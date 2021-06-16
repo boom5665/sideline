@@ -1,0 +1,360 @@
+#header .topnav {
+    background-color: #EC5858;
+
+    height: max-content;
+    color: white;
+    width: 100%;
+    padding: 30px 0px 50px 0px;
+    text-align: center;
+    position: relative;
+}
+
+#header .toppage {
+    float: left;
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 10px 19px;
+    text-decoration: none;
+    font-size: 23px;
+    flex-direction: column;
+    align-items: center;
+}
+#header .toppage:hover {
+
+    color: white;
+
+}
+
+#header .topth {
+    float: left;
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 20px 25px;
+    text-decoration: none;
+    font-size: 25px;
+    flex-direction: row;
+    align-items: center;
+}
+
+#header .topic {
+    font-size: 60px;
+    font-weight: bold;
+
+}
+
+#header .topnavM {
+    display: none;
+}
+#header .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+#header .text-al-L {
+    text-align: left;
+}
+
+#header .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    color: black;
+}
+
+#header .close {
+    color: #000;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    top: -27px;
+}
+
+#header .close:hover,
+#header .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#header .topnav a:hover {
+
+    color: black;
+}
+
+#header .topnav .search-container {
+    float: right;
+    display: flex;
+    width: 24%;
+}
+
+#header .topnav input[type=text] {
+    padding: 6px;
+    width: 100%;
+    margin-top: 0px;
+    font-size: 17px;
+    border-radius: 4px;
+    border: 2px solid;
+    text-align: center;
+}
+
+#header .src {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 5px 0px;
+}
+
+#header .form-src {
+    border-top: 2px solid;
+    padding-top: 10px;
+}
+
+#header .but-src {
+    margin-top: 25px;
+    font-size: 20px;
+    background: #807E7E;
+    color: #fff;
+    border-radius: 3.0458px;
+    border: none;
+    width: 70px;
+    height: 40px;
+    text-align: center;
+}
+
+#header .but-srcC {
+    background: #EC5858;
+
+}
+
+#header .src-button {
+    background: #FFFFFF;
+    box-shadow: inset 0px 3px 7px rgba(0, 0, 0, 0.25);
+    border: none;
+    color: #AEAEAE;
+    width: 40%;
+    height: 50px;
+    transform: translateY(70%);
+}
+
+#header .top-us {
+    width: 130%;
+}
+
+
+
+#header select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    background-image: none;
+    background: #fff;
+    border-left: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+#header .select {
+    position: relative;
+    display: flex;
+    height: 3em;
+    line-height: 3;
+    background: #2c3e50;
+    overflow: hidden;
+    border-radius: .25em;
+
+}
+
+#header select {
+    flex: 1;
+    padding: 0 .5em;
+    color: #000;
+    cursor: pointer;
+}
+
+
+#header .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #fff;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+    border-right: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    height: 42px;
+}
+#header .set-but {
+    background: #EC5858;
+    border-radius: 17.7418px;
+    border: none;
+    width: 90%;
+    color: #fff;
+}
+
+#header .set-but-2 {
+    background: #C4C4C4;
+    border-radius: 5px;
+    border: none;
+    width: 80%;
+}
+
+#header .set-but-out {
+    background: #6D6D6D;
+    border-radius: 17.7418px;
+    border: none;
+    width: 90%;
+    font-size: 15px;
+    color: #fff;
+    padding: 5px 0px;
+}
+
+#header .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#header .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    padding: 12px 16px;
+    z-index: 1;
+    color: black;
+    top: 135px;
+    left: -35px;
+}
+
+#header .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#header .padbut {
+    margin: 8px 0px;
+    width: 100%;
+}
+@media screen and (min-device-width: 280px) and (max-device-width: 1024px) {
+    #header .topnav .search-container {
+        float: none;
+    }
+
+    #header .topnav a,
+    #header .topnav input[type=text],
+    #header .topnav input[type=text] {
+        border: 1px solid #ccc;
+    }
+
+    #header .topnav {
+        display: none;
+    }
+
+    #header .topnavM {
+        display: block;
+    }
+
+    #header .topnavM {
+        overflow: hidden;
+        background-color: #EC5858;
+        position: relative;
+        height: max-content;
+        color: white;
+        width: 100%;
+        padding: 15px 0px 15px 0px;
+    }
+
+    #header .topnavM #myLinks {
+        display: none;
+    }
+
+    #header .topnavM a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    #header .topnavM a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 30px;
+    }
+
+    #header .topnavM a:hover {
+        color: white;
+    }
+
+    #header .active {
+        background-color: #EC5858;
+        color: white;
+    }
+    #header .textsizeH {
+
+        font-size: 40px;
+    }
+    #header .align {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    #header .bar1,
+    #header .bar2,
+    #header .bar3 {
+        width: 50px;
+        height: 6px;
+        background-color: #ffff;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+
+    #header .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    #header .change .bar2 {
+        opacity: 0;
+    }
+
+    #header .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+
+}
+
+#footer .footer {
+    background-color: #EC5858;
+    overflow: hidden;
+    height: max-content;
+    color: white;
+    width: 100%;
+    padding: 30px 0px 30px 0px;
+    text-align: center;
+}

@@ -1,0 +1,214 @@
+
+
+
+#login .card-description-nemaF {
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 50px;
+    color: #EC5858;
+}
+
+#login .dis-between {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#login input[type="checkbox"i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: 2.26718px solid #EC5858;
+}
+
+#login input[type=text]
+ {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+
+#login .inputtwo[type=text]
+ {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 25px;
+    background-image: url(/images/eye.png);
+    background-position: 97% 15px;
+    background-repeat: no-repeat;
+    background-size: 50px;
+}
+
+#login input[type=submit] {
+    width: 100%;
+    background-color: #EC5858;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+#login input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+#login .formstyle {
+    border: 1.51145px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 18.8931px;
+    /* border: 2px solid; */
+    margin: 60px;
+    padding: 80px;
+}
+
+#login .content .content-grid .content-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+#login .color-log {
+    color: #EC5858;
+
+}
+
+#login .login {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 10px 0px 0px 40px;
+}
+
+
+/* Hide the browser's default checkbox */
+#login .login input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+
+}
+
+/* Create a custom checkbox */
+#login .login .checkmark {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border: 2px solid #EC5858;
+}
+
+#login .regisC .checkmark {
+
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+#login .login:hover input~.checkmark {
+    background-color: #fff;
+}
+
+/* When the checkbox is checked, add a blue background */
+#login .login input:checked~.checkmark {
+    background-color: #EC5858;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+#login .login .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+#login .login input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+#login .login .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#login .regis {
+    font-size: 30px;
+    padding: 18px 0px 0px 0px;
+    text-align: right;
+}
+
+#login .dis-evenly {
+    display: flex;
+    padding-left: 20px;
+    flex-direction: column;
+
+
+}
+
+@media screen and (min-device-width: 280px) and (max-device-width: 1024px) {
+    #login .formstyle {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    #login .regis {
+        font-size: 20px;
+    }
+
+    #login .card-description-nemaF {
+        font-size: 30px;
+    }
+
+    #login .inputtwo[type=text]
+     {
+        font-size: 17px;
+        background-size: -0px;
+    }
+
+    #login input[type=text]
+     {
+        font-size: 17px;
+    }
+
+    #login .login {
+        font-size: 20px;
+    }
+    #login .login .checkmark {
+        top: 13px;
+    }
+    #login .loginimg{
+        width: 100px;
+    }
+}
