@@ -15,21 +15,29 @@ use App\Http\Controllers\PostController;
 */
 Route::resource('posts', PostController::class);
 
-Route::get('/home', [PostController::class, 'homeindex']);
+Route::get('admin/home', [PostController::class, 'homeindex'])->name('admin.home')->middleware('isAdmin');
 
+
+Route::get('/', function () {
+    return view('home');
+});
+Route::get('/main', [PostController::class, 'mainindex']);
 Route::get('/follow', [PostController::class, 'followindex']);
 
 
 
 
 
-Route::get('/login', function () {
-    return view('login');
-});
 
-Route::get('/register', function () {
-    return view('register');
-});
+
+
+// Route::get('/login', function () {
+//     return view('login');
+// });
+
+// Route::get('/register', function () {
+//     return view('register');
+// });
 
 
 Route::get('/dataweb', function () {
@@ -50,3 +58,7 @@ Route::get('Login/login', function () {
 Route::get('Login/register', function () {
     return view('Login/register');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

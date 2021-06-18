@@ -81,9 +81,9 @@
 
                 <div class="content-grid">
                     <div class="content-list">
-                        @foreach ($homes as $home)
-                        <a  href="{{ route('posts.show', $home->id) }}" class="card-content">
-                            <?php foreach (json_decode($home->filename)as $picture) { ?>
+                        @foreach ($mains as $main)
+                        <a  href="{{ route('posts.show', $main->id) }}" class="card-content">
+                            <?php foreach (json_decode($main->filename)as $picture) { ?>
                                <img class="card-img" src="{{ asset('/image/'.$picture) }}" >
                               <?php } ?>
                            <div class="card-quality">
@@ -97,17 +97,17 @@
                            <div class="card-description">
 
                                <div class="card-description-content">
-                                   <div class="card-description-cut">{{ $home->title }}</div>
-                                   <div class="card-description-name">฿ {{ $home->money }}</div>
+                                   <div class="card-description-cut">{{ $main->title }}</div>
+                                   <div class="card-description-name">฿ {{ $main->money }}</div>
                                    <div class="card-description-nema"> <img class="imgline"
-                                           src="{{ url('/images/line.png') }}" alt="Image" />: {{ $home->line }}
+                                           src="{{ url('/images/line.png') }}" alt="Image" />: {{ $main->line }}
                                    </div>
                                    <div class="card-description-down">
                                        <div class=""><i class="fas fa-map-marker-alt"></i>
-                                           :{{ Str::limit($home->location1, 100) }}
-                                           {{ Str::limit($home->location2, 100) }}
-                                           {{ Str::limit($home->location3, 100) }}
-                                           {{ Str::limit($home->location4, 100) }}</div>
+                                           :{{ Str::limit($main->location1, 100) }}
+                                           {{ Str::limit($main->location2, 100) }}
+                                           {{ Str::limit($main->location3, 100) }}
+                                           {{ Str::limit($main->location4, 100) }}</div>
 
                                    </div>
                                </div>
@@ -125,7 +125,7 @@
 
             <div class="top-button">
                 <button class="but-up">..ดูเพิ่มเติม..</button>
-                {{ $homes->links() }}
+                {{ $mains->links() }}
             </div>
             <div class="content-top">
                 <div class="content-head content-headD">TOP SIDELINE</div>
@@ -135,9 +135,9 @@
 
                 <div class="content-grid">
                     <div class="content-list">
-                        @foreach ($homes as $home)
-                            <a href="{{ route('posts.show', $home->id) }}" class="card-content">
-                                 <?php foreach (json_decode($home->filename)as $picture) { ?>
+                        @foreach ($mains as $main)
+                            <a href="{{ route('posts.show', $main->id) }}" class="card-content">
+                                 <?php foreach (json_decode($main->filename)as $picture) { ?>
                                     <img class="card-img" src="{{ asset('/image/'.$picture) }}" >
                                    <?php } ?>
                                 <div class="card-quality">
@@ -149,17 +149,17 @@
                                 <div class="card-description">
 
                                     <div class="card-description-content">
-                                        <div class="card-description-cut">{{ $home->title }}</div>
-                                        <div class="card-description-name">฿ {{ $home->money }}</div>
+                                        <div class="card-description-cut">{{ $main->title }}</div>
+                                        <div class="card-description-name">฿ {{ $main->money }}</div>
                                         <div class="card-description-nema"> <img class="imgline"
-                                                src="{{ url('/images/line.png') }}" alt="Image" />: {{ $home->line }}
+                                                src="{{ url('/images/line.png') }}" alt="Image" />: {{ $main->line }}
                                         </div>
                                         <div class="card-description-down">
                                             <div class=""><i class="fas fa-map-marker-alt"></i>
-                                                :{{ Str::limit($home->location1, 100) }}
-                                                {{ Str::limit($home->location2, 100) }}
-                                                {{ Str::limit($home->location3, 100) }}
-                                                {{ Str::limit($home->location4, 100) }}</div>
+                                                :{{ Str::limit($main->location1, 100) }}
+                                                {{ Str::limit($main->location2, 100) }}
+                                                {{ Str::limit($main->location3, 100) }}
+                                                {{ Str::limit($main->location4, 100) }}</div>
 
                                         </div>
                                     </div>

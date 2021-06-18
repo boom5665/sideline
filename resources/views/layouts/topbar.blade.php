@@ -3,7 +3,7 @@
 
     <div class="topnav">
         <div class="" style="margin-left: 40px;">
-            <a class="toppage" href="{{ url('home') }}"><img class="toppageimg"
+            <a class="toppage" href="{{ url('main') }}"><img class="toppageimg"
                     src="{{ url('/images/Subtract.png') }}" alt="Image" />หน้าหลัก</a>
             <a class="toppage" href="{{ url('dataweb') }}"><img class="topdataimg"
                     src="{{ url('/images/Subtract (1).png') }}" alt="Image" />ข้อมูล</a>
@@ -199,8 +199,10 @@
                 </div>
             </form>
             <div class="dropdown">
+                @if (Route::has('login'))
                 <a class="toppage top-us" href="{{ url('login') }}"><img class="toppageimg"
                         src="{{ url('/images/Vector.png') }}" alt="Image" />เข้าสู่ระบบ</a>
+                @endif
                 <div class="dropdown-content">
                     <div class="padbut"><img class="" src="{{ url('/images/usera.png') }}" alt="Image" /></div>
                     <div class="padbut">XXXXX</div>
@@ -210,7 +212,7 @@
                     <button class="padbut set-but-out"><img class="" src="{{ url('/images/log-out.png') }}" alt="Image" />ออกจากระบบ</button>
                 </div>
             </div>
-            <a class="topth" href="{{ url('home') }}">TH<img class="" src="{{ url('/images/Polygon.png') }}"
+            <a class="topth" href="{{ url('main') }}">TH<img class="" src="{{ url('/images/Polygon.png') }}"
                     alt="Image" /></a>
         </div>
     </div>
@@ -219,7 +221,7 @@
         <a href="#" class="active textsizeH">TH-SIDELINE</a>
 
         <div id="myLinks">
-            <a class="align" href="{{ url('home') }}">หน้าหลัก</a>
+            <a class="align" href="{{ url('main') }}">หน้าหลัก</a>
             <a class="align" href="{{ url('dataweb') }}">ข้อมูล</a>
             <a class="align" href="{{ url('follow') }}">ที่ติดตาม</a>
             <a class="align" href="#">ค้นหาน้อง

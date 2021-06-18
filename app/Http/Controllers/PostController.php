@@ -18,10 +18,10 @@ class PostController extends Controller
         return view('posts.index',compact('posts'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
-    public function homeindex()
+    public function mainindex()
     {
-        $data['homes'] = Post::latest()->paginate(6);
-        return view('posts.home',  $data);
+        $data['mains'] = Post::latest()->paginate(6);
+        return view('posts.main',  $data);
     }
     public function followindex()
     {
