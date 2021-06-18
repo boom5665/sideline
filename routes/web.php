@@ -16,6 +16,8 @@ use App\Http\Controllers\HomeController;
 Route::resource('posts', PostController::class);
 
 
+Route::get('/', [PostController::class, 'mainindex']);
+
 Route::get('/main', [PostController::class, 'mainindex']);
 Route::get('/follow', [PostController::class, 'followindex']);
 
@@ -23,14 +25,16 @@ Route::get('/follow', [PostController::class, 'followindex']);
 
 
 
+
 Auth::routes();
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('login');
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home')->middleware('isAdmin');
 
 
 
-// Route::get('/login', function () {
-//     return view('login');
+// Route::get('/', function () {
+//     return view('auth.login');
 // });
 
 // Route::get('/register', function () {
@@ -49,4 +53,5 @@ Route::get('Login/login', function () {
 Route::get('Login/register', function () {
     return view('Login/register');
 });
+
 
