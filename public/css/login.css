@@ -39,7 +39,7 @@
     font-size: 25px;
 }
 
-#login .inputtwo[type=text]
+#login .inputtwo[type=password]
  {
     width: 100%;
     padding: 12px 20px;

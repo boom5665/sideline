@@ -3,9 +3,8 @@
 namespace App\Http\Middleware;
 
 use Closure;
-use Illuminate\Http\Request;
 
-class isAdmin
+class IsAdmin
 {
     /**
      * Handle an incoming request.
@@ -14,11 +13,12 @@ class isAdmin
      * @param  \Closure  $next
      * @return mixed
      */
-    public function handle(Request $request, Closure $next)
+    public function handle($request, Closure $next)
     {
-        if (auth()->user()->isAdmin == 1){
-        return $next($request);
+        if(auth()->user()->isAdmin == 1){
+            return $next($request);
         }
-        return redirect('home')->with('NOT ADMIN');
+
+        return redirect('home')->with('error',"You don't have admin access.");
     }
 }

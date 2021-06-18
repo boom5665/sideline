@@ -238,7 +238,7 @@
 }
 
 #header .dropdown-content {
-    display: none;
+    display: block;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 200px;
@@ -246,7 +246,7 @@
     padding: 12px 16px;
     z-index: 1;
     color: black;
-    top: 135px;
+    top: 100px;
     left: -35px;
 }
 
@@ -257,6 +257,7 @@
 #header .padbut {
     margin: 8px 0px;
     width: 100%;
+    font-size: 20px;
 }
 @media screen and (min-device-width: 280px) and (max-device-width: 1024px) {
     #header .topnav .search-container {

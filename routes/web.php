@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
-
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,12 +15,7 @@ use App\Http\Controllers\PostController;
 */
 Route::resource('posts', PostController::class);
 
-Route::get('admin/home', [PostController::class, 'homeindex'])->name('admin.home')->middleware('isAdmin');
 
-
-Route::get('/', function () {
-    return view('home');
-});
 Route::get('/main', [PostController::class, 'mainindex']);
 Route::get('/follow', [PostController::class, 'followindex']);
 
@@ -28,6 +23,9 @@ Route::get('/follow', [PostController::class, 'followindex']);
 
 
 
+Auth::routes();
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('login');
+Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home')->middleware('isAdmin');
 
 
 
@@ -44,13 +42,6 @@ Route::get('/dataweb', function () {
     return view('dataweb');
 });
 
-Route::get('/work', function () {
-    return view('work');
-});
-Route::get('/workpass', function () {
-    return view('workpass');
-});
-
 Route::get('Login/login', function () {
     return view('Login/login');
 });
@@ -59,6 +50,3 @@ Route::get('Login/register', function () {
     return view('Login/register');
 });
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
