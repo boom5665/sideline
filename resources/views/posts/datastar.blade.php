@@ -403,6 +403,7 @@
       height: 300px;
       margin-left: auto;
       margin-right: auto;
+      z-index: 0;
     }
 
     .swiper-slide {
