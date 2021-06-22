@@ -238,7 +238,7 @@
 }
 
 #header .dropdown-content {
-    display: none;
+    display: block;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 200px;
@@ -253,7 +253,14 @@
 #header .dropdown:hover .dropdown-content {
     display: block;
 }
-
+#header .avatar {
+    width: 55%;
+    height: 100px;
+    /* position: absolute; */
+    /* top: 10px; */
+    /* left: 10px; */
+    border-radius: 50%;
+}
 #header .padbut {
     margin: 8px 0px;
     width: 100%;

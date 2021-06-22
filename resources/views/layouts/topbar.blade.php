@@ -10,34 +10,7 @@
 <!-- Styles -->
 {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
 <link href="{{ asset('css/layout.css') }}" rel="stylesheet">
-<script>
-    function TFunc(x) {
-        x.classList.toggle("change");
-        var x = document.getElementById("myLinks");
 
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
-        }
-
-    }
-    var modal = document.getElementById("Mpop");
-    var btn = document.getElementById("Bpop");
-    var close = document.getElementsByClassName("close")[0];
-    btn.onclick = function() {
-        modal.style.display = "block";
-    }
-    close.onclick = function() {
-        modal.style.display = "none";
-    }
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-
-</script>
 
 <header id="header">
     <div id="app">
@@ -245,14 +218,17 @@
                             @endif
 
                     <div class="dropdown-content">
-                        <div class="padbut"><img class="" src="{{ url('/images/usera.png') }}" alt="Image" /></div>
+                        @guest
+                        @else
+                        <img src="/uploads/avatars/{{ Auth::user()->avatar }}" class="avatar">
+                        @endguest
                         @guest
                         @else
                             <div class="padbut " href="#">
                                 {{ Auth::user()->name }}
                             </div>
                         @endguest
-                        <button class="padbut set-but">จัดการบัญชี</button>
+                        <a href="{{ url('/profile') }}"><button class="padbut set-but">จัดการบัญชี</button></a>
                         <button class="padbut set-but-2">การบ้านที่ส่ง</button>
                         <button class="padbut set-but-2">น้องสุดโปรด</button>
                         <button class="padbut set-but-out" onclick="event.preventDefault();
@@ -350,13 +326,33 @@
 
 
 
-<style>
-    .dropdown-menu {
-        position: absolute;
 
-        display: block;
 
-        right: 671px;
+<script>
+    function TFunc(x) {
+        x.classList.toggle("change");
+        var x = document.getElementById("myLinks");
+
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+
+    }
+    var modal = document.getElementById("Mpop");
+    var btn = document.getElementById("Bpop");
+    var close = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    close.onclick = function() {
+        modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
     }
 
-</style>
+</script>

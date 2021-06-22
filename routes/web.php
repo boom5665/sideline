@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,18 +17,18 @@ use App\Http\Controllers\HomeController;
 Route::resource('posts', PostController::class);
 
 
-Route::get('/', [PostController::class, 'mainindex']);
 
 Route::get('/main', [PostController::class, 'mainindex']);
 Route::get('/follow', [PostController::class, 'followindex']);
 
 
-
-
+Route::get('/profile', [UserController::class, 'profile']);
+Route::post('/profile', [UserController::class, 'update_avatar']);
 
 
 Auth::routes();
 
+Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home')->middleware('isAdmin');
 

@@ -368,6 +368,7 @@
     .swiper-container {
       width: 100%;
       height: 100%;
+
     }
 
     .swiper-slide {
@@ -403,7 +404,7 @@
       height: 300px;
       margin-left: auto;
       margin-right: auto;
-      z-index: 0;
+      z-index: 0 !important;
     }
 
     .swiper-slide {
