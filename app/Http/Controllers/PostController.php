@@ -20,7 +20,7 @@ class PostController extends Controller
     }
     public function mainindex()
     {
-        $data['mains'] = Post::latest()->paginate(6);
+        $data['mains'] = Post::latest()->paginate(12);
         return view('posts.main',  $data);
     }
     public function followindex()

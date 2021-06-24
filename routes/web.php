@@ -22,6 +22,7 @@ Route::get('/main', [PostController::class, 'mainindex']);
 Route::get('/follow', [PostController::class, 'followindex']);
 
 
+
 Route::get('/profile', [UserController::class, 'profile']);
 Route::post('/profile', [UserController::class, 'update_avatar']);
 
@@ -42,7 +43,9 @@ Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home
 //     return view('register');
 // });
 
-
+Route::get('/work', function () {
+    return view('work');
+});
 Route::get('/dataweb', function () {
     return view('dataweb');
 });
