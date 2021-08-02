@@ -34,6 +34,10 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home')->middleware('isAdmin');
 
 
+Route::get('/test', function () {
+    return view('posts.test');
+});
+
 
 // Route::get('/', function () {
 //     return view('auth.login');
