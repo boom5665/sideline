@@ -1,0 +1,355 @@
+body {
+  background: url('/images/it.jpg') #fff center center fixed;
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Chakra Petch', sans-serif;
+  line-height: 1.42857143;
+  padding: 0;
+  margin: 0;
+}
+
+#wrap {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.notice {
+  width: 100%;
+  float: left;
+  padding: 10px 15px;
+  background: transparent;
+  box-sizing: border-box;
+  /* text-align: center; */
+  color: #d60000;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.movie-box:hover {
+  border-color: #ADFF2F;
+  transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  transform: scale(1.1);
+  box-shadow: inset 0 0 0.8em 0 #adff2f, 0 0 0.5em 0 #adff2f;
+  z-index: 1;
+}
+
+.header-requestmovie-button {
+  background-color: transparent;
+  font-family: myFirstFont !important;
+  padding: 4px 20px;
+  cursor: pointer;
+  border-radius: 0.5em;
+  border: #ADFF2F 5px solid;
+  color: #ADFF2F;
+  text-shadow: 0 0 0.2em hsl(0 0% 100% / 0.3), 0 0 0.5em currentColor;
+  box-shadow: inset 0 0 0.8em 0 #adff2f, 0 0 0.5em 0 #adff2f;
+}
+
+.box-header,
+.box h3 {
+  background-color: transparent;
+}
+
+#content h2.title-description {
+  text-align: center;
+  color: #ADFF2F;
+}
+
+.box-header,
+.box h3 {
+
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 8px;
+  border-bottom: 1px solid #333;
+  color: #f2d45f;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: none;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 100%;
+  float: left;
+  padding: 0;
+  background: transparent;
+  border: 0px solid #333;
+  box-sizing: border-box;
+  margin-bottom: 4px;
+}
+
+
+
+.header-search-input {
+  float: left;
+  background: transparent;
+  font-size: 14px;
+  height: 20px;
+  outline: none;
+  padding: 4px;
+  border: #ADFF2F 5px solid;
+  box-shadow: inset 0 0 0.8em 0 #adff2f, 0 0 0.5em 0 #adff2f;
+  text-align: center;
+  font-family: myFirstFont !important;
+  color: #ADFF2F;
+}
+
+.header-search-button {
+  background: transparent;
+  font-family: myFirstFont !important;
+  color: #ADFF2F;
+  cursor: pointer;
+}
+
+.header-search-button {
+  float: left;
+  /* border: 1px solid #ccc; */
+  border-left: none;
+  font-size: 14px;
+  height: 19.5px;
+  outline: none;
+  margin-left: -5px;
+  text-align: center;
+  border: #ADFF2F 5px solid;
+  box-shadow: inset 0 0 0.8em 0 #adff2f, 0 0 0.5em 0 #adff2f;
+
+}
+
+
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+  background-color: #ADFF2F;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 8px;
+  text-shadow: 0 0 0.2em hsl(0 0% 100% / 0.3), 0 0 0.5em currentColor;
+  box-shadow: inset 0 0 0.8em 0 #adff2f, 0 0 0.5em 0 #adff2f;
+  color: white;
+}
+
+.logo {
+  text-align: center;
+  width: 65%;
+  margin: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  user-select: none;
+}
+
+.logo b {
+  font-weight: 400;
+  font-size: 60px;
+  color: #fff;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #adff2f, 0 0 0.5em #adff2f, 0 0 0.1em #adff2f, 0 10px 3px #000;
+}
+
+.logo b span {
+  animation: blink linear infinite 2s;
+}
+
+.logo b span:nth-of-type(2) {
+  animation: blink linear infinite 3s;
+}
+
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+
+  79% {
+    color: #333;
+  }
+
+  80% {
+
+    text-shadow: none;
+  }
+
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
+
+
+/* follow me @nodws */
+#btn-twtr {
+  clear: both;
+  color: #fff;
+  border: 2px solid;
+  border-radius: 3px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-family: sans-serif;
+  font-size: 14px;
+  width: 13em;
+  padding: 5px 10px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0px 3px rgba(0, 0, 0, 0.2);
+  opacity: 0.4
+}
+
+#btn-twtr:hover {
+  color: #fff;
+  opacity: 1
+}
+
+
+
+
+
+
+.neon-btn {
+  position: relative;
+  text-decoration: none;
+  /* left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%); */
+  color: #ADFF2F;
+  font-size: 2em;
+  border: #ADFF2F 5px solid;
+  padding: 0.3em 1em;
+  border-radius: 0.5em;
+  text-shadow: 0 0 0.2em hsl(0 0% 100% / 0.3), 0 0 0.5em currentColor;
+  box-shadow: inset 0 0 0.8em 0 #ADFF2F, 0 0 0.5em 0 #ADFF2F;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+
+.Nswap {
+  text-align: center;
+  font-size: 50px;
+  margin: 0px 0 0px 0;
+}
+
+.Nswap:nth-child(1) a {
+  color: #b6ff00;
+  font-family: "Press Start 2P";
+  font-size: 0.8em;
+}
+
+.Nswap:nth-child(1) a:hover {
+  -webkit-animation: neon4 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon4 1.5s ease-in-out infinite alternate;
+  animation: neon4 1.5s ease-in-out infinite alternate;
+}
+
+.Nswap a:hover {
+  color: #ffffff;
+}
+
+/*glow for webkit*/
+@-webkit-keyframes neon4 {
+  from {
+
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #b6ff00,
+      0 0 20px #b6ff00, 0 0 80px #b6ff00, 0 0 20px #b6ff00, 0 0 20px #b6ff00;
+  }
+
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #b6ff00,
+      0 0 35px #b6ff00, 0 0 40px #b6ff00, 0 0 50px #b6ff00, 0 0 75px #b6ff00;
+
+  }
+}
+
+
+.fluk {
+  position: relative;
+  font-size: 2em;
+  color: #ADFF2F;
+  text-shadow: 0 0 0.05em #ADFF2F,
+    0 0 0.15em #ADFF2F,
+    0 0 0.3em #ADFF2F;
+  animation: 2.5s ease-in-out infinite neon-sign;
+}
+
+.fluk::after {
+  position: absolute;
+  content: "";
+  width: 110%;
+  height: 0;
+  left: 50%;
+  bottom: 0.25em;
+  transform: translateX(-50%) rotate3d(1, 0, 0, 75deg);
+  border-radius: 50%;
+  animation: 2.5s ease-in-out infinite neon-sign-shadow;
+}
+
+@keyframes neon-sign {
+
+  0%,
+  30% {
+    color: #ADFF2F;
+    text-shadow: 0 0 0.05em #ADFF2F,
+      0 0 0.15em #ADFF2F,
+      0 0 0.3em #ADFF2F;
+  }
+
+  50%,
+  90% {
+    color: #ADFF2F;
+    text-shadow: none;
+  }
+}
+
+
+.textNE-green:hover {
+  color: #ADFF2F;
+  text-shadow:
+    0 0 5px rgb(46, 146, 43),
+    0 0 10px rgb(46, 146, 43),
+    0 0 20px rgb(46, 146, 43),
+    0 0 40px rgb(46, 146, 43),
+    0 0 80px rgb(46, 146, 43),
+    0 0 90px rgb(46, 146, 43),
+    0 0 100px rgb(46, 146, 43);
+}
+
+
+.sidebar ul li a {
+  color: #fff;
+  background-color: transparent;
+}

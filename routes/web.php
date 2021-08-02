@@ -59,3 +59,6 @@ Route::get('Login/register', function () {
 });
 
 
+Route::get('gg/HUAYTHAI', function () {
+    return view('gg/HUAYTHAI');
+});

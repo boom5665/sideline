@@ -4,7 +4,7 @@
 <header id="header">
     <div id="app">
         <div class="topnav">
-            <div class="" style="margin-left: 40px;">
+            <div class="" style="margin-left: 60px;">
                 <a class="toppage" href="{{ url('main') }}"><img class="toppageimg"
                         src="{{ url('/images/Subtract.png') }}" alt="Image" />หน้าหลัก</a>
                 <a class="toppage" href="{{ url('dataweb') }}"><img class="topdataimg"
@@ -13,7 +13,7 @@
                         src="{{ url('/images/Subtract (2).png') }}" alt="Image" />ที่ติดตาม</a>
             </div>
             <span class="topic">TH-SIDELINE</span>
-            <div class="search-container">
+            <div class="search-container" >
 
                 <button id="Bpop" type="text" class="src-button"><i class="fas fa-search"></i>Search.. </button>
                 <form class="" action="/search" method="GET" role="search">
@@ -202,6 +202,7 @@
                 </form>
                 <div class="dropdown">
                     @if (Route::has('login'))
+
                     <a class="toppage top-us"  href="{{ route('login') }}"><img class="toppageimg"
                             src="{{ url('/images/Vector.png') }}" alt="Image" />เข้าสู่ระบบ</a>
                             @endif
@@ -210,8 +211,6 @@
                         @guest
                         @else
                         <img src="/uploads/avatars/{{ Auth::user()->avatar }}" class="avatar">
-
-
                             <div class="padbut " href="#">
                                 {{ Auth::user()->name }}
                             </div>

@@ -318,7 +318,114 @@
 #body .content-top-#body {
     font-size: 30px;
 }
+#datastar .img-girl-s {
+    width: 100%;
+}
 
+#datastar .img-lo {
+    width: 5%;
+}
+
+#datastar .img-pro {
+    width: 30%;
+    float: right;
+}
+
+#datastar .img-line {
+    width: 10%;
+}
+
+#datastar .img-pro-s {
+    width: 25%;
+    float: right;
+}
+
+#datastar .page {
+    width: 100%;
+    height: 40px;
+    background: #F0F0F0;
+    font-size: 17px;
+    color: black;
+    margin: 20px auto;
+    padding: 8px;
+}
+
+#datastar .content-down {
+    font-size: 18px;
+    text-align: left;
+    font-weight: normal;
+}
+
+#datastar .content-lo {
+    text-align: center;
+    color: rgba(236, 88, 88, 1);
+}
+
+#datastar .bott-line {
+    border-bottom: 3px solid #C6C2C2;
+    margin: 20px 0px;
+}
+
+#datastar .bott-line-com {
+    border-bottom: 3px solid #C6C2C2;
+
+}
+
+#datastar .page-com {
+    width: 100%;
+    height: 70px;
+    background: #F0F0F0;
+    font-size: 17px;
+    color: black;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+#datastar p {
+    margin: 0 0 3px;
+}
+
+#datastar .input-container {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #a9a9a9;
+    margin-bottom: 20px;
+}
+
+#datastar .input-container input:focus,
+#datastar .input-container input:active {
+    outline: none;
+}
+
+#datastar .input-container input {
+    border: none;
+    width: 100%;
+}
+
+#datastar .input-button {
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    bottom: 25px;
+    right: 75px;
+    background: #3BAEDA;
+    border-radius: 22px;
+    border: none;
+    padding: 3px 10px;
+    color: white;
+}
+
+#datastar .input-button-cal {
+    bottom: 25px;
+    right: 20px;
+    background: #EC5858;
+}
+#selectedFiles img {
+    max-width: 300px;
+    max-height: 300px;
+    padding: 10px;
+
+}
 @media screen and (min-device-width: 280px) and (max-device-width: 1024px) {
     #body .content-top {
         padding: 0px 0px 0px 0px;

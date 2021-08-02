@@ -68,7 +68,7 @@
 }
 
 #login input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #F58989;
 }
 
 #login .formstyle {
@@ -88,9 +88,11 @@
 
 #login .color-log {
     color: #EC5858;
+}
+#login .color-log:hover {
+    color: #EC5858;
 
 }
-
 #login .login {
     display: block;
     position: relative;

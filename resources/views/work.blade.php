@@ -1,159 +1,45 @@
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://md-aqil.github.io/images/swiper.min.css">
-
-<section class="spacer">
-    <div class="testimonial-section">
-        <div class="testi-user-img">
-            <div class="swiper-container gallery-thumbs">
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide">
-                        <img class="u3" src="https://md-aqil.github.io/images/2091127763_1_1_1.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="u1" src="https://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="u1" src="https://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="u1" src="https://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg" alt="">
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
+<template>
+    <div class="role-content">
+      <div class="role-title">
+          หวยจับยี่กี
+          <span class="small">หวยจับยี่กี่ กติกาการเเทง AMBLOTTO</span>
+      </div>
+      <ul class="role-list">
+          <li class="role-item">เปิดรับเเทงออนไลน์วันละ 88 รอบ ออกผลรางวัลทุกๆ 15 นาที</li>
+          <li class="role-item">รอบเเรกเริ่มเวลา 06:00น. (เริ่มทายผลใหม่ได้ตั้งเเต่ 05:00น.)</li>
+          <li class="role-item">ปิดรับเเทงรอบสุดท้าย เวลา 03:45น.</li>
+          <li class="role-item">สามารถส่งตัวเลขได้ฟรีไม่จำกัดจำนวนครั้งด้วยกติกาที่ชัดเสจเเละตรวจสอบได้</li>
+          <li class="role-item">สมาชิกที่ยิงเลขได้ ลำดับที่ 16 จะได้รับเครดิตฟรี 400 บาท เเละ ลำดับ 1 ฟรี 200 บาท เเต่จะต้องมียอดเดิมพันรอบนั้นขั้นต่ำ 100 บาทขั้นไป</li>
+      </ul>
+      <div class="role-title hasMTไม่ถึง 20 ลำดับ ไม่ว่ากรณีใดก็ตาม ทางระบบจะทำการคืน โพยเเละยอดเงินที่เเทงเข้ามาในรอบนั้นทันที</span>
+      <span>!!หากระบบล่มหรือขัดข้อง ระ">เลขวิ่งบน รับทายผล 3 ตัวบนเหมือนหวยรัฐบาล</div>
+      <span>หากเลขที่สมาชิกร่วมทายผล มีหว่างก่อนปิดการร่วมส่งทายผลตัวเลขออกรางวัลจนเป็นสาเหตุทำให้สมาชิกไม่สามารถเเข้าใช้งานระบบได้ทีมงานจะทำการตัดสินการออกรางวัลตามความเหมาะสม</span>
+      <span>(การตัดสินขึ้นอยู่กับดุลพินิจของทีมงาน ทีมงานจะตัดสินด้วยความโปร่งใสเเละเป็นธรรมที่สุด)</span>
+      <ul class="role-list">
+          <li class="role-item">ก่อนหมดเวลาร่วมส่งผลทายผลตัวเลขออกรางวัลที่ 1 นาทีระบบเกิดปัญหาข้อข้องไม่สามารถเข้าใช้งานได้ ทำให้ท่านไม่สามารถเข้าร่วมทายผลตัวเลขได้ กรณีนี้ทางทีมงานจะทำการยกเลิกเเละคืนเงินเครดิตในรอบนั้นทีนที ถึงเเม้ว่าก่อนหน้านั้นจะมีสมาชิยิงเข้ามามากกว่า 20 ลำดับก็ตาม</li>
+      </ul>
+      <span>(การออกผลรางวัล คิดจาก ผลรางวัลทีสมาชิกทุกๆท่านส่งตัวเลขจำนวน 5 หลัก [12345] จากนั้นทีมงานจะนำตัวเลขที่สมาชิกส่งเข้ามาทั้งหมดในรอบนั้นๆมารวมกัน เเล้ว เอาผลรวมที่ได้นำไปลบกับเลข ลำดับที่ 16 ของรอบนั้น เเละจะนำผลที่ได้มาเป็ยผลออกรางวัล)</span>
+      <span>ตัวอย่าง การออกผลรางวัล ผลรวมการยิงเลขทั้งหมดได้ 1234567890 – [51876 ตัวอย่างลำดับที่ 16] = 1234516014 << ผลหลังจากกลบลำดับที่ 16</span>
+      <span>ผลรวม 3 ตัวท้าย จะถูกนำมาออกผลรางวัลเป็นเลข 3 ตัวบนของหวยยี่กี่รอบนั้นผลรวมหลักพันเเละหลักหมื่นจะถูกนำมาออกผลรางวัลเป็นเลข 2 ตัวล่าง ของหวยยี่กีรอบนั้น</span>
+      <span>ตามตัวอย่างผลรวมหลังลบลำดับที่ 16 ได้ = 12345[16][014] = เลขที่ออก 3 ตัวบนคือ = [014] เลขที่ออก 2 ตัวล่างคือ = [16] สมาชิกที่ยิงเลขได้ลำดับที่ 16 ได้รับเครดิตฟรี 400 บาท</span>
+      <span>พิเศษ!! สมาชิกที่ยิงเลขได้ลำดับที่ 1 จะได้รับเครดิตฟรี 200 บาท</span>
+      <span>(เงื่อนไขจะต้องมียอดเดิมพันรอบนั้นขั้นต่ำ 100 บาท ขึ้นไป)</span>
+      <ul class="role-list">
+          <li class="role-item">หวยยี่กีเปิดรับเเทงวันละ 44 รอบ</li>
+          <li class="role-item">ออกผลรางวัลทุกๆ 30 นาที</li>
+          <li class="role-item">เปิดรอบเเรก 06:00น. – 03:45น หลังจากหวยยี่กีปิดรับเเทงเเต่ละรอบ</li>
+          <li class="role-item">ระบบยิงเลขเปิดให้ยิง 2 นาทีหลังจากระบบยิงเลขปิดอีก 1 นาที</li>
+          <li class="role-item">ระบบจะทำการตรวจโพยโดยใช้เวลาการจ่ายเงิน 2 – 5 นาที</li>
+      </ul>
+      <span>ตัวอย่าง</span>
+      <span>ยี่กี่รอบที่ 1 ปิดรับเเทง 06:00น. ยิงเลขได้ถึง 06:02น. เเละ ระบบจะตรวจสอบโพยเวลา 06:03น. เเละจ่ายเงินท่านทั้งหมดเสร็จภายในเวลาไม่เกิน 06:08น</span>
+      <span>** โปรดตั้งเวลาของอุปกรณ์เข้าเล่นของท่านให้ตรงกับเวลาในเว็บ เพื่อที่ท่านจะได้ไม่สับสนกับเวลาปิดรับ เวลาที่เเสดงผลการส่งตัวเลขจะใช้เวลาจากเซิฟเวอร์จริง **</span>
+      <span>อัตตราการจ่ายหวยยี่กี</span>
+      <span>3 ตัวบน ราคาจ่าย 850 บาท</span>
+      <span>3 ตัวโต๊ด ราคาจ่าย 120 บาท</span>
+      <span>2 ตัวบน – ล่าง ราคา 92 บาท</span>
+      <span>เลขวิ่ง 3 ตัวบน ราคา 3.2 บาท</span>
+      <span>เลขวิ่ง 2 ตัวล่าง ราคา 4.2 บาท</span>
+      <span>*หากราคามีการเปลี่ยนเเปล จะเเจ้งให้ทราบล่วงหน้าก่อนมีการเปลี่ยนเเปลง 7 วัน</span>
     </div>
-</section>
-
-
-
-
-
-<style>
-
-    .gallery-thumbs {
-        height: 100%;
-    }
-
-    .gallery-thumbs .swiper-wrapper {
-        align-items: center;
-    }
-
-    .gallery-thumbs .swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 250px !important;
-        height: 330px;
-        position: relative;
-    }
-
-    .gallery-thumbs .swiper-slide img {
-        filter: contrast(0.5) blur(1px);
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 10px;
-    }
-
-    .gallery-thumbs .swiper-slide-active img {
-        filter: contrast(1) blur(0px) !important;
-    }
-
-    .flex-row .flex-col {
-        -ms-flex-preferred-size: 0;
-        flex-basis: 0;
-        -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-        flex-grow: 1;
-        max-width: 100%;
-        position: relative;
-        width: 100%;
-        min-height: 1px;
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-
-    .gallery-thumbs .swiper-wrapper {
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-
-
-    .testimonial-section .quote {
-        width: 100%;
-        height: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-
-    .swiper-container.testimonial {
-        height: 100vh;
-    }
-
-    .testimonial-section .user-saying {
-        background: var(--theme-color2);
-        width: 60%;
-        color: #fff;
-        height: 100%;
-    }
-
-    .testi-user-img {
-        width: 40%;
-    }
-
-    .testimonial-section {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-    }
-
-
-</style>
-
-<script src="https://md-aqil.github.io/images/swiper.min.js"></script>
-<script>
-    var galleryThumbs = new Swiper('.gallery-thumbs', {
-        effect: 'coverflow',
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: '2',
-        // coverflowEffect: {
-        //   rotate: 50,
-        //   stretch: 0,
-        //   depth: 100,
-        //   modifier: 1,
-        //   slideShadows : true,
-        // },
-
-        coverflowEffect: {
-            rotate: 0,
-            stretch: 0,
-            depth: 50,
-            modifier: 6,
-            slideShadows: false,
-        },
-
-    });
-
-</script>
+  </template>

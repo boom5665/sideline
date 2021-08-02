@@ -48,11 +48,13 @@
                         <section class="spacer">
                             <div class="testimonial-section">
                                 <div class="testi-user-img">
-                                    <div class="swiper-container gallery-thumbs" style="transform: translate3d(50px, 0px, 0px);">
+                                    <div class="swiper-container gallery-thumbs"
+                                        style="transform: translate3d(50px, 0px, 0px);">
                                         <div class="swiper-wrapper">
                                             @foreach ($mains as $main)
                                                 <div class="swiper-slide">
-                                                    <a href="{{ route('posts.show', $main->id) }}" class="card-content" style="    position: initial !important;">
+                                                    <a href="{{ route('posts.show', $main->id) }}" class="card-content"
+                                                        style="    position: initial !important;">
                                                         <?php foreach (json_decode($main->filename) as
                                                         $picture) { ?>
                                                         <img class="card-img-swiper"
@@ -68,7 +70,7 @@
                                                         </div>
                                                         <div class="card-description">
 
-                                                            <div class="card-description-content">
+                                                            <div class="card-description-content-swiper card-description-content ">
                                                                 <div class="card-description-cut">{{ $main->title }}</div>
                                                                 <div class="card-description-name">฿ {{ $main->money }}
                                                                 </div>
@@ -210,11 +212,12 @@
 
     .gallery-thumbs {
         height: 100%;
+        width: 80%;
     }
 
     .gallery-thumbs .swiper-wrapper {
         align-items: center;
-        
+
     }
 
     .gallery-thumbs .swiper-slide {
@@ -227,10 +230,10 @@
 
     .gallery-thumbs .swiper-slide img {
         /* filter: contrast(0.5) blur(1px); */
-        width: 100%;
-        height: 100%;
+        width: 95%;
+        /* height: 100%;
         object-fit: cover;
-        border-radius: 10px;
+        border-radius: 10px; */
     }
 
     .gallery-thumbs .swiper-slide-active img {
@@ -300,9 +303,26 @@
         width: 100%;
         height: 100%;
     }
-    article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-    display: block;
-    width: 100%;
-}
+
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    main,
+    menu,
+    nav,
+    section,
+    summary {
+        display: block;
+        width: 100%;
+    }
+
+    .card-description-content-swiper {
+        width: 95.1% !important;
+    }
 
 </style>

@@ -178,7 +178,7 @@
 
     #dataweb .active,
     #dataweb .collapsible:hover {
-        background-color: #F0F0F0;
+        background-color: #858181;
     }
     #dataweb a{
         color: #EC5858;
