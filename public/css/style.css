@@ -595,3 +595,146 @@
     font-size: 64px;
     padding: 22px 15px 0px 0px;
 }
+
+.head-font-bf-data {
+    font-size: 30px;
+    font-style: italic;
+    color: #6D0CEE;
+    font-weight: 700;
+}
+
+.head2-font-bf-data {
+    font-size: 19px;
+    color: #6D0CEE;
+    font-weight: 400;
+}
+
+.inline-formsearch {
+    display: inline-flex;
+    width: 100%;
+}
+
+.conent-search {
+    float: right;
+}
+
+.btn-search-insied-input {
+    position: relative;
+    left: -25px;
+}
+
+.conent-search-input {
+    background: #CDCDCD;
+    padding: 10px 0px 8px 6px;
+    border-radius: 5px;
+    border: bisque;
+}
+
+.box-sideline {
+    display: flex;
+    padding-left: 15px;
+    flex-wrap: wrap;
+    padding-right: 15px;
+    width: 100%;
+}
+
+.card_sis {
+    background-color: #6D0CEE;
+    border-radius: 10px;
+    height: auto;
+    width: 100%;
+}
+
+.card-title-side {
+    color: white;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+}
+
+.card-text-side {
+    color: white;
+}
+
+.div-point-side {
+    display: flex;
+}
+
+.card-point-side {
+    color: white;
+}
+
+.card-point-star {
+    color: white;
+    padding-left: 10px;
+}
+
+.card_sis .card_ratemoney-body a {
+    font-size: 13px;
+    color: #6D0CEE !important;
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    bottom: 125px;
+    background: #fff;
+    width: 75px;
+    height: 23px;
+    right: 0;
+    padding-left: 9px;
+    border-radius: 15px 0 0 0;
+    padding-top: 3px;
+}
+
+.card_sis .card_typesex-body a {
+    font-size: 13px;
+    color: #6D0CEE !important;
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    bottom: 125px;
+    background: #fff;
+    width: 52px;
+    height: 23px;
+    left: 0;
+    padding-left: 5px;
+    border-radius: 0px 15px 0px 0px;
+    padding-top: 2px;
+}
+
+.card_sis .card_new-body a {
+    font-size: 13px;
+    color: #6D0CEE !important;
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    background: #fff;
+    width: 52px;
+    height: 23px;
+    left: 0;
+    padding-left: 5px;
+    border-radius: 0px 0px 15px 0px;
+    padding-top: 2px;
+}
+
+.card_sis .card_follow-body i {
+    font-size: 24px;
+    color: #ffffff !important;
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    /* background: #fff; */
+    width: 52px;
+    height: 23px;
+    right: 0;
+    padding-left: 5px;
+    border-radius: 0px 0px 15px 0px;
+    padding-top: 2px;
+}
+
+.img-side-data-body {
+    border-radius: 10px;
+}
