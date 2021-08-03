@@ -81,10 +81,10 @@
                                                                 </div>
                                                                 <div class="card-description-down">
                                                                     <div class=""><i class="fas fa-map-marker-alt"></i>
-                                                                        :{{ Str::limit($main->location1, 100) }}
-                                                                        {{ Str::limit($main->location2, 100) }}
-                                                                        {{ Str::limit($main->location3, 100) }}
-                                                                        {{ Str::limit($main->location4, 100) }}</div>
+                                                                        :{{ Str::limit($main->location1, 3) }}
+                                                                        {{ Str::limit($main->location2, 3) }}
+                                                                        {{ Str::limit($main->location3, 3) }}
+                                                                        {{ Str::limit($main->location4, 3) }}</div>
 
                                                                 </div>
                                                             </div>

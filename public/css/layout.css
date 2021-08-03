@@ -1,12 +1,11 @@
 #header .topnav {
-    background-color: #EC5858;
-
-    height: max-content;
+    background-color: #6D0CEE;
     color: white;
     width: 100%;
-    padding: 25px 0px 35px 0px;
+    <<<<<<< HEAD=======padding: 25px 0px 35px 0px;
     text-align: center;
     position: relative;
+    >>>>>>>cbfa7d4f916e5dcd35ecb8d021d4ffa1bade16a0
 }
 
 #header .toppage {
@@ -20,10 +19,9 @@
     flex-direction: column;
     align-items: center;
 }
+
 #header .toppage:hover {
-
     color: white;
-
 }
 
 #header .topth {
@@ -41,12 +39,12 @@
 #header .topic {
     font-size: 70px;
     font-weight: bold;
-
 }
 
 #header .topnavM {
     display: none;
 }
+
 #header .modal {
     display: none;
     position: fixed;
@@ -58,7 +56,6 @@
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
-
 }
 
 #header .text-al-L {
@@ -90,9 +87,7 @@
     cursor: pointer;
 }
 
-
 #header .topnav a:hover {
-
     color: black;
 }
 
@@ -137,8 +132,7 @@
 }
 
 #header .but-srcC {
-    background: #EC5858;
-
+    background: #6D0CEE;
 }
 
 #header .src-button {
@@ -152,10 +146,10 @@
 }
 
 #header .top-us {
-    width: 110%;
+    <<<<<<< HEAD width: 100%;
+    =======width: 110%;
+    >>>>>>>cbfa7d4f916e5dcd35ecb8d021d4ffa1bade16a0
 }
-
-
 
 #header select {
     -webkit-appearance: none;
@@ -179,7 +173,6 @@
     background: #2c3e50;
     overflow: hidden;
     border-radius: .25em;
-
 }
 
 #header select {
@@ -188,7 +181,6 @@
     color: #000;
     cursor: pointer;
 }
-
 
 #header .select::after {
     content: '\25BC';
@@ -207,8 +199,9 @@
     border-bottom: 2px solid;
     height: 42px;
 }
+
 #header .set-but {
-    background: #EC5858;
+    background: #6D0CEE;
     border-radius: 17.7418px;
     border: none;
     width: 90%;
@@ -253,6 +246,7 @@
 #header .dropdown:hover .dropdown-content {
     display: block;
 }
+
 #header .avatar {
     width: 55%;
     height: 100px;
@@ -261,75 +255,66 @@
     /* left: 10px; */
     border-radius: 50%;
 }
+
 #header .padbut {
     margin: 8px 0px;
     width: 100%;
     font-size: 20px;
 }
+
 @media screen and (min-device-width: 280px) and (max-device-width: 1024px) {
     #header .topnav .search-container {
         float: none;
     }
-
     #header .topnav a,
     #header .topnav input[type=text],
     #header .topnav input[type=text] {
         border: 1px solid #ccc;
     }
-
     #header .topnav {
         display: none;
     }
-
     #header .topnavM {
         display: block;
     }
-
     #header .topnavM {
         overflow: hidden;
-        background-color: #EC5858;
+        background-color: #6D0CEE;
         position: relative;
         height: max-content;
         color: white;
         width: 100%;
         padding: 15px 0px 15px 0px;
     }
-
     #header .topnavM #myLinks {
         display: none;
     }
-
     #header .topnavM a {
         color: white;
         padding: 14px 16px;
         text-decoration: none;
         display: block;
     }
-
     #header .topnavM a.icon {
         display: block;
         position: absolute;
         right: 0;
         top: 30px;
     }
-
     #header .topnavM a:hover {
         color: white;
     }
-
     #header .active {
-        background-color: #EC5858;
+        background-color: #6D0CEE;
         color: white;
     }
     #header .textsizeH {
-
         font-size: 40px;
     }
     #header .align {
         text-align: center;
         font-size: 25px;
     }
-
     #header .bar1,
     #header .bar2,
     #header .bar3 {
@@ -339,30 +324,50 @@
         margin: 5px 0;
         transition: 0.4s;
     }
-
     #header .change .bar1 {
         -webkit-transform: rotate(-45deg) translate(-9px, 6px);
         transform: rotate(-45deg) translate(-9px, 6px);
     }
-
     #header .change .bar2 {
         opacity: 0;
     }
-
     #header .change .bar3 {
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-8px, -8px);
     }
-
-
 }
 
 #footer .footer {
-    background-color: #EC5858;
+    background-color: #6D0CEE;
     overflow: hidden;
     height: max-content;
     color: white;
     width: 100%;
     padding: 30px 0px 30px 0px;
     text-align: center;
+}
+
+.header-menu {
+    display: inline-block;
+    width: 100%;
+}
+
+.img-logo {
+    float: left;
+    height: auto;
+    padding-left: 47px;
+    padding-top: 26px;
+}
+
+.tab-menu-in {
+    margin: auto;
+    position: absolute;
+    transform: translate(79%, -7%);
+    padding: 10px;
+}
+
+.menu-right-topbar {
+    width: auto;
+    float: right;
+    padding-right: 83px;
 }

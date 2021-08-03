@@ -32,6 +32,7 @@
 
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
+
 <body>
 <div class="container">
 <div class="row mt-5">
