@@ -24,8 +24,8 @@
                             <a class="toppage top-us"  href="{{ route('login') }}">เข้าสู่ระบบ</a>
                                     @endif
             
-                            <div class="dropdown-content">
-                                @guest
+                                 
+                                {{-- @guest
                                 @else
                                 <img src="/uploads/avatars/{{ Auth::user()->avatar }}" class="avatar">
             
@@ -33,15 +33,9 @@
                                     <div class="padbut " href="#">
                                         {{ Auth::user()->name }}
                                     </div>
-                                @endguest
-                                <a href="{{ url('/profile') }}"><button class="padbut set-but">จัดการบัญชี</button></a>
-                                <button class="padbut set-but-2">การบ้านที่ส่ง</button>
-                                <button class="padbut set-but-2">น้องสุดโปรด</button>
-                                
-                                <button class="padbut set-but-out" onclick="event.preventDefault();
-                            document.getElementById('logout-form').submit();"><img class=""
-                                        src="{{ url('/images/log-out.png') }}" alt="Image" />ออกจากระบบ</button>
-                            </div>
+                                @endguest --}}
+                            
+                   
             
                         </div>
                     </div>
@@ -50,13 +44,16 @@
 
               
         </div>
-        <form class="" action="/search" method="GET" role="search">
+        
+        
+        
+       
             {{ csrf_field() }}
             <div id="Mpop" class="modal">
                 <div class="modal-content">
                     <div class="close"><div id="close" style="text-align: right;">&times;</div></div>
-                    <form>
-                        <div class="" style="padding-bottom: 10px;">
+                    <form action="/search">
+                        <div style="">
                             <div class="content-head">
                                 ค้นหาน้องๆไซต์ไลน์
                             </div>
@@ -233,7 +230,7 @@
 
                 </div>
             </div>
-        </form>
+       
         <div class="topnavM" class="display: none;">
             <a href="#" class="active textsizeH">TH-SIDELINE</a>
 

@@ -78,10 +78,27 @@
     display: flex;
 }
 
+#body .content-tab-dont-login {
+    font-size: 30px;
+    color: #6D0CEE;
+    text-align: center;
+}
+
+#body .content-tab-dont-login {
+    font-size: 15px;
+    text-align: center;
+}
+
 #body .content-top-alert {
     font-size: 30px;
-    color: red;
+    color: #6D0CEE;
     text-align: left;
+}
+
+#body .content-top-dont-login {
+    font-size: 30px;
+    color: #6D0CEE;
+    text-align: center;
 }
 
 #body .content-fontalert {
@@ -95,11 +112,17 @@
 }
 
 #body .content-alert {
-    padding: 10px 5px 10px 5px;
-    color: #000;
-    font-weight: bold;
+    color: #6d0cee;
+    border-style: solid;
     text-align: center;
-    background-color: rgba(181, 223, 239, 1);
+    border-radius: 10px;
+}
+
+#body .content-tab-dont-log {
+    color: #6d0cee;
+    border-style: solid;
+    text-align: center;
+    border-radius: 10px;
 }
 
 #body .but-map {
@@ -123,7 +146,6 @@
 
 #body .content {
     margin-top: 5px;
-
 }
 
 #body .content:after {
@@ -166,11 +188,9 @@
     position: absolute;
     width: 27%;
     height: 0;
-
 }
 
 #body .content .content-grid .content-list .card-content .color-star {
-
     margin: 0px 0px 0px 0px;
     color: #FFC37C;
     background: transparent;
@@ -276,7 +296,6 @@
     height: 60px;
     font-size: 20px;
     font-weight: bold;
-
     overflow: hidden;
     text-overflow: ellipsis;
     /* text-align: center; */
@@ -302,7 +321,6 @@
     text-align: center;
 }
 
-
 #body .content-top-title {
     font-size: 20px;
     text-align: left;
@@ -318,6 +336,7 @@
 #body .content-top-#body {
     font-size: 30px;
 }
+
 #datastar .img-girl-s {
     width: 100%;
 }
@@ -368,7 +387,6 @@
 
 #datastar .bott-line-com {
     border-bottom: 3px solid #C6C2C2;
-
 }
 
 #datastar .page-com {
@@ -420,23 +438,21 @@
     right: 20px;
     background: #EC5858;
 }
+
 #selectedFiles img {
     max-width: 300px;
     max-height: 300px;
     padding: 10px;
-
 }
+
 @media screen and (min-device-width: 280px) and (max-device-width: 1024px) {
     #body .content-top {
         padding: 0px 0px 0px 0px;
         text-align: center;
     }
-
     #body .container {
         width: 100%;
-
     }
-
     #body .content .content-grid .content-list .card-content .card-quality {
         top: 5px;
         right: 60px;
@@ -444,11 +460,9 @@
         width: 0;
         height: 0;
     }
-
     #body .content .content-grid {
         width: 100%;
     }
-
     #body .content .content-grid .content-list .card-content {
         width: 48%;
         height: 200px;
@@ -456,117 +470,128 @@
         text-decoration: none;
         overflow: hidden;
     }
-
     #body .content .content-grid .content-list .card-content .card-img {
         width: 100%;
         height: 160px;
-
     }
-
     #body .title-right {
         font-size: 20px;
         color: white;
         padding-top: 0px;
         padding-right: 5px;
     }
-
     #body .content {
         margin-top: 1px;
         padding-left: 0px;
     }
-
     #body .content .content-grid .content-list .card-content .card-description .card-description-content .card-description-down {
         height: 30px;
         font-size: 16px;
     }
-
     #body .content .content-grid .content-list .card-content .card-description .card-description-content .card-description-nema {
         font-size: 14px;
     }
-
     #body .top-img-con {
         font-size: 25px;
     }
-
     #body .but-img {
         width: 100px;
         height: 38px;
         font-size: 13px;
         margin: 2px;
     }
-
     #body .topimg {
         height: 260px;
     }
-
     #body .content-head {
         font-size: 20px;
         text-align: center;
     }
-
     #body .content-headD {
         font-size: 25px;
         text-align: left;
     }
-
     #body .content-top-title {
         font-size: 20px;
     }
-
     #body .alert-img {
         padding: 5px;
         width: 45px;
     }
-
     #body .content-top-alert {
         font-size: 15px;
     }
-
     #body .content-fontalert {
         font-size: 10px;
     }
-
     #body .but-up {
         width: 100%;
         height: 30px;
         font-size: 25px;
         margin: 0px;
     }
-
-
-
-
 }
 
-
-
-
-    @media screen and (min-device-width: 600px) and (max-device-width: 1023px) {
-
-        #body .content .content-grid .content-list .card-content {
-            width: 27%;
-            height: 200px;
-            margin-right: 5px;
-            text-decoration: none;
-            overflow: hidden;
-        }
+@media screen and (min-device-width: 600px) and (max-device-width: 1023px) {
+    #body .content .content-grid .content-list .card-content {
+        width: 27%;
+        height: 200px;
+        margin-right: 5px;
+        text-decoration: none;
+        overflow: hidden;
     }
+}
 
+#follow .content .content-grid .content-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
 
-    #follow .content .content-grid .content-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: left;
-    }
+#follow .card-description-nemaF {
+    text-align: center;
+    position: relative;
+    /* padding-top: 50%; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+    color: white;
+    transform: translateY(50%);
+}
 
-    #follow .card-description-nemaF {
-        text-align: center;
-        position: relative;
-        /* padding-top: 50%; */
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        font-size: 30px;
-        color: white;
-        transform: translateY(50%);
-    }
+.login-content {
+    border-radius: 5px;
+    height: 55px;
+    background-color: #9443FF;
+    color: white;
+    padding: 0px 20px 0px 20px;
+    font-size: 25px;
+    align-items: center;
+    border-color: #9443FF;
+}
+
+.regis-content {
+    border-radius: 5px;
+    height: 55px;
+    background-color: #9443FF;
+    color: white;
+    padding: 0px 20px 0px 20px;
+    font-size: 25px;
+    align-items: center;
+    border-color: #9443FF;
+}
+
+.btn-log-regis {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.bt-content {
+    padding-top: 25px;
+}
+
+.iconalert-tabcontent {
+    font-size: 64px;
+    padding: 22px 15px 0px 0px;
+}

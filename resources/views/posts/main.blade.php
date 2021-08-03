@@ -4,39 +4,37 @@
 
     <body id="body">
 
-        <div class="con-top-img">
-            <img class="topimg" src="{{ url('/images/msa.png') }}" alt="Image" />
-            <div class="top-img-con">
-                <div class="top-font">TH-SIDELINE</div>
-                <div class="top-font">เว็บรวมน้องไซด์ไลน์</div>
-                <div class="top-button">
-                    <a href="{{ route('posts.create') }}"><button type="button" class="but-img">ลงโพสไซด์ไลน์</button></a>
-                    <a href="{{ url('register') }}"><button type="button" class="but-img but-two">สมัครบัญชี</button></a>
-                </div>
-            </div>
-        </div>
+     
 
 
         <div class="container">
-            <div class="content-top">
-                <div class="content-head">ผู้รับจ้างเป็นแฟนในเว็บนี้มีอายุมากกว่า 18 ปีทุกคน</div>
-            </div>
-            <div class="content-alert">
-                <div class="alert">
-                    <img class="alert-img" src="{{ url('/images/Group.png') }}" alt="Image" />
+            <div class="content-tab-dont-log">
+                <div class="alert2">
                     <div class="content">
-                        <div class="content-top-alert">แจ้งเตือนน้อง ๆ ไซด์ไลน์ที่หลอกลวง </div>
-                        <div class="content-fontalert">ไม่มีการโอนเงินผ่านแอดมินโดยเด็ดขาด
-                            ผู้ใช้งานเว็บไซต์ต้องติดต่อแล้วคุยกับน้องๆ ไซด์ไลน์เอง ทางเว็บไซต์จะไม่รับผิดชอบ
-                            หากมีการโกงเกิดขึ้น
+                        <div class="content-top-dont-login">เว็บไซต์ไลน์บีเคเค</div>
+                        <div class="content-tab-dont-login">ผู้รับจ้างเป็นแฟน รับงาน ในเว็บไซต์แห่งนี้</div>
+                        <div class="content-tab-dont-login">อายุมากกว่า 18 ปี ตามกฎหมาย</div>
+                        <div class="btn-log-regis">
+                            <button class="login-content">เข้าสู่ระบบ</button>
+                            <button class="regis-content">ลงทะเบียน</button>
                         </div>
                     </div>
-
                 </div>
             </div>
-            <div class="">
-                <button class="but-map">กรุงเทพฯ - ใกล้เคียง</button>
-            </div>
+
+            <div class="bt-content"> 
+                <div class="content-alert">
+                    <div class="alert">
+                        <i class="fas fa-exclamation-triangle iconalert-tabcontent"></i>
+                        {{-- <img class="alert-img" src="{{ url('/images/Group.png') }}" alt="Image" /> --}}
+                        <div class="content">
+                            <div class="content-top-alert">แจ้งเตือน !</div>
+                            <div class="content-fontalert">ไม่มีการโอนเงินผ่านแอดมินโดยเด็ดขาด ผู้ใช้งานเว็บไซต์ต้องติดต่อแล้วคุยกับน้องๆ</div>
+                            <div class="content-fontalert">ไซด์ไลน์เอง ทางเว็บไซต์จะไม่รับผิดชอบหากมีการโกงเกิดขึ้น</div>
+                        </div>
+                    </div>
+                </div>
+           </div>
             <div class="content-top">
                 <div class="content-head content-headD">NEW SIDELINE</div>
                 <div class="content-top-title">น้อง ๆ ที่มาใหม่วันนี้</div>
