@@ -610,8 +610,9 @@
 }
 
 .inline-formsearch {
-    display: inline-flex;
+    display: flex;
     width: 100%;
+    justify-content: space-between;
 }
 
 .conent-search {
@@ -642,7 +643,9 @@
     background-color: #6D0CEE;
     border-radius: 10px;
     height: auto;
+    display: block;
     width: 100%;
+    position: relative;
 }
 
 .card-title-side {
@@ -664,11 +667,14 @@
 
 .card-point-side {
     color: white;
+    font-size: 10px;
 }
 
 .card-point-star {
     color: white;
-    padding-left: 10px;
+    right: 11px;
+    position: absolute;
+    font-size: 10px;
 }
 
 .card_sis .card_ratemoney-body a {
@@ -677,10 +683,10 @@
     opacity: 1;
     position: absolute;
     z-index: 1;
-    bottom: 125px;
+    bottom: 117px;
     background: #fff;
-    width: 75px;
-    height: 23px;
+    width: 56px;
+    height: 24px;
     right: 0;
     padding-left: 9px;
     border-radius: 15px 0 0 0;
@@ -693,7 +699,7 @@
     opacity: 1;
     position: absolute;
     z-index: 1;
-    bottom: 125px;
+    bottom: 117px;
     background: #fff;
     width: 52px;
     height: 23px;
@@ -727,7 +733,23 @@
     z-index: 1;
     top: 0;
     /* background: #fff; */
-    width: 52px;
+    width: 35px;
+    height: 23px;
+    right: 0;
+    padding-left: 5px;
+    border-radius: 0px 0px 15px 0px;
+    padding-top: 2px;
+}
+
+.card_sis .card_check-body i {
+    font-size: 24px;
+    color: #4608f1 !important;
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    top: 29px;
+    /* background: #fff; */
+    width: 35px;
     height: 23px;
     right: 0;
     padding-left: 5px;
@@ -737,4 +759,24 @@
 
 .img-side-data-body {
     border-radius: 10px;
+}
+
+.pd-bottom {
+    padding-bottom: 1rem;
+}
+
+.btn-seemore {
+    border-radius: 5px;
+    height: 39px;
+    background-color: #6D0CEE;
+    color: white;
+    padding: 0px 9px 0px 9px;
+    font-size: 16px;
+    width: 111px;
+    align-items: center;
+    border-color: #9443FF;
+}
+
+.div-seemore {
+    text-align: center;
 }
