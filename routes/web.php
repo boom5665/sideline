@@ -50,8 +50,8 @@ Route::get('/test', function () {
 Route::get('/work', function () {
     return view('work');
 });
-Route::get('/dataweb', function () {
-    return view('dataweb');
+Route::get('/about', function () {
+    return view('about');
 });
 
 Route::get('Login/login', function () {

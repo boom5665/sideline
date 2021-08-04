@@ -1,11 +1,20 @@
-
 @extends('layouts.app')
 
 @section('content')
 
     <body id="body">
 
+        <div id="login" class="">
+            <div class="">
+                <div class="dis-between-center">
+                    <div class="login" style="padding: 10px 0px 0px 10px;">หน้าหลัก
+                    </div>
+                    <a class="login" href="{{ url('about') }}">เกี่ยวกับ
+                    </a>
 
+                </div>
+            </div>
+        </div>
         <div id="login" class="container">
             <div class="formstyle">
 
@@ -13,28 +22,23 @@
                     @csrf
                     <div class="card-description">
                         <div class="card-description-nemaF">
-                            <img class="loginimg" src="{{ url('/images/Vectory.png') }}" alt="Image" />เข้าสู่ระบบ
+                            <img class="loginimg" src="{{ url('/images/Vectory.png') }}" alt="Image" />SIDELINE-BKK
                         </div>
                     </div>
                     <div>
-                        <input type="text" id="email" name="email" value="{{ old('email') }}" placeholder="ID / อีเมล"
-                            required autocomplete="email" autofocus class="@error('email') is-invalid @enderror">
-                        @error('email')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
+
+                        <img class="icon" src="{{ url('/images/email.png') }}" alt="Image" />
+                        <input type="text" id="email" name="email" placeholder="ID / อีเมล" required autocomplete="email"
+                            autofocus class="@error('email') is-invalid @enderror">
+
+
+
                     </div>
                     <div class="">
-
+                        <img class="icon2" src="{{ url('/images/lock.png') }}" alt="Image" />
                         <input id="password" type="password" class="inputtwo @error('password') is-invalid @enderror"
                             name="password" required autocomplete="current-password">
 
-                        @error('password')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
                     </div>
 
                     <div class="dis-between">
@@ -50,11 +54,21 @@
                         @endif
 
                     </div>
+                    @error('email')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+                    @error('password')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
 
                     <input type="submit" value="ลงชื่อเข้าใช้">
-                    <div class="login" style="color: black">หรือ
+                    <div class="login" style="color: black">
                         @if (Route::has('register'))
-                            <a class="color-log" href="{{ route('register') }}"> สมัครเลย ฟรี ง่ายมาก!
+                            <a class="color-log" href="{{ route('register') }}"> สมัครบัญชี  >
                             </a>
                         @endif
                     </div>
@@ -69,4 +83,3 @@
     </body>
 
 @endsection
-

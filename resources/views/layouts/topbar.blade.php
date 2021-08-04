@@ -5,17 +5,17 @@
     <div id="app">
         <div class="topnav">
             <div class="header-menu">
-              
+
                 <a href=""><img class="img-logo" src="{{ url('/images/sdbkk-2.png') }}" alt="Image" /></a>
-                    <div class="tab-menu-in "> 
-                       
+                    <div class="tab-menu-in ">
+
                         <a class="toppage" href="{{ url('main') }}"> หน้าหลัก</a>
                         <a class="toppage" href="{{ url('') }}"> เลือกน้อง</a>
                         <a class="toppage" href="{{ url('dataweb') }}"> สังกัด</a>
                         <a class="toppage" href="{{ url('follow') }}"> ที่ติดตาม</a>
                         <a class="toppage" href="{{ url('dataweb') }}"> เกี่ยวกับเรา</a>
                         <a class="toppage" href="{{ url('dataweb') }}"> ติดต่อเรา</a>
-                      
+
                     </div>
                     <div class="menu-right-topbar">
                         <a id="Bpop" class="toppage"><i class="fas fa-search"></i></a>
@@ -23,31 +23,37 @@
                             @if (Route::has('login'))
                             <a class="toppage top-us"  href="{{ route('login') }}">เข้าสู่ระบบ</a>
                                     @endif
-            
-                                 
-                                {{-- @guest
+
+                            <div class="dropdown-content">
+                                @guest
                                 @else
                                 <img src="/uploads/avatars/{{ Auth::user()->avatar }}" class="avatar">
-            
-            
+
+
                                     <div class="padbut " href="#">
                                         {{ Auth::user()->name }}
                                     </div>
-                                @endguest --}}
-                            
-                   
-            
+                                @endguest
+                                <a href="{{ url('/profile') }}"><button class="padbut set-but">จัดการบัญชี</button></a>
+                                <button class="padbut set-but-2">การบ้านที่ส่ง</button>
+                                <button class="padbut set-but-2">น้องสุดโปรด</button>
+
+                                <button class="padbut set-but-out" onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();"><img class=""
+                                        src="{{ url('/images/log-out.png') }}" alt="Image" />ออกจากระบบ</button>
+                            </div>
+
                         </div>
                     </div>
             </div>
-        
 
-              
+
+
         </div>
-        
-        
-        
-       
+
+
+
+
             {{ csrf_field() }}
             <div id="Mpop" class="modal">
                 <div class="modal-content">
@@ -230,7 +236,7 @@
 
                 </div>
             </div>
-       
+
         <div class="topnavM" class="display: none;">
             <a href="#" class="active textsizeH">TH-SIDELINE</a>
 
