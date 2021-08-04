@@ -34,14 +34,14 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home')->middleware('isAdmin');
 
 
-Route::get('/test', function () {
-    return view('posts.test');
-});
+
+Route::get('/sidelinelist', [PostController::class, 'sidelinelist']);
 
 
 Route::get('/about', function () {
     return view('about');
 });
+
 Route::get('/contract', function () {
     return view('contract');
 });

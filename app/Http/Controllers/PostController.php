@@ -23,11 +23,18 @@ class PostController extends Controller
         $data['mains'] = Post::latest()->paginate(12);
         return view('posts.main',  $data);
     }
+    public function sidelinelist()
+    {
+        $data['mains'] = Post::latest()->paginate(12);
+        return view('posts.sidelinelist', $data);
+    }
     public function followindex()
     {
         $data['follows'] = Post::latest()->paginate();
         return view('posts.follow', $data);
     }
+
+  
     /**
      * Show the form for creating a new resource.
      *

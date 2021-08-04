@@ -608,6 +608,17 @@
     font-weight: 400;
 }
 
+.head2-font-bf-data-following {
+    font-size: 26px;
+    color: #6D0CEE;
+    padding-top: 2rem;
+    font-weight: 700;
+}
+
+.right-contentsearch-following {
+    padding-top: 2rem;
+}
+
 .inline-formsearch {
     display: flex;
     width: 100%;
@@ -778,4 +789,84 @@
 
 .div-seemore {
     text-align: center;
+}
+
+.card_sis .card_ratemoney-following a {
+    font-size: 13px;
+    color: #6D0CEE !important;
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    bottom: 101px;
+    background: #fff;
+    width: 56px;
+    height: 24px;
+    right: 0;
+    padding-left: 9px;
+    border-radius: 15px 0 0 0;
+    padding-top: 3px;
+}
+
+.card_sis .card_typesex-following a {
+    font-size: 13px;
+    color: #6D0CEE !important;
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    bottom: 101px;
+    background: #fff;
+    width: 52px;
+    height: 23px;
+    left: 0;
+    padding-left: 5px;
+    border-radius: 0px 15px 0px 0px;
+    padding-top: 2px;
+}
+
+.card_sis .card_new-following a {
+    font-size: 13px;
+    color: #6D0CEE !important;
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    background: #fff;
+    width: 52px;
+    height: 23px;
+    left: 0;
+    padding-left: 5px;
+    border-radius: 0px 0px 15px 0px;
+    padding-top: 2px;
+}
+
+.card_sis .card_follow-following i {
+    font-size: 24px;
+    color: #5008f1 !important;
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    /* background: #fff; */
+    width: 35px;
+    height: 23px;
+    right: 0;
+    padding-left: 5px;
+    border-radius: 0px 0px 15px 0px;
+    padding-top: 2px;
+}
+
+.card_sis .card_check-following i {
+    font-size: 24px;
+    color: #4608f1 !important;
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    top: 29px;
+    /* background: #fff; */
+    width: 35px;
+    height: 23px;
+    right: 0;
+    padding-left: 5px;
+    border-radius: 0px 0px 15px 0px;
+    padding-top: 2px;
 }
