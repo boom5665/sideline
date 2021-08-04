@@ -361,9 +361,6 @@
 
 .tab-menu-in {
     margin: auto;
-    position: absolute;
-    transform: translate(79%, -7%);
-    padding: 10px;
 }
 
 .menu-right-topbar {

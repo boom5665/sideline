@@ -50,13 +50,16 @@
 
 
         </div>
-        <form class="" action="/search" method="GET" role="search">
+
+
+
+
             {{ csrf_field() }}
             <div id="Mpop" class="modal">
                 <div class="modal-content">
                     <div class="close"><div id="close" style="text-align: right;">&times;</div></div>
-                    <form>
-                        <div class="" style="padding-bottom: 10px;">
+                    <form action="/search">
+                        <div style="">
                             <div class="content-head">
                                 ค้นหาน้องๆไซต์ไลน์
                             </div>
@@ -233,7 +236,7 @@
 
                 </div>
             </div>
-        </form>
+
         <div class="topnavM" class="display: none;">
             <a href="#" class="active textsizeH">TH-SIDELINE</a>
 
