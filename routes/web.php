@@ -39,6 +39,18 @@ Route::get('/test', function () {
 });
 
 
+Route::get('/about', function () {
+    return view('about');
+});
+Route::get('/contract', function () {
+    return view('contract');
+});
+Route::get('/wallet', function () {
+    return view('wallet');
+});
+Route::get('/addunder', function () {
+    return view('addunder');
+});
 // Route::get('/', function () {
 //     return view('auth.login');
 // });
@@ -50,10 +62,6 @@ Route::get('/test', function () {
 Route::get('/work', function () {
     return view('work');
 });
-Route::get('/about', function () {
-    return view('about');
-});
-
 Route::get('Login/login', function () {
     return view('Login/login');
 });
@@ -63,6 +71,4 @@ Route::get('Login/register', function () {
 });
 
 
-Route::get('gg/HUAYTHAI', function () {
-    return view('gg/HUAYTHAI');
-});
+
