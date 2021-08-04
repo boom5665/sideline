@@ -54,7 +54,7 @@
 
             <div class="content">
                 <div class="row"> 
-                    <div class="col-lg-12 col-md-9 col-xs-6"> 
+                    <div class="col-lg-12 col-md-12 col-xs-6"> 
                         <div class="box-sideline"> 
                             <div class="row"> 
                                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom">
@@ -504,7 +504,7 @@
          
             <div class="content">
                 <div class="row"> 
-                    <div class="col-lg-12 col-md-9 col-xs-6"> 
+                    <div class="col-lg-12 col-md-12 col-xs-6"> 
                         <div class="box-sideline"> 
                             <div class="row"> 
                                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom">
@@ -928,6 +928,10 @@
                                 </div>
                                 
 
+                                <div id="example"></div>
+                              
+                                   
+                                   
 
                                 
                                 <div class="div-seemore">
@@ -948,31 +952,15 @@
 
     </html>
 
-    <script src="https://md-aqil.github.io/images/swiper.min.js"></script>
-    <script>
-        var galleryThumbs = new Swiper('.gallery-thumbs', {
-            effect: 'coverflow',
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: '2',
-            // coverflowEffect: {
-            //   rotate: 50,
-            //   stretch: 0,
-            //   depth: 100,
-            //   modifier: 1,
-            //   slideShadows : true,
-            // },
-
-            coverflowEffect: {
-                rotate: 0,
-                stretch: 0,
-                depth: 50,
-                modifier: 6,
-                slideShadows: false,
-            },
-
-        });
+    @section('js')
+        <script>
+        var options = {
+            currentPage: 3,
+            totalPages: 10
+        }
+        $('#example').bootstrapPaginator(options);
     </script>
+@endsection
 @stop
 
 

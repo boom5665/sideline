@@ -40,7 +40,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://md-aqil.github.io/images/swiper.min.css">
     {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
     <link href="{{ asset('css/layout.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/login.css') }}" rel="stylesheet">
@@ -48,6 +48,9 @@
 
     <link href="{{ asset('css/bootstrap-reboot.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap-grid.min.css') }}" rel="stylesheet">
+    <script src="{{ asset('js/bootstrap-paginator.js') }}" defer></script>
+
+    
 
 </head>
 
