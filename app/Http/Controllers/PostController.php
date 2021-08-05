@@ -34,7 +34,7 @@ class PostController extends Controller
         return view('posts.follow', $data);
     }
 
-  
+
     /**
      * Show the form for creating a new resource.
      *
@@ -42,7 +42,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        return view('posts.work');
+        return view('posts.Addsideline');
     }
 
     /**

@@ -381,3 +381,157 @@ font-size: 25px;
     border: none;
     background: transparent;
 }
+
+
+#wallet .formstyle {
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 4px solid #6D0CEE;
+    margin: 20px 0px;
+    padding: 20px;
+}
+
+#wallet .content-wallet {
+    font-size: 30px;
+    text-align: left;
+    color: #6D0CEE;
+}
+
+#wallet .content-wallet-con {
+    font-size: 50px;
+    text-align: center;
+    color: #6D0CEE;
+    font-weight: 600;
+}
+
+#wallet .display-tele {
+    display: flex;
+    font-size: 50px;
+    font-weight: 400 !important;
+    color: #53545F !important;
+    align-items: center;
+}
+
+#wallet .imgtele {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+#wallet .display-row {
+    display: flex;
+    font-size: 25px;
+    font-weight: 400 !important;
+    color: #6D0CEE;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#wallet .coppy-tran {
+    background: #C4C4C4;
+    border-radius: 40px;
+    color: #6D0CEE;
+    font-size: 25px;
+    padding: 0px 10px;
+    border: none;
+}
+
+#wallet .wallet-table {
+    width: 100%;
+    border-collapse: collapse;
+    /* border-radius: 5px; */
+    overflow: hidden;
+    border: 2px solid #6D0CEE;
+    background: #6D0CEE;
+    border-radius: 5px 5px 5px 5px;
+    text-align: center;
+}
+
+#wallet .wallet-table td,
+#wallet .wallet-table th {
+    /* border: 1px solid #ddd; */
+    padding: 8px;
+
+    background-color: white;
+}
+
+#wallet .wallet-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#wallet .wallet-table tr:hover {
+    background-color: #ddd;
+}
+
+#wallet .wallet-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #6D0CEE;
+    color: white;
+}
+
+#wallet .but-table {
+    padding: 5px 0px 5px 0px;
+    color: #000;
+    font-weight: bold;
+    text-align: right;
+}
+
+#wallet .re-tran {
+    color: #fff;
+    font-size: 20px;
+    padding: 0px 15px;
+    border: none;
+    background: #6D0CEE;
+    border-radius: 5px;
+}
+
+
+
+
+.pagination {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.pagination .pagination-item {
+    text-decoration: none;
+    position: relative;
+    margin: 0 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: 0 5px 10px rgb(0 0 0 / 30%), inset 0 -5px 0px rgb(80 80 80 / 10%), inset 0 -10px 0px rgb(150 150 150 / 10%); */
+    overflow: hidden;
+    color: #6D0CEE;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    /* background-color: transparent;*/
+}
+
+.pagination .pagination-item:hover {
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.4), inset 0 -5px 0px rgba(80, 80, 80, 0), inset 0 -10px 0px rgba(150, 150, 150, 0);
+}
+
+.pagination .pagination-item:hover:before,
+.pagination .pagination-item:hover:after {
+    transform: translateY(0);
+}
+
+.pagination .pagination-item:active {
+    box-shadow: none;
+}
+
+.pagination .pagination-item.active {
+    color: #fff;
+    background: #6D0CEE;
+}
