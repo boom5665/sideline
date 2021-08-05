@@ -39,25 +39,26 @@
     <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
     <link href="{{ asset('css/layout.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/addForm.css') }}" rel="stylesheet">
 </head>
 
 @extends('layouts.app')
 @section('content')
 
     <body id="body">
-        <div id="work" class="container">
+        <div id="work" class="container" style="color: #6D0CEE;">
             @if ($errors->any())
-            <div class=" alert alert-danger">
-                <strong>Oop </strong>
-                thre were som problems with your input.<br><br>
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
+                <div class=" alert alert-danger">
+                    <strong>Oop </strong>
+                    thre were som problems with your input.<br><br>
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
 
-                    @endforeach
-                </ul>
-            </div>
-        @endif
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
             <form action=" {{ route('posts.store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div id="Form1">
@@ -67,7 +68,8 @@
                                 <div class="col-sm-12" id="">
                                     <div class="col-sm-6 toppage wrap">
                                         <div class="one-page">1</div>
-                                        <img class="toppageimg" src="{{ url('/images/Ellipse.png') }}" alt="Image" />
+                                        <img class="toppageimg" style="width: 98px; height: 98px;"
+                                            src="{{ url('/images/Ellipse.png') }}" alt="Image" />
                                         <div> <i class="far fa-file-alt"></i>ใส่ข้อมูลโพสต์สำคัญ</div>
                                     </div>
                                     <div class="col-sm-6 toppage wrap2">
@@ -83,13 +85,18 @@
                     </div>
                     <div class="col content">
                         <div class="content">โปรดอ่าน</div>
+                        <div class="content">เมื่อสร้างโพสต์เสร็จแล้วต้อง "ยืนยันตัวตน" และรออนุมัติจากทางเจ้าหน้าที่ก่อน
+                        </div>
                         <ul>
-                            <li>คุณสามารถแก้ข้อมูลหลังจากโพสต์ไปแล้ว
-                            </li>
-                            <li>ห้ามรีเฟรช (Refresh) จนกว่าการสร้างเสร็จเรียบร้อยในขั้นสุดท้าย (ไม่งั้นข้อมูลหาย)
-                            </li>
-                            <li>โปรดทำให้เสร็จถึงหน้าสุดท้าย
-                            </li>
+                            <li>การอนุมัติโพสต์และ "ยืนยันตัวตน" ก่อนแสดง มีจุดประสงค์เพื่อ</li>
+                            <li>คุณสามารถแก้ข้อมูลหลังจากโพสต์ไปแล้ว</li>
+                            <li>ป้องกันมิจฉาชีพ, การฉ้อโกง ที่อาจก่อให้เกิดผลเสียต่อนักท่องเที่ยวและเว็บไซต์ได้</li>
+                            <li>ป้องกันการแอบอ้างจากบุคคลอื่น ( โพสต์ปลอม )</li>
+                            <li>ป้องกันรูปภาพสุ่มเสี่ยง ( โป๊ ) หรือมีการโชว์ส่วนสำคัญ ซึ่งต้องมีการ Censor ทุกครั้ง</li>
+                            <li>ไม่ต้องตกใจ ! ถ้าคุณไม่ได้กระทำอย่างที่เรากล่าวไปจากข้อความข้างต้น
+                                เราอนุมัติโพสต์ให้คุณอย่างแน่นอน</li>
+                            <li>ห้ามรีเฟรช ( Refresh ) จนกว่าการสร้างเสร็จเรียบร้อยในขั้นสุดท้าย ( ไม่งั้นข้อมูลหาย )</li>
+                            <li>โปรดทำให้เสร็จถึงหน้าสุดท้าย</li>
                         </ul>
                     </div>
                     <div class="col content">
@@ -98,113 +105,187 @@
                         <div id="Form1" class="formstyle Form1 ">
                             <div class="card-description">
                                 <div class="card-description-nemaW">
-                                    สมัครสมาชิก
+                                    ข้อมูลสำคัญ
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="regis col-sm-12" for="email"> ชื่อ *</label>
-                                <div class="col-sm-12">
-                                    <input type="text" id="name" name="title" placeholder="ใส่ไม่เกิน 15 ตัวอักษร" value="โบว์">
+                                <div class="col-sm-6">
+                                    <label class="src" for="email"> ชื่อที่ใช้รับงาน</label>
+                                    <div class="">
+                                        <input type="text" id="name" name="title" placeholder="ใส่ไม่เกิน 15 ตัวอักษร"
+                                            value="โบว์">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-6 text-al-L">
-                                <label class="src " for="sex"> เพศ</label>
-                                <div class="select">
-                                    <select name="sex" id="sex">
-                                        <option value="หญิง">หญิง</option>
-                                        <option value="ชาย">ชาย</option>
-                                        <option value="สาวสอง">สาวสอง</option>
-                                    </select>
+                                <div class="col-sm-6">
+                                    <label class="src" for="email"> เรทราคา</label>
+                                    <div class="">
+                                        <input type="text" id="name" name="title" placeholder="ใส่ไม่เกิน 15 ตัวอักษร"
+                                            value="โบว์">
+                                    </div>
                                 </div>
-
-                            </div>
-                            <div class="col-sm-6 text-al-L">
-                                <label class="src " for="money"> ค่าจ้าง</label>
-                                <div class="select">
-                                    <select name="money" id="money">
-                                        <option selected disabled>-</option>
-                                        <option value="1000">1000</option>
-                                        <option value="1300">1300</option>
-                                        <option value="1500">1500</option>
-                                        <option value="2000">2000</option>
-                                        <option value="2500">2500</option>
-                                        <option value="3000">3000</option>
-                                    </select>
-                                </div>
-
-                            </div>
-                            <div class="form-group">
-                                <label class="regis col-sm-12" for="locationall"> สถานที่รับงาน</label>
-                                <div class="col-sm-12">
-                                    <input type="text" name="job" name="job" value="1">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="src col-sm-12" for="location1"> โซนรับงาน ที่ใกล้ที่สุด</label>
-                                <div class="col-sm-3">
+                                <div class="col-sm-4 text-al-L">
+                                    <label class="src " for="sex"> ภาค</label>
                                     <div class="select">
-                                        <select name="location1" id="location1">
-                                            <option selected disabled>---</option>
-                                            <option value="กรุงเทพ">กรุงเทพ</option>
-                                            <option value="นนทบุรี">นนทบุรี</option>
-                                            <option value="นครปฐม">นครปฐม</option>
+                                        <select name="sex" id="sex">
+                                            <option value="หญิง">หญิง</option>
+                                            <option value="ชาย">ชาย</option>
+                                            <option value="สาวสอง">สาวสอง</option>
                                         </select>
                                     </div>
-
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-4 text-al-L">
+                                    <label class="src " for="money"> จังหวัด</label>
                                     <div class="select">
-                                        <select name="location2" id="location2">
-                                            <option selected disabled></option>
-                                            <option value="กรุงเทพ">กรุงเทพ</option>
-                                            <option value="นนทบุรี">นนทบุรี</option>
-                                            <option value="นครปฐม">นครปฐม</option>
-                                        </select>
-                                    </div>
-
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="select">
-                                        <select name="location3" id="location3">
-                                            <option selected disabled></option>
-                                            <option value="กรุงเทพ">กรุงเทพ</option>
-                                            <option value="นนทบุรี">นนทบุรี</option>
-                                            <option value="นครปฐม">นครปฐม</option>
-                                        </select>
-                                    </div>
-
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="select">
-                                        <select name="location4" id="location4">
+                                        <select name="money" id="money">
                                             <option selected disabled>-</option>
-                                            <option value="กรุงเทพ">กรุงเทพ</option>
-                                            <option value="นนทบุรี">นนทบุรี</option>
-                                            <option value="นครปฐม">นครปฐม</option>
+                                            <option value="1000">1000</option>
+                                            <option value="1300">1300</option>
+                                            <option value="1500">1500</option>
+                                            <option value="2000">2000</option>
+                                            <option value="2500">2500</option>
+                                            <option value="3000">3000</option>
                                         </select>
                                     </div>
 
                                 </div>
-                                <div class="">*ลูกค้าจะค้นหาคุณด้วย Zone ฉะนั้นโปรดเลือกให้ถูก</div>
+                                <div class="col-sm-4 text-al-L">
+                                    <label class="src " for="money">อำเภอ/เขต ที่รับงาน</label>
+                                    <div class="select">
+                                        <select name="money" id="money">
+                                            <option selected disabled>-</option>
+                                            <option value="1000">1000</option>
+                                            <option value="1300">1300</option>
+                                            <option value="1500">1500</option>
+                                            <option value="2000">2000</option>
+                                            <option value="2500">2500</option>
+                                            <option value="3000">3000</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 text-al-L">
+                                    <label class="src " for="money"> ตำบล/แขวง ที่รับงาน</label>
+                                    <div class="select">
+                                        <select name="money" id="money">
+                                            <option selected disabled>-</option>
+                                            <option value="1000">1000</option>
+                                            <option value="1300">1300</option>
+                                            <option value="1500">1500</option>
+                                            <option value="2000">2000</option>
+                                            <option value="2500">2500</option>
+                                            <option value="3000">3000</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 text-al-L">
+                                    <label class="src " for="money"> สถานที่รับงาน</label>
+                                    <div class="">
+                                        <input type="text" id="name" name="title" placeholder="ใส่ไม่เกิน 15 ตัวอักษร"
+                                            value="โบว์">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 text-al-L">
+                                    <label class="src " for="money"> ID Line ที่รับงาน</label>
+                                    <div class="">
+                                        <input type="text" id="name" name="title" placeholder="ใส่ไม่เกิน 15 ตัวอักษร"
+                                            value="โบว์">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 text-al-L">
+                                    <label class="src " for="money"> เพศ</label>
+                                    <div class="select">
+                                        <select name="money" id="money">
+                                            <option selected disabled>-</option>
+                                            <option value="1000">1000</option>
+                                            <option value="1300">1300</option>
+                                            <option value="1500">1500</option>
+                                            <option value="2000">2000</option>
+                                            <option value="2500">2500</option>
+                                            <option value="3000">3000</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                            <div class="form-group col-sm-12" style="padding-right: 0px; padding-left: 0px;">
+                                <div class="col-sm-4">
+                                    <label class="src " for="sex"> อายุ</label>
+                                    <div class="">
+                                        <input type="text" id="name" name="title" placeholder="ใส่ไม่เกิน 15 ตัวอักษร"
+                                            value="โบว์">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="src " for="sex"> ส่วนสูง</label>
+                                    <div class="">
+                                        <input type="text" id="name" name="title" placeholder="ใส่ไม่เกิน 15 ตัวอักษร"
+                                            value="โบว์">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="src " for="sex"> น้ำหนัก</label>
+                                    <div class="">
+                                        <input type="text" id="name" name="title" placeholder="ใส่ไม่เกิน 15 ตัวอักษร"
+                                            value="โบว์">
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="form-group">
-                                <label class="regis col-sm-12" for="detail"> คำอธิบาย</label>
+                                <label class="src col-sm-12"> สัดส่วน</label>
+                                <div class="col-sm-4">
+                                    <label class="src " for="sex"> หน้าอก ( นิ้ว )</label>
+                                    <div class="">
+                                        <input type="text" id="name" name="title" placeholder="ใส่ไม่เกิน 15 ตัวอักษร"
+                                            value="โบว์">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="src " for="sex"> เอว ( นิ้ว )</label>
+                                    <div class="">
+                                        <input type="text" id="name" name="title" placeholder="ใส่ไม่เกิน 15 ตัวอักษร"
+                                            value="โบว์">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="src " for="sex"> สะโพก ( นิ้ว )</label>
+                                    <div class="">
+                                        <input type="text" id="name" name="title" placeholder="ใส่ไม่เกิน 15 ตัวอักษร"
+                                            value="โบว์">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 text-al-L">
+                                    <label class="src " for="money"> สโลแกน</label>
+                                    <div class="">
+                                        <input type="text" id="name" name="title" placeholder="ใส่ไม่เกิน 15 ตัวอักษร"
+                                            value="โบว์">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 text-al-L slogan">
+                                    <button class="srcb">น้องดุนะ...พี่ไหวหรอ</button>
+                                    <button class="srcb">น้องสู้นะ...พี่ไหวหรอ</button>
+
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="src col-sm-12" for="detail"> คำอธิบาย</label>
                                 <div class="col-sm-12">
                                     <input class="c-box" type="text" id="detail" name="description" value="สวย">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="regis col-sm-12" for="detaildont"> น้องๆ ไม่ชอบให้ทำอะไรบ้าง เช่น
-                                    ห้ามประตูหลัง
-                                    ไม่เอาสด
-                                    ไม่เอาใหญ่เกิน ฯลฯ</label>
+                                <label class="src col-sm-12" for="detaildont"> ข้อห้าม ที่น้องๆ ไม่ชอบให้ทำอะไรบ้าง เช่น
+                                    ห้ามประตูหลัง ไม่เอาสด ไม่รับของทำ ฯลฯ</label>
                                 <div class="col-sm-12">
                                     <input class="c-ale" type="text" id="danger" name="danger" value="ไม่เอาสด">
                                 </div>
                             </div>
                             <div class="c-note">
                                 <div>หมายเหตุ ต้องแนบรูปเพื่อยืนยันตัวตน></div>
-                                <div> 1.ด้วยการถ่ายคู่โลโก้ TH-SIDELINE (รูปในเว๊บหรือเขียนแล้วถือป้าย)</div>
+                                <div> 1.ด้วยการถ่ายคู่โลโก้ SIDELINE (รูปในเว๊บหรือเขียนแล้วถือป้าย)</div>
                                 <div> 2.รูปบัตรประชาชนหรือใบขับขี่ (ปิดเลขได้)
                                     **ทั้งสองรูปนี้ทางแอดมินจะนำออกจากโพสเมื่อนำขึ้นเว็บ
                                 </div>
@@ -219,11 +300,12 @@
                                 </div>
                                 <div> ซึ่งสามารถค้นหา Profile ตัวเองได้โดยการค้นหาชื่อ</div>
                             </div>
+
                             <div class="form-group">
                                 <div class="col-sm-12">
                                     <div class="" id="">
                                         <div class="fallback">
-                                            <div class="gallery" id="selectedFiles" ></div>
+                                            <div class="gallery" id="selectedFiles"></div>
                                         </div>
                                     </div>
 
@@ -231,13 +313,13 @@
                             </div>
 
                             <div class="form-group">
-                                <label class="regis col-sm-12" for="email"> ไอดีไลน์</label>
+                                <label class="src col-sm-12" for="email"> ยืนยันตัวตน</label>
                                 <div class="col-sm-5">
                                     <input class="" type="text" id="line" name="line" value="serld">
 
                                 </div>
                                 <div class="col-sm-7">
-                                    <input type="file" multiple id="gallery-photo-add"  name="filename[]" class="input-file">
+                                    <input type="file" multiple id="gallery-photo-add" name="filename[]" class="input-file">
                                     <div class="input-group col-xs-12">
                                         <input type="text" class="form-control inputfile" disabled
                                             placeholder="Upload Video">
@@ -251,14 +333,14 @@
 
 
                             </div>
-                            <div class="" style="TEXT-ALIGN: center;">
-                                <button class="nextbutton" type="button" onclick="next1()">ขั้นตอนต่อไป</button>
+                            <div class="col-sm-12">
                             </div>
 
+                            <div style="text-align: center;">
+                                <button class="nextbutton" type="button" onclick="next1()">แสดงตัวอย่างโพส</button>
+                                <button class="nextbutton" type="button" onclick="next1()">ขั้นตอนต่อไป</button>
+                            </div>
                         </div>
-
-
-
                     </div>
                 </div>
 
@@ -268,64 +350,82 @@
                         <div class="col-sm-12">
                             <div class="col-sm-6 toppage wrap">
                                 <div class="one-page">1</div>
-                                <img class="toppageimg" src="{{ url('/images/Ellipse.png') }}" alt="Image" />
+                                <img class="toppageimg" style="width: 98px; height: 98px;"
+                                    src="{{ url('/images/Ellipse.png') }}" alt="Image" />
                                 <div> <i class="far fa-file-alt"></i>ใส่ข้อมูลโพสต์สำคัญ</div>
                             </div>
                             <div class="col-sm-6 toppage wrap">
                                 <div class="one-page">2</div>
-                                <img class="toppageimg" src="{{ url('/images/Ellipse.png') }}" alt="Image" />
+                                <img class="toppageimg" style="width: 98px; height: 98px;"
+                                    src="{{ url('/images/Ellipse.png') }}" alt="Image" />
                                 <div> <i class="far fa-file-alt"></i>ใส่ข้อมูลเพิ่มเติม</div>
                             </div>
                         </div>
                     </div>
                     <div class="content">
                     </div>
-                    <div class="formstyle Form2">
+
+                    <div class="formstyle2 Form2">
                         <div class="card-description">
-                            <div class="card-description-nemaW">
-                                ข้อมูลเพิ่มเติม
+                            <div class="card-description-nemaW2 font-w ">
+                                กำลังดำเนินการเปิดใช้งานระบบแพ็กเกจ
+                            </div>
+                            <div class="card-description-nemaW2 font-w ">
+                                กรุณาเลือกแพ็กเกจที่ต้องการ
+                            </div>
+                            <div class="card-description-nemaW2">
+                                ***แพ็กเกจ ดียังไง ใช้ในการต่ออายุโพสต์,
+                            </div>
+                            <div class="card-description-nemaW2">
+                                การต่ออายุ Agency Page พร้อมกับติดในหน้าแรกของเว็บไซต์
+                            </div>
+                            <div class="card-description-nemaW2">
+                                หรืออื่น ๆ อีกมากมาย***
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label class="regis col-sm-12" for="email"> อายุ *</label>
-                            <div class="col-sm-12">
-                                <input type="text" id="age" name="age" placeholder="ชื่อ" value="25">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="regis col-sm-12" for="email"> หน้าอก/เอว/สะโพก</label>
-                            <div class="col-sm-4">
-                                <input class="" type="text" id="milk" name="milk" placeholder="ชื่อ" value="35">
-                            </div>
-                            <div class="col-sm-4">
-                                <input class="" type="text" id="waist" name="waist" placeholder="ชื่อ" value="30">
-                            </div>
-                            <div class="col-sm-4">
-                                <input class="" type="text" id="hip" name="hip" placeholder="ชื่อ" value="34">
 
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-6">
-                                <label class="regis col-sm-6" for="email"> ส่วนสูง</label>
-                                <div class="">
-                                    <input class="" type="text" id="height" name="height" placeholder="ชื่อ" value="160">
-
+                        <div class="col-sm-12" style="display: flex;
+                                    justify-content: space-evenly;
+                                    margin: 20px;">
+                            <div class="">
+                                <div class="card_sis">
+                                    <div class="div-point-side">
+                                        <div class="">Free</div>
+                                    </div>
+                                    <div class="card-body" style="text-align: center;">
+                                        <h5 class="card-title-side">ระยะเวลา 7 วัน</h5>
+                                        <button class="but-pak">เลือก</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <label class="regis col-sm-6" for="email"> น้ำหนัก</label>
-                                <div class="">
-                                    <input class="" type="text" id="weight" name="weight" placeholder="ชื่อ" value="51">
-
+                            <div class="">
+                                <div class="card_sis">
+                                    <div class="div-point-side">
+                                        <div class="">189 บาท</div>
+                                    </div>
+                                    <div class="card-body" style="text-align: center;">
+                                        <h5 class="card-title-side">ระยะเวลา 15 วัน</h5>
+                                        <button class="but-pak">เลือก</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="card_sis">
+                                    <div class="div-point-side">
+                                        <div class="">299 บาท</div>
+                                    </div>
+                                    <div class="card-body" style="text-align: center;">
+                                        <h5 class="card-title-side">ระยะเวลา 30 วัน</h5>
+                                        <button class="but-pak">เลือก</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="" style="TEXT-ALIGN: center;">
-                            <button class="inputtwo nextbutton" type="submit">ยืนยัน</button>
-                            <button class="nextbutton" type="button" onclick="back1()">ยกเลิก</button>
-                        </div>
+                            <button class="nextbutton" type="button" onclick="back1()">ขั้นก่อนหน้านี้</button>
+                            <button class="nextbutton " type="submit">ขั้นตอนต่อไป</button>
 
+                        </div>
                     </div>
 
 
@@ -376,279 +476,32 @@
             x.style.display = "block";
         }
     }
-
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
-   $(function() {
-    // Multiple images preview in browser
-    var imagesPreview = function(input, placeToInsertImagePreview) {
+    $(function() {
+        // Multiple images preview in browser
+        var imagesPreview = function(input, placeToInsertImagePreview) {
 
-        if (input.files) {
-            var filesAmount = input.files.length;
+            if (input.files) {
+                var filesAmount = input.files.length;
 
-            for (i = 0; i < filesAmount; i++) {
-                var reader = new FileReader();
+                for (i = 0; i < filesAmount; i++) {
+                    var reader = new FileReader();
 
-                reader.onload = function(event) {
-                    $($.parseHTML('<img>')).attr('src', event.target.result).appendTo(placeToInsertImagePreview);
+                    reader.onload = function(event) {
+                        $($.parseHTML('<img>')).attr('src', event.target.result).appendTo(
+                            placeToInsertImagePreview);
+                    }
+
+                    reader.readAsDataURL(input.files[i]);
                 }
-
-                reader.readAsDataURL(input.files[i]);
             }
-        }
 
-    };
+        };
 
-    $('#gallery-photo-add').on('change', function() {
-        imagesPreview(this, 'div.gallery');
+        $('#gallery-photo-add').on('change', function() {
+            imagesPreview(this, 'div.gallery');
+        });
     });
-});
-
 </script>
-
-<style>
-    #work .FormD2 {
-        display: none;
-    }
-
-    #work .formstyle {
-        border: 1.51145px solid #C4C4C4;
-        box-sizing: border-box;
-        border-radius: 6px;
-        margin: 20px;
-        padding: 20px;
-
-
-    }
-
-    #work .nextbutton {
-        width: max-content;
-        background-color: #EC5858;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 25px;
-    }
-
-    #work input[type=text] {
-        width: 100%;
-        padding: 5px 20px;
-        margin: 0px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-        font-size: 20px;
-    }
-
-    #work .input2[type=file] {
-        visibility: inherit;
-        position: relative;
-        width: 100%;
-        height: 100px;
-        border: 1px solid;
-    }
-
-    #work input[type=file] {
-        visibility: hidden;
-        position: absolute;
-
-    }
-
-    #work .inputfile {
-        height: max-content;
-    }
-
-    #work .input-group-btn:last-child>.btn,
-    #work .input-group-btn:last-child>.btn-group {
-
-        height: 40px;
-        background-color: #138EFF;
-    }
-
-    #work .c-select {
-        padding: 10px 20px;
-    }
-
-    #work .c-box {
-        height: 300px;
-    }
-
-    #work .c-ale {
-        height: 100px;
-    }
-
-    #work input[type=submit] {
-        width: max-content;
-        background-color: #EC5858;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 25px;
-    }
-
-    #work input[type=submit]:hover {
-        background-color: #45a049;
-    }
-
-    #work .inputimg {
-        width: max-content;
-        background-color: #138EFF;
-        color: white;
-        padding: 14px 15px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 16px;
-
-    }
-
-    #work .butimg {
-        width: 30%;
-        padding: 5px;
-    }
-
-    #work .c-note {
-        font-size: 15px;
-        text-align: left;
-        color: rgba(250, 2, 0, 1);
-    }
-
-
-    #work .select {
-        position: relative;
-        display: flex;
-        height: 3em;
-        line-height: 3;
-        background: #2c3e50;
-        overflow: hidden;
-        border-radius: .25em;
-
-    }
-
-    #work select {
-        flex: 1;
-        padding: 0px .5em;
-        color: #000;
-        cursor: pointer;
-        font-size: 17px;
-        line-height: 2;
-    }
-
-
-    #work .select::after {
-        content: '\25BC';
-        position: absolute;
-        top: 0;
-        right: 0;
-        padding: 0 1em;
-        background: #fff;
-        cursor: pointer;
-        pointer-events: none;
-        -webkit-transition: .25s all ease;
-        -o-transition: .25s all ease;
-        transition: .25s all ease;
-        border-right: 2px solid #ccc;
-        border-top: 2px solid #ccc;
-        border-bottom: 2px solid #ccc;
-        height: 42px;
-    }
-
-    #work .src {
-        font-size: 20px;
-        padding-top: 15px;
-    }
-
-    #work .inputtwo[type=submit] {
-        background: #3BAEDA;
-    }
-
-    #work .content .content-grid .content-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: left;
-    }
-
-    #work .card-description-nemaW {
-        text-align: center;
-        position: relative;
-        display: flex;
-        align-items: baseline;
-        flex-direction: column;
-        font-size: 50px;
-        color: #000;
-
-    }
-
-    #work .color-log {
-        color: #EC5858;
-
-    }
-
-    #work .dis-between {
-        display: flex;
-        justify-content: space-between;
-    }
-
-
-    #work .regis {
-        font-size: 30px;
-        padding: 18px 0px 0px 0px;
-
-    }
-
-    #work .toppage {
-        float: left;
-        display: flex;
-        color: black;
-        text-align: center;
-        padding: 20px 5px;
-        text-decoration: none;
-        font-size: 23px;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-    }
-
-    #work .one-page {
-        position: absolute;
-        font-size: 40px;
-        transform: translateY(35%);
-        color: white;
-    }
-
-    .wrap:before {
-        content: '';
-        position: absolute;
-        top: 40%;
-        left: 0;
-        border-top: 5px solid #FF9494;
-        width: 100%;
-        transform: translateY(-50%);
-    }
-
-    #work .wrap2:before {
-        content: '';
-        position: absolute;
-        top: 40%;
-        left: 0;
-        border-top: 5px solid #F3F3F3;
-        width: 100%;
-        transform: translateY(-50%);
-    }
-	#selectedFiles img {
-		max-width: 300px;
-		max-height: 300px;
-		padding: 10px;
-
-	}
-
-</style>
