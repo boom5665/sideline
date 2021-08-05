@@ -49,8 +49,9 @@ Route::get('/wallet', function () {
     return view('wallet');
 });
 Route::get('/addunder', function () {
-    return view('addunder');
+    return view('posts.addunder');
 });
+
 // Route::get('/', function () {
 //     return view('auth.login');
 // });
