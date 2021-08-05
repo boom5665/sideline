@@ -1,5 +1,7 @@
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-    @include('layouts.topbar')
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -50,17 +52,19 @@
   
     
    
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    {{-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> --}}
     <script src="{{ asset('js/bootstrap.min.js') }}" defer></script>
     <script src="{{ asset('js/bootstrap-paginator.js') }}" defer></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     @yield('css')
     
 
 </head>
 
-<body>
+<body id="body">
+    @include('layouts.topbar')
     @yield('content')
     @yield('js')
     
@@ -69,3 +73,4 @@
 <footer>
     @include('layouts.footer')
 </footer>
+</html>

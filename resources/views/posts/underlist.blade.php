@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
-    <body id="body">
+    <div>
         <div class="container">
             <div class="bt-content">
                 <div class="content-alert">
@@ -38,7 +37,7 @@
             </div>
 
             <div class="search-underlist">
-                <form>
+                {{-- <form>
                     <div class="multiselect">
                         <div class="selectBox" onclick="showCheckboxes()">
                             <select>
@@ -56,7 +55,25 @@
                         </div>
                         <button type="submit">ค้นหา</button>
                     </div>
-                </form>
+                </form> --}}
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle click-js-search" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown button
+                    </button>
+                    <div class="dropdown-search-under" aria-labelledby="dropdownMenuButton">
+                      {{-- <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a> --}}
+                     
+                        <label class="dropdown-item" for="one">
+                            <input type="checkbox" id="one" />ผู้หญิง</label>
+                        <label class="dropdown-item" for="two">
+                            <input type="checkbox" id="two" />สาวสอง</label>
+                        <label class="dropdown-item" for="three">
+                            <input type="checkbox" id="three" />ผู้ชาย</label>
+                    
+                    </div>
+                  </div>
             </div>
 
 
@@ -255,165 +272,25 @@
                 </div>
             </div>
         </div>
-    </body>
-
-
-
-
-
-
-    </html>
+    </div>
+@endsection
 
 @section('js')
     <script>
-        var expanded = false;
-
-        function showCheckboxes() {
+       $(document).ready(function() {
             var options = {
                 currentPage: 3,
                 totalPages: 10
             }
-
+            
             $('#example').bootstrapPaginator(options);
-            var checkboxes = document.getElementById("checkboxes");
-            if (!expanded) {
-                checkboxes.style.display = "block";
-                expanded = true;
-            } else {
-                checkboxes.style.display = "none";
-                expanded = false;
-            }
+        });
 
-        }
+        $('.click-js-search').click(function() {
+                $('.dropdown-search-under').toggle('fast')
+        });
     </script>
 @endsection
-@stop
 
 
-<style>
-#body .swiper-container-3d {
-    perspective: 100000px !important;
-    transform: translate3d(0px, 0px, 0px) !important;
-}
 
-.card-img-swiper {
-    width: 100%;
-    height: 340px;
-}
-
-.gallery-thumbs {
-    height: 100%;
-    width: 80%;
-}
-
-.gallery-thumbs .swiper-wrapper {
-    align-items: center;
-
-}
-
-.gallery-thumbs .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 250px !important;
-    height: 330px;
-
-}
-
-.gallery-thumbs .swiper-slide img {
-    /* filter: contrast(0.5) blur(1px); */
-    width: 95%;
-    /* height: 100%;
-object-fit: cover;
-border-radius: 10px; */
-}
-
-.gallery-thumbs .swiper-slide-active img {
-    filter: contrast(1) blur(0px) !important;
-}
-
-.flex-row .flex-col {
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    max-width: 100%;
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-.gallery-thumbs .swiper-wrapper {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-
-.testimonial-section .quote {
-    width: 100%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-.swiper-container.testimonial {
-    height: 100vh;
-}
-
-.testimonial-section .user-saying {
-    background: var(--theme-color2);
-    width: 60%;
-    color: #fff;
-    height: 100%;
-}
-
-.testi-user-img {
-    width: 100%;
-}
-
-.testimonial-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
-    display: block;
-    width: 100%;
-}
-
-.card-description-content-swiper {
-    width: 95.1% !important;
-}
-
-</style>
