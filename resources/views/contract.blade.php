@@ -1,13 +1,9 @@
 @extends('layouts.app')
 @section('content')
 
-    <body id="body">
+
 
         <div id="contract" class="container">
-
-
-
-
             <div class="collapsible-head">
                 <div class="content-top display-tele">
                     <img src="{{ url('/images/Telegram_2019_Logo 1.png') }}" alt="Image" class="imgtele">
@@ -34,11 +30,9 @@
 
             </div>
         </div>
-    </body>
 
 
 
-    </html>
 
 
 

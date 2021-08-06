@@ -42,7 +42,6 @@ Route::get('/undersidelinedetail', [PostController::class, 'undersidelinedetail'
 Route::get('/about', function () {
     return view('about');
 });
-
 Route::get('/contract', function () {
     return view('contract');
 });
@@ -52,7 +51,18 @@ Route::get('/wallet', function () {
 Route::get('/addunder', function () {
     return view('posts.addunder');
 });
-
+Route::get('/addunderdetail', function () {
+    return view('posts.addunderdetail');
+});
+Route::get('/undersidelinelist', function () {
+    return view('undersidelinelist');
+});
+Route::get('/personalinformation', function () {
+    return view('personalinformation');
+});
+Route::get('/underdatail', function () {
+    return view('under-datail');
+});
 // Route::get('/', function () {
 //     return view('auth.login');
 // });

@@ -2,8 +2,6 @@
 
 @section('content')
 
-    <body id="body">
-
         <div id="login" class="container">
             <div id="profile">
                 <div class="formstyle">
@@ -55,5 +53,5 @@
 
             </div>
         </div>
-    </body>
+
 @endsection

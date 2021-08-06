@@ -1,18 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-
-    <body id="body">
-
         <div id="login" class="container">
             <div id="wallet">
                 <div class="content-top">
                     <div class="content-wallet">ยอดเงินของคุณ กูโต้ง ห้ามตัวเองไม่ให้รักเธอ</div>
                 </div>
                 <div class="formstyle">
-
                     <div class="content-wallet-con">200 บาท <i class="fas fa-undo-alt"></i></div>
-
                 </div>
                 <div class="content-top">
                     <div class="content-wallet">บัญชีรับโอน</div>
@@ -68,7 +63,7 @@
                 </div>
             </div>
         </div>
-    </body>
+
 @endsection
 
 
