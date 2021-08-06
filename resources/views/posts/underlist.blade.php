@@ -275,7 +275,7 @@
             </div>
         </div>
     </div>
-@endsection
+    @endsection
 
 @section('js')
     <script>

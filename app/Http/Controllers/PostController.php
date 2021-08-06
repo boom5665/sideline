@@ -35,10 +35,10 @@ class PostController extends Controller
         return view('posts.underlist', $data);
     }
 
-    public function underdetail()
+    public function undersidelinedetail()
     {
         $data['mains'] = Post::latest()->paginate(12);
-        return view('posts.under-detail', $data);
+        return view('posts.undersidelinedetail', $data);
     }
 
    

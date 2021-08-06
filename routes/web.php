@@ -37,7 +37,7 @@ Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home
 
 Route::get('/sidelinelist', [PostController::class, 'sidelinelist']);
 Route::get('/underlist', [PostController::class, 'underlist']);
-Route::get('/underdetail', [PostController::class, 'underdetail']);
+Route::get('/undersidelinedetail', [PostController::class, 'undersidelinedetail']);
 
 Route::get('/about', function () {
     return view('about');
