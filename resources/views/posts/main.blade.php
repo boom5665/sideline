@@ -20,7 +20,7 @@
 
             <div class="bt-content"> 
                 <div class="content-alert">
-                    <div class="alert">
+                    <div class="alert-header">
                         <i class="fas fa-exclamation-triangle iconalert-tabcontent"></i>
                         {{-- <img class="alert-img" src="{{ url('/images/Group.png') }}" alt="Image" /> --}}
                         <div class="content">

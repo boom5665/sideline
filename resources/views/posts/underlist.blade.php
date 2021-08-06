@@ -5,7 +5,7 @@
         <div class="container">
             <div class="bt-content">
                 <div class="content-alert">
-                    <div class="alert">
+                    <div class="alert-header">
                         <i class="fas fa-exclamation-triangle iconalert-tabcontent"></i>
                         {{-- <img class="alert-img" src="{{ url('/images/Group.png') }}" alt="Image" /> --}}
                         <div class="content">
@@ -30,7 +30,7 @@
                         <h2 class="head2-font-bf-data-underlist">สังกัดทั้งหมด</h2>
                     </div>
                     <div class="right-contentsearch-underlist">
-                        <input class="conent-search-input" id="search" type="text" placeholder="ค้นหาสังกัด">
+                        <input class="conent-search-input search-underlist-input" id="search" type="text" placeholder="ค้นหาสังกัด">
                         <i class="fas fa-search btn-search-insied-input"></i>
                     </div>
                 </div>
@@ -57,9 +57,11 @@
                     </div>
                 </form> --}}
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle click-js-search" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Dropdown button
+                    <span class="sptitle-search"> ตัวเลือกการค้นหา : <span>
+                    <button class="btn-secondary dropdown-toggle click-js-search btn-search-underlist" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      ความชอบ
                     </button>
+                    <button class="btn-search-underlist">ค้นหา</button>
                     <div class="dropdown-search-under" aria-labelledby="dropdownMenuButton">
                       {{-- <a class="dropdown-item" href="#">Action</a>
                       <a class="dropdown-item" href="#">Another action</a>
