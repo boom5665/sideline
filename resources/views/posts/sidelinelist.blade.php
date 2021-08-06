@@ -22,7 +22,7 @@
 
             <div class="bt-content">
                 <div class="content-alert">
-                    <div class="alert">
+                    <div class="alert-header">
                         <i class="fas fa-exclamation-triangle iconalert-tabcontent"></i>
                         {{-- <img class="alert-img" src="{{ url('/images/Group.png') }}" alt="Image" /> --}}
                         <div class="content">
@@ -48,7 +48,7 @@
                             คือน้องที่ยืนยันรูปกับแอดมินแล้ว</h2>
                     </div>
                     <div class="right-contentsearch">
-                        <input class="conent-search-input" id="search" type="text" placeholder="ค้นหาชื่อน้อง, สังกัด">
+                        <input class="conent-search-input search-sideline-input" id="search" type="text" placeholder="ค้นหาชื่อน้อง, สังกัด">
                         <i class="fas fa-search btn-search-insied-input"></i>
                     </div>
                 </div>
