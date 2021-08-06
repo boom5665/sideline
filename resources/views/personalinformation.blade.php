@@ -85,12 +85,12 @@
 @stop
 
 <style>
-    .dis-row {
+    #per .dis-row {
         display: flex;
         flex-direction: row;
     }
 
-    .dis-collum {
+    #per .dis-collum {
         display: flex;
         flex-direction: column;
         font-size: 20px;
@@ -98,7 +98,7 @@
 
     }
 
-    .btn-per {
+    #per .btn-per {
         background: #6D0CEE;
         box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
         border-radius: 7px;
@@ -113,18 +113,18 @@
         margin: 5px;
     }
 
-    .btn-per-red {
+    #per .btn-per-red {
         background: #FF403F;
 
     }
 
-    .alert-per {
+    #per .alert-per {
         font-size: 10px;
         padding: 10px;
         color: red;
     }
 
-    .per-con {
+    #per .per-con {
         font-size: 15px;
         color: #6D0CEE;
         margin: 0px 0px 20px 0px;
