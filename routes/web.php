@@ -42,7 +42,6 @@ Route::get('/underdetail', [PostController::class, 'underdetail']);
 Route::get('/about', function () {
     return view('about');
 });
-
 Route::get('/contract', function () {
     return view('contract');
 });
@@ -52,7 +51,9 @@ Route::get('/wallet', function () {
 Route::get('/addunder', function () {
     return view('posts.addunder');
 });
-
+Route::get('/personalinformation', function () {
+    return view('personalinformation');
+});
 // Route::get('/', function () {
 //     return view('auth.login');
 // });

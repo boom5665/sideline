@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -45,7 +44,7 @@
 @extends('layouts.app')
 @section('content')
 
-    <body id="body">
+
         <div id="work" class="container" style="color: #6D0CEE;">
             @if ($errors->any())
                 <div class=" alert alert-danger">
@@ -88,10 +87,9 @@
                         <div id="Form1" class="formstyle Form1 ">
                             <div class="" id="wallet">
                                 <div class="content-top display-tele">
-                                    <div style="display: flex>
-                                                    flex-direction: column;">
+                                    <div style="display: flex; flex-direction: column;">
                                         <img src="{{ url('/images/cam.png') }}" alt="Image" class="imgteleW">
-                                        <div>
+                                        <div class="display-cam">
                                             <button class="but-cam">ลบ</button>
                                             <button class="but-cam">เพิ่ม</button>
                                         </div>
@@ -252,10 +250,10 @@
             </form>
         </div>
     </body>
-@stop
 
 
-</html>
+
+
 
 <script>
     $(document).on('click', '.upload-field', function() {
@@ -324,5 +322,11 @@
         });
     });
 </script>
-
-
+@stop
+<style>
+.display-cam
+{
+    display: flex;
+    margin: 10px 0px;
+}
+</style>

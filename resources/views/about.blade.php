@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-    <body id="body">
+ 
 
         <div id="about" class="container">
 
@@ -104,7 +104,7 @@
             </div> --}}
             </div>
         </div>
-    </body>
+
 
 
 
