@@ -1275,3 +1275,15 @@ label {
     position: absolute;
     margin: -9px -2px -1px 13px;
 }
+
+.text-search-head {
+    width: 100%;
+    font-size: 17px;
+    height: 39px;
+}
+
+.span-txt-1 {
+    float: right;
+    font-size: 14px;
+    color: #C4C4C4;
+}

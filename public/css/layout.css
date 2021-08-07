@@ -67,7 +67,7 @@
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 50%;
     color: black;
 }
 
@@ -152,17 +152,17 @@
 }
 
 #header select {
-    -webkit-appearance: none;
+    /* -webkit-appearance: none; */
     -moz-appearance: none;
     -ms-appearance: none;
-    appearance: none;
-    outline: 0;
-    box-shadow: none;
-    background-image: none;
-    background: #fff;
-    border-left: 2px solid;
-    border-top: 2px solid;
-    border-bottom: 2px solid;
+    /* appearance: none; */
+    /* outline: 0; */
+    /* box-shadow: none; */
+    /* background-image: none; */
+    /* background: #fff; */
+    /* border-left: 2px solid; */
+    /* border-top: 2px solid; */
+    /* border-bottom: 2px solid; */
 }
 
 #header .select {
@@ -176,10 +176,10 @@
 }
 
 #header select {
-    flex: 1;
-    padding: 0 .5em;
-    color: #000;
-    cursor: pointer;
+    /* flex: 1; */
+    /* padding: 0 .5em; */
+    /* color: #000; */
+    /* cursor: pointer; */
 }
 
 #header .select::after {
@@ -373,4 +373,15 @@
 
 .fw {
     font-weight: 700;
+}
+
+@media screen and (max-width: 769px) {
+    #header .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 97%;
+        color: black;
+    }
 }
