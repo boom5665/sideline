@@ -685,23 +685,23 @@ summary {
 .login-content {
     border-radius: 5px;
     height: 49px;
-    background-color: #9443FF;
+    background-color: #6d0cee;
     color: white;
     padding: 0px 10px 0px 10px;
     font-size: 20px;
     align-items: center;
-    border-color: #9443FF;
+    border-color: #6d0cee;
 }
 
 .regis-content {
     border-radius: 5px;
     height: 47px;
-    background-color: #9443FF;
+    background-color: #6d0cee;
     color: white;
     padding: 0px 10px 0px 10px;
     font-size: 20px;
     align-items: center;
-    border-color: #9443FF;
+    border-color: #6d0cee;
 }
 
 .btn-log-regis {
@@ -711,6 +711,7 @@ summary {
 
 .bt-content {
     padding-top: 25px;
+    padding-bottom: 39px;
 }
 
 .iconalert-tabcontent {

@@ -60,8 +60,8 @@ Route::get('/undersidelinelist', function () {
 Route::get('/personalinformation', function () {
     return view('personalinformation');
 });
-Route::get('/underdatail', function () {
-    return view('under-datail');
+Route::get('/underdetail', function () {
+    return view('under-detail');
 });
 // Route::get('/', function () {
 //     return view('auth.login');

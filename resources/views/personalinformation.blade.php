@@ -3,7 +3,7 @@
 
 
 
-    <div id="wallet" class="container">
+    <div id="per" class="container">
         <div class="content-top">
             <div class="content-wallet">โพสต์ของฉัน</div>
         </div>

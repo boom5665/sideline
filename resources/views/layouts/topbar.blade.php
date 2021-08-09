@@ -75,16 +75,8 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-<<<<<<< HEAD
                                    
-=======
-
-<<<<<<< HEAD
-                                    <select class="form-control" id="exampleFormControlSelect1">
-=======
->>>>>>> 7849ca2d0f3a91a05741f287584da56ce179f88a
                                     <select class="form-select" id="exampleFormControlSelect1">
->>>>>>> 966942a26725b63896f06e867509bfb19eb9ebcb
                                         <option value="none" selected disabled hidden>
                                             ภาค
                                         </option>
@@ -94,16 +86,8 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-<<<<<<< HEAD
                                     
-=======
-
-<<<<<<< HEAD
-                                    <select class="form-control" id="exampleFormControlSelect1">
-=======
->>>>>>> 7849ca2d0f3a91a05741f287584da56ce179f88a
                                     <select class="form-select" id="exampleFormControlSelect1">
->>>>>>> 966942a26725b63896f06e867509bfb19eb9ebcb
                                         <option value="none" selected disabled hidden>
                                             จังหวัด
                                         </option>
@@ -115,16 +99,8 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-<<<<<<< HEAD
                                    
-=======
-
-<<<<<<< HEAD
-                                    <select class="form-control" id="exampleFormControlSelect1">
-=======
->>>>>>> 7849ca2d0f3a91a05741f287584da56ce179f88a
                                     <select class="form-select" id="exampleFormControlSelect1">
->>>>>>> 966942a26725b63896f06e867509bfb19eb9ebcb
                                         <option value="none" selected disabled hidden>
                                             เขต
                                         </option>
@@ -134,16 +110,8 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-<<<<<<< HEAD
                                    
-=======
-
-<<<<<<< HEAD
-                                    <select class="form-control" id="exampleFormControlSelect1">
-=======
->>>>>>> 7849ca2d0f3a91a05741f287584da56ce179f88a
                                     <select class="form-select" id="exampleFormControlSelect1">
->>>>>>> 966942a26725b63896f06e867509bfb19eb9ebcb
                                         <option value="none" selected disabled hidden>
                                             แขวง
                                         </option>
