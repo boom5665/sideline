@@ -1,52 +1,52 @@
 <header id="header">
     <div id="app">
-        <div class="row">
-            <div class="topnav">
-                <div class="header-menu">
-                    <a href="">
-                        <img class="img-logo" src="{{ url('/images/sdbkk-2.png') }}" alt="Image" />
-                    </a>
-                    <div class="tab-menu-in">
+        <div class="topnav">
+            <div class="header-menu">
 
-                        <a class="toppage" href="{{ url('main') }}"> หน้าหลัก</a>
-                        <a class="toppage" href="{{ url('') }}"> เลือกน้อง</a>
-                        <a class="toppage" href="{{ url('dataweb') }}"> สังกัด</a>
-                        <a class="toppage" href="{{ url('follow') }}"> ที่ติดตาม</a>
-                        <a class="toppage" href="{{ url('dataweb') }}"> เกี่ยวกับเรา</a>
-                        <a class="toppage" href="{{ url('dataweb') }}"> ติดต่อเรา</a>
+                <a href="">
+                    <img class="img-logo" src="{{ url('/images/sdbkk-2.png') }}" alt="Image" /></a>
+                <div class="tab-menu-in">
 
-                    </div>
+                    <a class="toppage" href="{{ url('main') }}"> หน้าหลัก</a>
+                    <a class="toppage" href="{{ url('') }}"> เลือกน้อง</a>
+                    <a class="toppage" href="{{ url('dataweb') }}"> สังกัด</a>
+                    <a class="toppage" href="{{ url('follow') }}"> ที่ติดตาม</a>
+                    <a class="toppage" href="{{ url('dataweb') }}"> เกี่ยวกับเรา</a>
+                    <a class="toppage" href="{{ url('dataweb') }}"> ติดต่อเรา</a>
                     <div class="menu-right-topbar">
                         <a id="Bpop" class="toppage"><i class="fas fa-search"></i></a>
                         <div class="dropdown">
                             @if (Route::has('login'))
                                 <a class="toppage top-us" href="{{ route('login') }}">เข้าสู่ระบบ</a>
                             @endif
-
+    
                             <div class="dropdown-content">
                                 @guest
                                 @else
                                     <img src="/uploads/avatars/{{ Auth::user()->avatar }}" class="avatar">
-
-
+    
+    
                                     <div class="padbut " href="#">
                                         {{ Auth::user()->name }}
                                     </div>
                                 @endguest
-                                <a href="{{ url('/profile') }}"><button
-                                        class="padbut set-but">จัดการบัญชี</button></a>
+                                <a href="{{ url('/profile') }}"><button class="padbut set-but">จัดการบัญชี</button></a>
                                 <button class="padbut set-but-2">การบ้านที่ส่ง</button>
                                 <button class="padbut set-but-2">น้องสุดโปรด</button>
-
+    
                                 <button class="padbut set-but-out" onclick="event.preventDefault();
-                            document.getElementById('logout-form').submit();"><img class=""
+                                document.getElementById('logout-form').submit();"><img class=""
                                         src="{{ url('/images/log-out.png') }}" alt="Image" />ออกจากระบบ</button>
                             </div>
-
+    
                         </div>
                     </div>
                 </div>
+                
             </div>
+
+
+
         </div>
 
 
@@ -70,12 +70,12 @@
                                 <span class="span-txt-1">ถ้ามีหลายชื่อให้ใส่จุลภาค(,) ผิงผิง,ปอย,แพท</span>
                             </div>
                         </div>
-
+                        
                         <h5>โซนรับงาน</h5>
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-
+                                   
                                     <select class="form-select" id="exampleFormControlSelect1">
                                         <option value="none" selected disabled hidden>
                                             ภาค
@@ -86,7 +86,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-
+                                    
                                     <select class="form-select" id="exampleFormControlSelect1">
                                         <option value="none" selected disabled hidden>
                                             จังหวัด
@@ -99,7 +99,7 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-
+                                   
                                     <select class="form-select" id="exampleFormControlSelect1">
                                         <option value="none" selected disabled hidden>
                                             เขต
@@ -110,7 +110,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-
+                                   
                                     <select class="form-select" id="exampleFormControlSelect1">
                                         <option value="none" selected disabled hidden>
                                             แขวง
@@ -126,7 +126,7 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-
+                                   
                                     <select class="form-select" id="exampleFormControlSelect1">
                                         <option value="none" selected disabled hidden>
                                             เพศ
@@ -147,7 +147,7 @@
                             </div>
                             <div class="col-sm-3">
                                 <div class="form-group">
-
+                                    
                                     <select class="form-select" id="exampleFormControlSelect1">
                                         <option value="none" selected disabled hidden>
                                             ส่วนสูง
@@ -170,7 +170,7 @@
                             </div>
                             <div class="col-sm-3">
                                 <div class="form-group">
-
+                                    
                                     <select class="form-select" id="exampleFormControlSelect1">
                                         <option value="none" selected disabled hidden>
                                             หน้าอก
@@ -191,7 +191,7 @@
                             </div>
                             <div class="col-sm-3">
                                 <div class="form-group">
-
+                                    
                                     <select class="form-select" id="exampleFormControlSelect1">
                                         <option value="none" selected disabled hidden>
                                             สะโพก
@@ -228,14 +228,14 @@
                         <div class="form-check verify-people">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                             <label class="form-check-label" for="flexCheckDefault">
-                                ยืนยันตัวตน
+                              ยืนยันตัวตน
                             </label>
-                        </div>
+                          </div>
                     </div>
 
 
-
-
+                   
+                
                     <div class="modal-footer search-modal-header">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">รีเซ็ต</button>
                         <button type="button" class="btn btn-primary btn-searchheader-modal">ค้นหา</button>
@@ -308,7 +308,7 @@
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                                         document.getElementById('logout-form').submit();">
+                                                                     document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
                             </a>
 
