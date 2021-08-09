@@ -29,7 +29,7 @@
             <div class="row">
                 <div class="col-sm-5">
                     <div class="data1-undersideline">
-                        <h1>น้อง Miki</h1>
+                        <h1 class="name-sdunderdetail">น้อง Miki</h1>
                         <img class="img-undersidelinedetail"  src="{{ url('/image/gigkun.png') }}" />
                         <span class="data1-follow-underdetail">
                             <i class="fas fa-heart"></i>

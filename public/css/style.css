@@ -755,6 +755,7 @@ summary {
 
 .inline-formsearch {
     display: flex;
+    padding-bottom: 6px;
     width: 100%;
     justify-content: space-between;
 }
@@ -765,14 +766,17 @@ summary {
 
 .btn-search-insied-input {
     position: relative;
-    left: -25px;
+    left: -5px;
 }
 
 .conent-search-input {
     background: #CDCDCD;
-    padding: 10px 0px 8px 6px;
+    padding: 9px 5px 8px 5px;
     border-radius: 5px;
     border: bisque;
+    position: relative;
+    right: -15px;
+    width: 160px;
 }
 
 .box-sideline {
@@ -792,6 +796,16 @@ summary {
     position: relative;
 }
 
+.card_sis:hover {
+    background-color: #6D0CEE;
+    border-radius: 10px;
+    height: auto;
+    display: block;
+    width: 100%;
+    position: relative;
+    opacity: 0.5;
+}
+
 .card_under {
     background-color: #6D0CEE;
     border-radius: 10px;
@@ -803,9 +817,9 @@ summary {
 
 .card-title-side {
     color: white;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 23px;
-    line-height: 42px;
+    line-height: 32px;
     display: flex;
     align-items: center;
 }
@@ -844,7 +858,7 @@ summary {
     opacity: 1;
     position: absolute;
     /* z-index: 1; */
-    bottom: 125px;
+    bottom: 79px;
     background: #fff;
     width: 56px;
     height: 24px;
@@ -860,7 +874,7 @@ summary {
     opacity: 1;
     position: absolute;
     /* z-index: 1; */
-    bottom: 125px;
+    bottom: 79px;
     background: #fff;
     width: 52px;
     height: 23px;
@@ -876,6 +890,7 @@ summary {
     opacity: 1;
     position: absolute;
     /* z-index: 1; */
+    font-style: italic;
     top: 0;
     background: #fff;
     width: 52px;
@@ -955,7 +970,7 @@ summary {
     opacity: 1;
     position: absolute;
     /* z-index: 1; */
-    bottom: 107px;
+    bottom: 76px;
     background: #fff;
     width: 56px;
     height: 24px;
@@ -971,7 +986,7 @@ summary {
     opacity: 1;
     position: absolute;
     /* z-index: 1; */
-    bottom: 107px;
+    bottom: 76px;
     background: #fff;
     width: 52px;
     height: 23px;
@@ -988,6 +1003,7 @@ summary {
     position: absolute;
     /* z-index: 1; */
     top: 0;
+    font-style: italic;
     background: #fff;
     width: 52px;
     height: 23px;
@@ -1103,15 +1119,23 @@ label {
 }
 
 .btn-search-underlist {
-    background-color: white;
-    color: #6d0cee;
-    border-radius: 4px;
+    background-color: white !important;
+    color: #6d0cee !important;
+    border-radius: 4px !important;
     border: none;
 }
 
 .btn-search-underlist:hover {
     background-color: white;
     color: #6d0cee;
+}
+
+.check-item-search {
+    color: #6d0cee !important;
+}
+
+.dd-item {
+    color: #6d0cee !important;
 }
 
 .search-underlist-input {
@@ -1223,7 +1247,7 @@ label {
 }
 
 .main-score-underdetail {
-    padding: 15px 0px 15px 0px;
+    padding: 0px 0px 15px 0px;
 }
 
 .icon-ratescore-underdetail {
@@ -1267,6 +1291,7 @@ label {
 
 .idline-underditial {
     font-size: 17px;
+    padding-top: 8px;
     color: #6d0cee;
 }
 
@@ -1306,4 +1331,75 @@ label {
 
 .img-sdunderdetail {
     width: 100% !important;
+    border-radius: 6px;
+}
+
+.img-profile-user {
+    width: 100% !important;
+    border-radius: 50%;
+}
+
+.card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 0px 0px 4px 15px !important;
+}
+
+.name-sdunderdetail {
+    color: #6d0cee;
+}
+
+.btn-inwork-underdetail {
+    background: #6d0cee;
+    font-size: 15px;
+    color: white;
+    padding: 8px;
+    border-radius: 7px;
+    border: none;
+}
+
+.main-comment {
+    padding-top: 35px;
+}
+
+.comment-after {
+    width: 100%;
+    border: solid 2px;
+    border-radius: 5px;
+    height: 100%;
+    font-size: 15px;
+    padding: 12px 12px 22px 12px;
+    color: #6d0cee;
+}
+
+.post-afterwork {
+    color: #C4C4C4;
+}
+
+.text-comment-after {
+    color: #6d0cee;
+}
+
+.img-comment {
+    width: 130px;
+    border-radius: 7px;
+}
+
+.pad-comment {
+    padding-bottom: 23px;
+}
+
+.comand-work {
+    font-size: 20px;
+    color: #6d0cee;
+}
+
+.h1-work-after {
+    font-size: 22px;
+    color: #6d0cee;
+}
+
+.pad-bt-workafter {
+    padding-bottom: 30px;
 }

@@ -29,33 +29,15 @@
                     <div class="left-contenthead">
                         <h2 class="head2-font-bf-data-underlist">สังกัดทั้งหมด</h2>
                     </div>
-                    <div class="right-contentsearch-underlist">
-                        <input class="conent-search-input search-underlist-input" id="search" type="text" placeholder="ค้นหาสังกัด">
+                    <div class="right-contentsearch"> 
+                        <input class="conent-search-input" id="" type="text" placeholder="ค้นหาสังกัด">
                         <i class="fas fa-search btn-search-insied-input"></i>
                     </div>
                 </div>
             </div>
 
             <div class="search-underlist">
-                {{-- <form>
-                    <div class="multiselect">
-                        <div class="selectBox" onclick="showCheckboxes()">
-                            <select>
-                                <option>ความชอบ</option>
-                            </select>
-                            <div class="overSelect"></div>
-                        </div>
-                        <div id="checkboxes">
-                            <label for="one">
-                                <input type="checkbox" id="one" />ผู้หญิง</label>
-                            <label for="two">
-                                <input type="checkbox" id="two" />สาวสอง</label>
-                            <label for="three">
-                                <input type="checkbox" id="three" />ผู้ชาย</label>
-                        </div>
-                        <button type="submit">ค้นหา</button>
-                    </div>
-                </form> --}}
+              
                 <div class="dropdown">
                     <span class="sptitle-search"> ตัวเลือกการค้นหา : <span>
                     <button class="btn-secondary dropdown-toggle click-js-search btn-search-underlist" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -67,12 +49,12 @@
                       <a class="dropdown-item" href="#">Another action</a>
                       <a class="dropdown-item" href="#">Something else here</a> --}}
                      
-                        <label class="dropdown-item" for="one">
-                            <input type="checkbox" id="one" />ผู้หญิง</label>
-                        <label class="dropdown-item" for="two">
-                            <input type="checkbox" id="two" />สาวสอง</label>
-                        <label class="dropdown-item" for="three">
-                            <input type="checkbox" id="three" />ผู้ชาย</label>
+                        <label class="dropdown-item dd-item" for="one">
+                            <input type="checkbox" class="check-item-search" id="one" /> ผู้หญิง</label>
+                        <label class="dropdown-item dd-item" for="two">
+                            <input type="checkbox" class="check-item-search" id="two" /> สาวสอง</label>
+                        <label class="dropdown-item dd-item" for="three">
+                            <input type="checkbox" class="check-item-search" id="three" /> ผู้ชาย</label>
                     
                     </div>
                   </div>

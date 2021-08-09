@@ -63,7 +63,7 @@
                     <h1 class="head2-font-bf-data-following">น้อง ๆ ที่ติดตาม</h1>
                 </div>
                 <div class="right-contentsearch-following"> 
-                    <input class="conent-search-input" id="search" type="text" placeholder="ค้นหาชื่อน้อง, สังกัด">
+                    <input class="conent-search-input" id="" type="text" placeholder="ค้นหาชื่อน้อง, สังกัด">
                     <i class="fas fa-search btn-search-insied-input"></i>
                 </div>
             </div>
@@ -96,11 +96,7 @@
                                         ผู้หญิง
                                         </a>
                                     </span>
-                                    <span class="card_new-following"> 
-                                        <a class="color-eye" >
-                                        NEW
-                                        </a>
-                                    </span>
+                                  
                                     <span class="card_follow-following"> 
                                         <i class="fas fa-heart"></i>
                                     </span>
@@ -130,11 +126,7 @@
                                         ผู้หญิง
                                         </a>
                                     </span>
-                                    <span class="card_new-following"> 
-                                        <a class="color-eye" >
-                                        NEW
-                                        </a>
-                                    </span>
+                                  
                                     <span class="card_follow-following"> 
                                         <i class="fas fa-heart"></i>
                                     </span>
@@ -164,11 +156,7 @@
                                         ผู้หญิง
                                         </a>
                                     </span>
-                                    <span class="card_new-following"> 
-                                        <a class="color-eye" >
-                                        NEW
-                                        </a>
-                                    </span>
+                                  
                                     <span class="card_follow-following"> 
                                         <i class="fas fa-heart"></i>
                                     </span>
@@ -198,11 +186,7 @@
                                         ผู้หญิง
                                         </a>
                                     </span>
-                                    <span class="card_new-following"> 
-                                        <a class="color-eye" >
-                                        NEW
-                                        </a>
-                                    </span>
+                                  
                                     <span class="card_follow-following"> 
                                         <i class="fas fa-heart"></i>
                                     </span>
@@ -232,11 +216,7 @@
                                         ผู้หญิง
                                         </a>
                                     </span>
-                                    <span class="card_new-following"> 
-                                        <a class="color-eye" >
-                                        NEW
-                                        </a>
-                                    </span>
+                                  
                                     <span class="card_follow-following"> 
                                         <i class="fas fa-heart"></i>
                                     </span>
@@ -266,11 +246,7 @@
                                         ผู้หญิง
                                         </a>
                                     </span>
-                                    <span class="card_new-following"> 
-                                        <a class="color-eye" >
-                                        NEW
-                                        </a>
-                                    </span>
+                                  
                                     <span class="card_follow-following"> 
                                         <i class="fas fa-heart"></i>
                                     </span>
@@ -300,11 +276,7 @@
                                         ผู้หญิง
                                         </a>
                                     </span>
-                                    <span class="card_new-following"> 
-                                        <a class="color-eye" >
-                                        NEW
-                                        </a>
-                                    </span>
+                                  
                                     <span class="card_follow-following"> 
                                         <i class="fas fa-heart"></i>
                                     </span>
@@ -334,11 +306,7 @@
                                         ผู้หญิง
                                         </a>
                                     </span>
-                                    <span class="card_new-following"> 
-                                        <a class="color-eye" >
-                                        NEW
-                                        </a>
-                                    </span>
+                                  
                                     <span class="card_follow-following"> 
                                         <i class="fas fa-heart"></i>
                                     </span>
@@ -368,11 +336,7 @@
                                         ผู้หญิง
                                         </a>
                                     </span>
-                                    <span class="card_new-following"> 
-                                        <a class="color-eye" >
-                                        NEW
-                                        </a>
-                                    </span>
+                                  
                                     <span class="card_follow-following"> 
                                         <i class="fas fa-heart"></i>
                                     </span>

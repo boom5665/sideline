@@ -63,6 +63,10 @@ Route::get('/personalinformation', function () {
 Route::get('/underdetail', function () {
     return view('under-detail');
 });
+
+Route::get('/sidelineinformation', function () {
+    return view('posts.sidelineinformation');
+});
 // Route::get('/', function () {
 //     return view('auth.login');
 // });

@@ -41,6 +41,12 @@ class PostController extends Controller
         return view('posts.undersidelinedetail', $data);
     }
 
+    public function sidelineinformation()
+    {
+        $data['mains'] = Post::latest()->paginate(12);
+        return view('posts.sidelineinformation', $data);
+    }
+
    
 
     public function followindex()

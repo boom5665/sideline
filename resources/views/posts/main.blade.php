@@ -40,7 +40,7 @@
                         <h2 class="head2-font-bf-data">เครื่องหมาย <i class="fas fa-check"></i> คือน้องที่ยืนยันรูปกับแอดมินแล้ว</h2>
                     </div>
                     <div class="right-contentsearch"> 
-                        <input class="conent-search-input" id="search" type="text" placeholder="ค้นหาชื่อน้อง, สังกัด">
+                        <input class="conent-search-input" id="" type="text" placeholder="ค้นหาชื่อน้อง, สังกัด">
                         <i class="fas fa-search btn-search-insied-input"></i>
                     </div>
                 </div>
