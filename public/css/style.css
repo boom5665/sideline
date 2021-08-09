@@ -684,22 +684,22 @@ summary {
 
 .login-content {
     border-radius: 5px;
-    height: 55px;
+    height: 49px;
     background-color: #9443FF;
     color: white;
-    padding: 0px 20px 0px 20px;
-    font-size: 25px;
+    padding: 0px 10px 0px 10px;
+    font-size: 20px;
     align-items: center;
     border-color: #9443FF;
 }
 
 .regis-content {
     border-radius: 5px;
-    height: 55px;
+    height: 47px;
     background-color: #9443FF;
     color: white;
-    padding: 0px 20px 0px 20px;
-    font-size: 25px;
+    padding: 0px 10px 0px 10px;
+    font-size: 20px;
     align-items: center;
     border-color: #9443FF;
 }
@@ -843,7 +843,7 @@ summary {
     opacity: 1;
     position: absolute;
     /* z-index: 1; */
-    bottom: 117px;
+    bottom: 125px;
     background: #fff;
     width: 56px;
     height: 24px;
@@ -859,7 +859,7 @@ summary {
     opacity: 1;
     position: absolute;
     /* z-index: 1; */
-    bottom: 117px;
+    bottom: 125px;
     background: #fff;
     width: 52px;
     height: 23px;
@@ -922,7 +922,7 @@ summary {
 }
 
 .img-side-data-underlist {
-    border-radius: 50%;
+    border-radius: 50% !important;
     text-align: center;
     padding: 15px 15px 15px 15px;
     height: 70%;
@@ -954,7 +954,7 @@ summary {
     opacity: 1;
     position: absolute;
     /* z-index: 1; */
-    bottom: 117px;
+    bottom: 107px;
     background: #fff;
     width: 56px;
     height: 24px;
@@ -970,7 +970,7 @@ summary {
     opacity: 1;
     position: absolute;
     /* z-index: 1; */
-    bottom: 117px;
+    bottom: 107px;
     background: #fff;
     width: 52px;
     height: 23px;
@@ -1286,4 +1286,23 @@ label {
     float: right;
     font-size: 14px;
     color: #C4C4C4;
+}
+
+.verify-people {
+    font-size: 15px;
+}
+
+.search-modal-header {
+    -webkit-box-align: center !important;
+    -webkit-box-pack: center !important;
+    justify-content: center !important;
+}
+
+.btn-searchheader-modal {
+    background-color: #6d0cee !important;
+    border-color: #6d0cee !important;
+}
+
+.img-sdunderdetail {
+    width: 100% !important;
 }

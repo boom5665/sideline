@@ -1,51 +1,52 @@
 <header id="header">
     <div id="app">
-        <div class="topnav">
-            <div class="header-menu">
+        <div class="row">
+            <div class="topnav">
+                <div class="header-menu">
+                    <a href="">
+                        <img class="img-logo" src="{{ url('/images/sdbkk-2.png') }}" alt="Image" />
+                    </a>
+                    <div class="tab-menu-in">
 
-                <a href=""><img class="img-logo" src="{{ url('/images/sdbkk-2.png') }}" alt="Image" /></a>
-                <div class="tab-menu-in ">
+                        <a class="toppage" href="{{ url('main') }}"> หน้าหลัก</a>
+                        <a class="toppage" href="{{ url('') }}"> เลือกน้อง</a>
+                        <a class="toppage" href="{{ url('dataweb') }}"> สังกัด</a>
+                        <a class="toppage" href="{{ url('follow') }}"> ที่ติดตาม</a>
+                        <a class="toppage" href="{{ url('dataweb') }}"> เกี่ยวกับเรา</a>
+                        <a class="toppage" href="{{ url('dataweb') }}"> ติดต่อเรา</a>
 
-                    <a class="toppage" href="{{ url('main') }}"> หน้าหลัก</a>
-                    <a class="toppage" href="{{ url('main') }}"> เลือกน้อง</a>
-                    <a class="toppage" href="{{ url('underlist') }}"> สังกัด</a>
-                    <a class="toppage" href="{{ url('follow') }}"> ที่ติดตาม</a>
-                    <a class="toppage" href="{{ url('about') }}"> เกี่ยวกับเรา</a>
-                    <a class="toppage" href="{{ url('contract') }}"> ติดต่อเรา</a>
+                    </div>
+                    <div class="menu-right-topbar">
+                        <a id="Bpop" class="toppage"><i class="fas fa-search"></i></a>
+                        <div class="dropdown">
+                            @if (Route::has('login'))
+                                <a class="toppage top-us" href="{{ route('login') }}">เข้าสู่ระบบ</a>
+                            @endif
 
-                </div>
-                <div class="menu-right-topbar">
-                    <a id="Bpop" class="toppage"><i class="fas fa-search"></i></a>
-                    <div class="dropdown">
-                        @if (Route::has('login'))
-                            <a class="toppage top-us" href="{{ route('login') }}">เข้าสู่ระบบ</a>
-                        @endif
-
-                        <div class="dropdown-content">
-                            @guest
-                            @else
-                                <img src="/uploads/avatars/{{ Auth::user()->avatar }}" class="avatar">
+                            <div class="dropdown-content">
+                                @guest
+                                @else
+                                    <img src="/uploads/avatars/{{ Auth::user()->avatar }}" class="avatar">
 
 
-                                <div class="padbut " href="#">
-                                    {{ Auth::user()->name }}
-                                </div>
-                            @endguest
-                            <a href="{{ url('/profile') }}"><button class="padbut set-but">จัดการบัญชี</button></a>
-                            <button class="padbut set-but-2">การบ้านที่ส่ง</button>
-                            <button class="padbut set-but-2">น้องสุดโปรด</button>
+                                    <div class="padbut " href="#">
+                                        {{ Auth::user()->name }}
+                                    </div>
+                                @endguest
+                                <a href="{{ url('/profile') }}"><button
+                                        class="padbut set-but">จัดการบัญชี</button></a>
+                                <button class="padbut set-but-2">การบ้านที่ส่ง</button>
+                                <button class="padbut set-but-2">น้องสุดโปรด</button>
 
-                            <button class="padbut set-but-out" onclick="event.preventDefault();
+                                <button class="padbut set-but-out" onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();"><img class=""
-                                    src="{{ url('/images/log-out.png') }}" alt="Image" />ออกจากระบบ</button>
-                        </div>
+                                        src="{{ url('/images/log-out.png') }}" alt="Image" />ออกจากระบบ</button>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
             </div>
-
-
-
         </div>
 
 
@@ -56,7 +57,7 @@
 
             <div id="Mpop" class="modal">
                 <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -75,7 +76,11 @@
                             <div class="col-sm-6">
                                 <div class="form-group">
 
+<<<<<<< HEAD
                                     <select class="form-control" id="exampleFormControlSelect1">
+=======
+                                    <select class="form-select" id="exampleFormControlSelect1">
+>>>>>>> 966942a26725b63896f06e867509bfb19eb9ebcb
                                         <option value="none" selected disabled hidden>
                                             ภาค
                                         </option>
@@ -86,7 +91,11 @@
                             <div class="col-sm-6">
                                 <div class="form-group">
 
+<<<<<<< HEAD
                                     <select class="form-control" id="exampleFormControlSelect1">
+=======
+                                    <select class="form-select" id="exampleFormControlSelect1">
+>>>>>>> 966942a26725b63896f06e867509bfb19eb9ebcb
                                         <option value="none" selected disabled hidden>
                                             จังหวัด
                                         </option>
@@ -99,7 +108,11 @@
                             <div class="col-sm-6">
                                 <div class="form-group">
 
+<<<<<<< HEAD
                                     <select class="form-control" id="exampleFormControlSelect1">
+=======
+                                    <select class="form-select" id="exampleFormControlSelect1">
+>>>>>>> 966942a26725b63896f06e867509bfb19eb9ebcb
                                         <option value="none" selected disabled hidden>
                                             เขต
                                         </option>
@@ -110,7 +123,11 @@
                             <div class="col-sm-6">
                                 <div class="form-group">
 
+<<<<<<< HEAD
                                     <select class="form-control" id="exampleFormControlSelect1">
+=======
+                                    <select class="form-select" id="exampleFormControlSelect1">
+>>>>>>> 966942a26725b63896f06e867509bfb19eb9ebcb
                                         <option value="none" selected disabled hidden>
                                             แขวง
                                         </option>
@@ -119,10 +136,125 @@
                                 </div>
                             </div>
                         </div>
+
+
+                        <h5>คุณชอบแบบไหน</h5>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+
+                                    <select class="form-select" id="exampleFormControlSelect1">
+                                        <option value="none" selected disabled hidden>
+                                            เพศ
+                                        </option>
+                                        <option>1</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <select class="form-select" id="exampleFormControlSelect1">
+                                        <option value="none" selected disabled hidden>
+                                            อายุ
+                                        </option>
+                                        <option>1</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+
+                                    <select class="form-select" id="exampleFormControlSelect1">
+                                        <option value="none" selected disabled hidden>
+                                            ส่วนสูง
+                                        </option>
+                                        <option>1</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <select class="form-select" id="exampleFormControlSelect1">
+                                        <option value="none" selected disabled hidden>
+                                            น้ำหนัก
+                                        </option>
+                                        <option>1</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+
+                                    <select class="form-select" id="exampleFormControlSelect1">
+                                        <option value="none" selected disabled hidden>
+                                            หน้าอก
+                                        </option>
+                                        <option>1</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <select class="form-select" id="exampleFormControlSelect1">
+                                        <option value="none" selected disabled hidden>
+                                            เอว
+                                        </option>
+                                        <option>1</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+
+                                    <select class="form-select" id="exampleFormControlSelect1">
+                                        <option value="none" selected disabled hidden>
+                                            สะโพก
+                                        </option>
+                                        <option>1</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h5>คุณชอบแบบไหน</h5>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <select class="form-select" id="exampleFormControlSelect1">
+                                        <option value="none" selected disabled hidden>
+                                            เรทราคาต่ำสุด
+                                        </option>
+                                        <option>1</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <select class="form-select" id="exampleFormControlSelect1">
+                                        <option value="none" selected disabled hidden>
+                                            เรทราคาสูงสุด
+                                        </option>
+                                        <option>1</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-check verify-people">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                ยืนยันตัวตน
+                            </label>
+                        </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+
+
+
+
+                    <div class="modal-footer search-modal-header">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">รีเซ็ต</button>
+                        <button type="button" class="btn btn-primary btn-searchheader-modal">ค้นหา</button>
                     </div>
                 </div>
             </div>
@@ -192,7 +324,7 @@
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                                     document.getElementById('logout-form').submit();">
+                                                                         document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
                             </a>
 
