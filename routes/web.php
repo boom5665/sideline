@@ -42,8 +42,8 @@ Route::get('/undersidelinedetail', [PostController::class, 'undersidelinedetail'
 Route::get('/about', function () {
     return view('about');
 });
-Route::get('/contract', function () {
-    return view('contract');
+Route::get('/contact', function () {
+    return view('contact');
 });
 Route::get('/wallet', function () {
     return view('wallet');

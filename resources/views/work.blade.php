@@ -1,91 +1,257 @@
-@extends('layouts.app')
 
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Side line</title>
+    <link rel="shortcut icon" href="favicon.png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- Custom fonts for this template-->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"> -->
+
+    <!-- Custom styles for this template-->
+    <link href="css/app.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- Plugin -->
+    <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css" />
+    <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
+    <link href="{{ asset('css/layout.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/addForm.css') }}" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+@extends('layouts.app')
 @section('content')
 
-    <body id="body">
 
-        <div class="con-top-img">
-            <img class="topimg" src="{{ url('/images/msa.png') }}" alt="Image" />
-            <div class="top-img-con">
-                <div class="top-font">TH-SIDELINE</div>
-                <div class="top-font">เว็บรวมน้องไซด์ไลน์</div>
-                <div class="top-button">
-                    <a href="{{ route('posts.create') }}"><button type="button" class="but-img">ลงโพสไซด์ไลน์</button></a>
-                    <a href="{{ url('register') }}"><button type="button" class="but-img but-two">สมัครบัญชี</button></a>
+        <div id="work" class="container" style="color: #6D0CEE;">
+            @if ($errors->any())
+                <div class=" alert alert-danger">
+                    <strong>Oop </strong>
+                    thre were som problems with your input.<br><br>
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+
+                        @endforeach
+                    </ul>
                 </div>
-            </div>
-        </div>
-
-
-        <div class="container">
-            <div class="content-top">
-                <div class="content-head">ผู้รับจ้างเป็นแฟนในเว็บนี้มีอายุมากกว่า 18 ปีทุกคน</div>
-            </div>
-            <div class="content-alert">
-                <div class="alert">
-                    <img class="alert-img" src="{{ url('/images/Group.png') }}" alt="Image" />
-                    <div class="content">
-                        <div class="content-top-alert">แจ้งเตือนน้อง ๆ ไซด์ไลน์ที่หลอกลวง </div>
-                        <div class="content-fontalert">ไม่มีการโอนเงินผ่านแอดมินโดยเด็ดขาด
-                            ผู้ใช้งานเว็บไซต์ต้องติดต่อแล้วคุยกับน้องๆ ไซด์ไลน์เอง ทางเว็บไซต์จะไม่รับผิดชอบ
-                            หากมีการโกงเกิดขึ้น
+            @endif
+            <form action=" {{ route('posts.store') }}" method="POST" enctype="multipart/form-data">
+                @csrf
+                <div id="Form1">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="content-head">โพสต์ ลงงานไซด์ไลน์
+                                <div class="col-sm-12" id="">
+                                    <div class="col-sm-6 toppage wrap">
+                                        <div class="one-page">1</div>
+                                        <img class="toppageimg" style="width: 98px; height: 98px;"
+                                            src="{{ url('/images/Ellipse.png') }}" alt="Image" />
+                                        <div> <i class="far fa-file-alt"></i>ใส่ข้อมูลโพสต์สำคัญ</div>
+                                    </div>
+                                    <div class="col-sm-6 toppage wrap2">
+                                        <div class="one-page">2</div>
+                                        <img class="toppageimg" src="{{ url('/images/Ellipse17.png') }}" alt="Image" />
+                                        <div> <i class="far fa-file-alt"></i>ใส่ข้อมูลเพิ่มเติม</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                </div>
-            </div>
-            <div class="">
-                <button class="but-map">กรุงเทพฯ - ใกล้เคียง</button>
-            </div>
-            <div class="content-top">
-                <div class="content-head content-headD">NEW SIDELINE</div>
-                <div class="content-top-title">น้อง ๆ ที่มาใหม่วันนี้</div>
-            </div>
-            <div class="content">
+                    <div class="col content">
+                    </div>
+                    <div class="container">
+                        <div id="Form1" class="formstyle Form1 ">
 
-                <div class="content-grid">
-                    <div class="content-list">
-                        <section class="spacer">
-                            <div class="testimonial-section">
-                                <div class="testi-user-img">
-                                    <div class="swiper-container gallery-thumbs"
-                                        style="transform: translate3d(50px, 0px, 0px);">
+                            <div class="" id="wallet">
+                                <div class="content-top display-tele">
+                                    <div style="display: flex; flex-direction: column;">
+                                        <img src="{{ url('/images/cam.png') }}" id="preview" alt="Image" class="imgteleW img-thumbnail">
+                                        <div class="display-cam">
+                                            <button class="but-cam" type="reset">ลบ</button>
+                                            <div id="msg"></div>
+                                            <input type="file" name="img[]" class="file" accept="image/*">
+                                              <button type="button" class="browse but-cam">เพิ่ม</button>
+                                        </div>
+                                    </div>
+                                    <div class="display-rowW">
+                                        <div class=""><b>ชื่อสังกัด</b></div>
+                                        <input type="text" id="name" name="title" placeholder=""
+                                            value="">
+                                        <p class="">กำหนดชื่อ URL
+                                            เพื่อให้คุณสามารถนำลิ้งก์ URL นี้ ไปแชร์หรือโปรโมท
+                                            หน้าเว็บเพจสังกัดของคุณ</p>
+                                        <p class="">คำแนะนำ:</p>
+                                        <p class=""> - ชื่อ URL ของคุณควรมีชื่อสังกัดของคุณรวมอยู่ด้วย</p>
+                                        <p class=""> - ห้ามใช้อักขระหรือสัญลักษณ์พิเศษ</p>
+                                        <p class="">- เพื่อให้ผู้ใช้งานจำสังกัดคุณได้ ดังนั้นไม่ควรเปลี่ยนชื่อURL บ่อยครั้ง
+                                        </p>
 
                                     </div>
                                 </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="src col-sm-12" for="detail"> คำอธิบายเกี่ยวกับสังกัดคุณ</label>
+                                <div class="col-sm-12">
+                                    <input class="c-box" type="text" id="detail" name="description" value="สวย">
+                                </div>
+                            </div>
+
+
+
+                            <div class="form-group">
+                                <label class="src col-sm-12" for="detail"> อัพโหลดรูปหน้าปก</label>
+                                <div class="col-sm-12">
+                                    <div class="" id="">
+                                        <div class="fallback">
+                                            <div class="gallery" id="selectedFiles"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="src col-sm-12" for="email"> ยืนยันตัวตน</label>
+
+                                <div class="col-sm-11">
+                                    <input type="file" multiple id="gallery-photo-add" name="filename[]" class="input-file">
+                                    <div class="input-group col-xs-12">
+                                        <input type="text" class="form-control inputfile" disabled
+                                            placeholder="Upload Video" style="width: 99%;">
+                                        <span class="input-group-btn">
+                                            <button class="upload-field btn btn-info" type="button"><i
+                                                    class="fas fa-folder-open"></i>
+                                                Browse...</button>
+                                        </span>
+                                    </div>
+                                </div>
+
 
                             </div>
-                        </section>
-                    </div>
+                            <div class="col-sm-12">
+                            </div>
 
-                </div>
-
-
-            </div>
-
-            {{-- <div class="top-button">
-                <button class="but-up">..ดูเพิ่มเติม..</button>
-                {{ $mains->links() }}
-            </div> --}}
-            <div class="content-top">
-                <div class="content-head content-headD">TOP SIDELINE</div>
-                <div class="content-top-title">น้อง ๆ ที่น่าสนใจ</div>
-            </div>
-            <div class="content">
-
-                <div class="content-grid">
-                    <div class="content-list">
-
+                            <div style="text-align: center;">
+                                <button class="nextbutton" type="button" onclick="next1()">แสดงตัวอย่างโพส</button>
+                                <button class="nextbutton" type="button" onclick="next1()">ขั้นตอนต่อไป</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
+                <div id="Form2" class="FormD2">
+                    <div class="col-sm-12">
+                        <div class="content-head">โพสต์ ลงงานไซด์ไลน์</div>
+                        <div class="col-sm-12">
+                            <div class="col-sm-6 toppage wrap">
+                                <div class="one-page">1</div>
+                                <img class="toppageimg" style="width: 98px; height: 98px;"
+                                    src="{{ url('/images/Ellipse.png') }}" alt="Image" />
+                                <div> <i class="far fa-file-alt"></i>ใส่ข้อมูลโพสต์สำคัญ</div>
+                            </div>
+                            <div class="col-sm-6 toppage wrap">
+                                <div class="one-page">2</div>
+                                <img class="toppageimg" style="width: 98px; height: 98px;"
+                                    src="{{ url('/images/Ellipse.png') }}" alt="Image" />
+                                <div> <i class="far fa-file-alt"></i>ใส่ข้อมูลเพิ่มเติม</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                    </div>
 
-            </div>
+                    <div class="formstyle2 Form2">
+                        <div class="card-description">
+                            <div class="card-description-nemaW2 font-w ">
+                                กำลังดำเนินการเปิดใช้งานระบบแพ็กเกจ
+                            </div>
+                            <div class="card-description-nemaW2 font-w ">
+                                กรุณาเลือกแพ็กเกจที่ต้องการ
+                            </div>
+                            <div class="card-description-nemaW2">
+                                ***แพ็กเกจ ดียังไง ใช้ในการต่ออายุโพสต์,
+                            </div>
+                            <div class="card-description-nemaW2">
+                                การต่ออายุ Agency Page พร้อมกับติดในหน้าแรกของเว็บไซต์
+                            </div>
+                            <div class="card-description-nemaW2">
+                                หรืออื่น ๆ อีกมากมาย***
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12" style="display: flex;
+                                                    justify-content: space-evenly;
+                                                    margin: 20px;">
+                            <div class="">
+                                <div class="card_sis">
+                                    <div class="div-point-side">
+                                        <div class="">Free</div>
+                                    </div>
+                                    <div class="card-body" style="text-align: center;">
+                                        <h5 class="card-title-side">ระยะเวลา 7 วัน</h5>
+                                        <button class="but-pak">เลือก</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="card_sis">
+                                    <div class="div-point-side">
+                                        <div class="">189 บาท</div>
+                                    </div>
+                                    <div class="card-body" style="text-align: center;">
+                                        <h5 class="card-title-side">ระยะเวลา 15 วัน</h5>
+                                        <button class="but-pak">เลือก</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="card_sis">
+                                    <div class="div-point-side">
+                                        <div class="">299 บาท</div>
+                                    </div>
+                                    <div class="card-body" style="text-align: center;">
+                                        <h5 class="card-title-side">ระยะเวลา 30 วัน</h5>
+                                        <button class="but-pak">เลือก</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="" style="TEXT-ALIGN: center;">
+                            <button class="nextbutton" type="button" onclick="back1()">ขั้นก่อนหน้านี้</button>
+                            <button class="nextbutton " type="submit">ขั้นตอนต่อไป</button>
+
+                        </div>
+                    </div>
 
 
-            <div class="top-button">
-                <img class="" src="{{ url('/images/circular-arrow.png') }}" alt="Image" />
-            </div>
+                </div>
+            </form>
         </div>
     </body>
 
@@ -93,161 +259,96 @@
 
 
 
+<script>
+    $(document).on('click', '.upload-field', function() {
+        var file = $(this).parent().parent().parent().find('.input-file');
+        file.trigger('click');
+    });
+    $(document).on('change', '.input-file', function() {
+        $(this).parent().find('.form-control').val($(this).val().replace(/C:\\fakepath\\/i, ''));
+    });
 
-    </html>
+    function next1() {
+        var x = document.getElementById("Form1");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+        var x = document.getElementById("Form2");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
 
-    <script src="https://md-aqil.github.io/images/swiper.min.js"></script>
-    <script>
-        var galleryThumbs = new Swiper('.gallery-thumbs', {
-            effect: 'coverflow',
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: '2',
-            // coverflowEffect: {
-            //   rotate: 50,
-            //   stretch: 0,
-            //   depth: 100,
-            //   modifier: 1,
-            //   slideShadows : true,
-            // },
+    function back1() {
+        var x = document.getElementById("Form2");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+        var x = document.getElementById("Form1");
+        if (x.style.display === "block") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+    $(function() {
+        // Multiple images preview in browser
+        var imagesPreview = function(input, placeToInsertImagePreview) {
 
-            coverflowEffect: {
-                rotate: 0,
-                stretch: 0,
-                depth: 50,
-                modifier: 6,
-                slideShadows: false,
-            },
+            if (input.files) {
+                var filesAmount = input.files.length;
 
+                for (i = 0; i < filesAmount; i++) {
+                    var reader = new FileReader();
+
+                    reader.onload = function(event) {
+                        $($.parseHTML('<img>')).attr('src', event.target.result).appendTo(
+                            placeToInsertImagePreview);
+                    }
+
+                    reader.readAsDataURL(input.files[i]);
+                }
+            }
+
+        };
+
+        $('#gallery-photo-add').on('change', function() {
+            imagesPreview(this, 'div.gallery');
         });
-    </script>
+    });
+</script>
+
+<script>
+$(document).on("click", ".browse", function() {
+  var file = $(this).parents().find(".file");
+  file.trigger("click");
+});
+$('input[type="file"]').change(function(e) {
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    // get loaded data and render thumbnail.
+    document.getElementById("preview").src = e.target.result;
+  };
+  // read the image file as a data URL.
+  reader.readAsDataURL(this.files[0]);
+
+});
+
+</script>
 @stop
-
-
 <style>
-    #body .swiper-container-3d {
-        perspective: 100000px !important;
-        transform: translate3d(0px, 0px, 0px) !important;
-    }
-
-    .card-img-swiper {
-        width: 100%;
-        height: 340px;
-    }
-
-    .gallery-thumbs {
-        height: 100%;
-        width: 80%;
-    }
-
-    .gallery-thumbs .swiper-wrapper {
-        align-items: center;
-
-    }
-
-    .gallery-thumbs .swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 250px !important;
-        height: 330px;
-
-    }
-
-    .gallery-thumbs .swiper-slide img {
-        /* filter: contrast(0.5) blur(1px); */
-        width: 95%;
-        /* height: 100%;
-        object-fit: cover;
-        border-radius: 10px; */
-    }
-
-    .gallery-thumbs .swiper-slide-active img {
-        filter: contrast(1) blur(0px) !important;
-    }
-
-    .flex-row .flex-col {
-        -ms-flex-preferred-size: 0;
-        flex-basis: 0;
-        -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-        flex-grow: 1;
-        max-width: 100%;
-        position: relative;
-        width: 100%;
-        min-height: 1px;
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-
-    .gallery-thumbs .swiper-wrapper {
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-
-
-    .testimonial-section .quote {
-        width: 100%;
-        height: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-
-    .swiper-container.testimonial {
-        height: 100vh;
-    }
-
-    .testimonial-section .user-saying {
-        background: var(--theme-color2);
-        width: 60%;
-        color: #fff;
-        height: 100%;
-    }
-
-    .testi-user-img {
-        width: 100%;
-    }
-
-    .testimonial-section {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-    }
-
-    article,
-    aside,
-    details,
-    figcaption,
-    figure,
-    footer,
-    header,
-    hgroup,
-    main,
-    menu,
-    nav,
-    section,
-    summary {
-        display: block;
-        width: 100%;
-    }
-
-    .card-description-content-swiper {
-        width: 95.1% !important;
-    }
-
+.display-cam
+{
+    display: flex;
+    margin: 10px 0px;
+}
 </style>

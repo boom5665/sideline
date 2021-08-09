@@ -1,13 +1,13 @@
 @extends('layouts.app')
 @section('content')
 
- 
+
 
         <div id="about" class="container">
 
 
             <div class="content-top">
-                <div class="content-head">เกี่ยวกับ</div>
+                <div class="content-head" style="color:#6D0CEE;">เกี่ยวกับ</div>
             </div>
 
             <div class="collapsible-head">
