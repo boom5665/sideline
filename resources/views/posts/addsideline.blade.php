@@ -314,15 +314,12 @@
 
                             <div class="form-group">
                                 <label class="src col-sm-12" for="email"> ยืนยันตัวตน</label>
-                                <div class="col-sm-5">
-                                    <input class="" type="text" id="line" name="line" value="serld">
 
-                                </div>
-                                <div class="col-sm-7">
+                                <div class="col-sm-11">
                                     <input type="file" multiple id="gallery-photo-add" name="filename[]" class="input-file">
-                                    <div class="input-group col-xs-12">
+                                    <div class="input-group col-xs-12 ">
                                         <input type="text" class="form-control inputfile" disabled
-                                            placeholder="Upload Video">
+                                            placeholder="Upload Video" style="width: 99%;">
                                         <span class="input-group-btn">
                                             <button class="upload-field btn btn-info" type="button"><i
                                                     class="fas fa-folder-open"></i>

@@ -7,11 +7,11 @@
                 <div class="tab-menu-in ">
 
                     <a class="toppage" href="{{ url('main') }}"> หน้าหลัก</a>
-                    <a class="toppage" href="{{ url('') }}"> เลือกน้อง</a>
-                    <a class="toppage" href="{{ url('dataweb') }}"> สังกัด</a>
+                    <a class="toppage" href="{{ url('main') }}"> เลือกน้อง</a>
+                    <a class="toppage" href="{{ url('underlist') }}"> สังกัด</a>
                     <a class="toppage" href="{{ url('follow') }}"> ที่ติดตาม</a>
-                    <a class="toppage" href="{{ url('dataweb') }}"> เกี่ยวกับเรา</a>
-                    <a class="toppage" href="{{ url('dataweb') }}"> ติดต่อเรา</a>
+                    <a class="toppage" href="{{ url('about') }}"> เกี่ยวกับเรา</a>
+                    <a class="toppage" href="{{ url('contract') }}"> ติดต่อเรา</a>
 
                 </div>
                 <div class="menu-right-topbar">
@@ -69,12 +69,12 @@
                                 <span class="span-txt-1">ถ้ามีหลายชื่อให้ใส่จุลภาค(,) ผิงผิง,ปอย,แพท</span>
                             </div>
                         </div>
-                        
+
                         <h5>โซนรับงาน</h5>
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                   
+
                                     <select class="form-control" id="exampleFormControlSelect1">
                                         <option value="none" selected disabled hidden>
                                             ภาค
@@ -85,7 +85,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    
+
                                     <select class="form-control" id="exampleFormControlSelect1">
                                         <option value="none" selected disabled hidden>
                                             จังหวัด
@@ -98,7 +98,7 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                   
+
                                     <select class="form-control" id="exampleFormControlSelect1">
                                         <option value="none" selected disabled hidden>
                                             เขต
@@ -109,7 +109,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                   
+
                                     <select class="form-control" id="exampleFormControlSelect1">
                                         <option value="none" selected disabled hidden>
                                             แขวง
