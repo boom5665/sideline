@@ -11,15 +11,15 @@
             <div class="swiper-container mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="{{ url('/image/Miki1.png') }}" />
+                        <img class="img-sdunderdetail"  src="{{ url('/image/Miki1.png') }}" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="{{ url('/image/Miki2.png') }}" />
+                        <img class="img-sdunderdetail"  src="{{ url('/image/Miki2.png') }}" />
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="{{ url('/image/Miki3.png') }}" />
+                        <img  class="img-sdunderdetail"  src="{{ url('/image/Miki3.png') }}" />
                     </div>
                 </div>
                 <div class="swiper-button-next"></div>
@@ -30,7 +30,7 @@
                 <div class="col-sm-5">
                     <div class="data1-undersideline">
                         <h1>น้อง Miki</h1>
-                        <img class="img-undersidelinedetail" src="{{ url('/image/gigkun.png') }}" />
+                        <img class="img-undersidelinedetail"  src="{{ url('/image/gigkun.png') }}" />
                         <span class="data1-follow-underdetail">
                             <i class="fas fa-heart"></i>
                         </span>
