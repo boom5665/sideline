@@ -1287,3 +1287,18 @@ label {
     font-size: 14px;
     color: #C4C4C4;
 }
+
+.verify-people {
+    font-size: 15px;
+}
+
+.search-modal-header {
+    -webkit-box-align: center !important;
+    -webkit-box-pack: center !important;
+    justify-content: center !important;
+}
+
+.btn-searchheader-modal {
+    background-color: #6d0cee !important;
+    border-color: #6d0cee !important;
+}

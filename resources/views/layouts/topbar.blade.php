@@ -56,7 +56,7 @@
 
             <div id="Mpop" class="modal">
                 <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -75,7 +75,7 @@
                             <div class="col-sm-6">
                                 <div class="form-group">
                                    
-                                    <select class="form-control" id="exampleFormControlSelect1">
+                                    <select class="form-select" id="exampleFormControlSelect1">
                                         <option value="none" selected disabled hidden>
                                             ภาค
                                         </option>
@@ -86,7 +86,7 @@
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     
-                                    <select class="form-control" id="exampleFormControlSelect1">
+                                    <select class="form-select" id="exampleFormControlSelect1">
                                         <option value="none" selected disabled hidden>
                                             จังหวัด
                                         </option>
@@ -99,7 +99,7 @@
                             <div class="col-sm-6">
                                 <div class="form-group">
                                    
-                                    <select class="form-control" id="exampleFormControlSelect1">
+                                    <select class="form-select" id="exampleFormControlSelect1">
                                         <option value="none" selected disabled hidden>
                                             เขต
                                         </option>
@@ -110,7 +110,7 @@
                             <div class="col-sm-6">
                                 <div class="form-group">
                                    
-                                    <select class="form-control" id="exampleFormControlSelect1">
+                                    <select class="form-select" id="exampleFormControlSelect1">
                                         <option value="none" selected disabled hidden>
                                             แขวง
                                         </option>
@@ -119,10 +119,125 @@
                                 </div>
                             </div>
                         </div>
+
+
+                        <h5>คุณชอบแบบไหน</h5>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                   
+                                    <select class="form-select" id="exampleFormControlSelect1">
+                                        <option value="none" selected disabled hidden>
+                                            เพศ
+                                        </option>
+                                        <option>1</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <select class="form-select" id="exampleFormControlSelect1">
+                                        <option value="none" selected disabled hidden>
+                                            อายุ
+                                        </option>
+                                        <option>1</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    
+                                    <select class="form-select" id="exampleFormControlSelect1">
+                                        <option value="none" selected disabled hidden>
+                                            ส่วนสูง
+                                        </option>
+                                        <option>1</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <select class="form-select" id="exampleFormControlSelect1">
+                                        <option value="none" selected disabled hidden>
+                                            น้ำหนัก
+                                        </option>
+                                        <option>1</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    
+                                    <select class="form-select" id="exampleFormControlSelect1">
+                                        <option value="none" selected disabled hidden>
+                                            หน้าอก
+                                        </option>
+                                        <option>1</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <select class="form-select" id="exampleFormControlSelect1">
+                                        <option value="none" selected disabled hidden>
+                                            เอว
+                                        </option>
+                                        <option>1</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    
+                                    <select class="form-select" id="exampleFormControlSelect1">
+                                        <option value="none" selected disabled hidden>
+                                            สะโพก
+                                        </option>
+                                        <option>1</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h5>คุณชอบแบบไหน</h5>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <select class="form-select" id="exampleFormControlSelect1">
+                                        <option value="none" selected disabled hidden>
+                                            เรทราคาต่ำสุด
+                                        </option>
+                                        <option>1</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <select class="form-select" id="exampleFormControlSelect1">
+                                        <option value="none" selected disabled hidden>
+                                            เรทราคาสูงสุด
+                                        </option>
+                                        <option>1</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-check verify-people">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              ยืนยันตัวตน
+                            </label>
+                          </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+
+
+                   
+                
+                    <div class="modal-footer search-modal-header">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">รีเซ็ต</button>
+                        <button type="button" class="btn btn-primary btn-searchheader-modal">ค้นหา</button>
                     </div>
                 </div>
             </div>
