@@ -3,7 +3,7 @@
 
 
 
-    <div id="per" class="container">
+    <div id="wallet" class="container">
         <div class="content-top">
             <div class="content-wallet">โพสต์ของฉัน</div>
         </div>
@@ -85,12 +85,12 @@
 @stop
 
 <style>
-    #per .dis-row {
+    #wallet .dis-row {
         display: flex;
         flex-direction: row;
     }
 
-    #per .dis-collum {
+    #wallet .dis-collum {
         display: flex;
         flex-direction: column;
         font-size: 20px;
@@ -98,7 +98,7 @@
 
     }
 
-    #per .btn-per {
+    #wallet .btn-per {
         background: #6D0CEE;
         box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
         border-radius: 7px;
@@ -113,18 +113,18 @@
         margin: 5px;
     }
 
-    #per .btn-per-red {
+    #wallet .btn-per-red {
         background: #FF403F;
 
     }
 
-    #per .alert-per {
+    #wallet .alert-per {
         font-size: 10px;
         padding: 10px;
         color: red;
     }
 
-    #per .per-con {
+    #wallet .per-con {
         font-size: 15px;
         color: #6D0CEE;
         margin: 0px 0px 20px 0px;

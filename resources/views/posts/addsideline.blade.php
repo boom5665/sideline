@@ -68,14 +68,13 @@
                                 <div class="col-sm-12" id="">
                                     <div class="col-sm-6 toppage wrap">
                                         <div class="one-page">1</div>
-                                        <img class="toppageimg" style="width: 98px; height: 98px;"
-                                            src="{{ url('/images/Ellipse.png') }}" alt="Image" />
-                                        <div> <i class="far fa-file-alt"></i>ใส่ข้อมูลโพสต์สำคัญ</div>
+                                        <img class="toppageimg" src="{{ url('/images/Ellipse.png') }}" alt="Image" />
+                                        <div style="color:#6D0CEE;"> <i class="far fa-file-alt"></i>ใส่ข้อมูลโพสต์สำคัญ</div>
                                     </div>
                                     <div class="col-sm-6 toppage wrap2">
                                         <div class="one-page">2</div>
                                         <img class="toppageimg" src="{{ url('/images/Ellipse17.png') }}" alt="Image" />
-                                        <div> <i class="far fa-file-alt"></i>ใส่ข้อมูลเพิ่มเติม</div>
+                                        <div style="color:#C4C4C4;"> <i class="far fa-file-alt"></i>ใส่ข้อมูลเพิ่มเติม</div>
                                     </div>
                                 </div>
                             </div>
@@ -273,7 +272,7 @@
                             <div class="form-group">
                                 <label class="src col-sm-12" for="detail"> คำอธิบาย</label>
                                 <div class="col-sm-12">
-                                    <input class="c-box" type="text" id="detail" name="description" value="สวย">
+                                    <textarea class="c-box" type="text" id="detail" name="description" value="สวย"></textarea>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -345,17 +344,17 @@
                     <div class="col-sm-12">
                         <div class="content-head">โพสต์ ลงงานไซด์ไลน์</div>
                         <div class="col-sm-12">
-                            <div class="col-sm-6 toppage wrap">
+                            <div class="col-sm-6 toppage wrap2">
                                 <div class="one-page">1</div>
-                                <img class="toppageimg" style="width: 98px; height: 98px;"
-                                    src="{{ url('/images/Ellipse.png') }}" alt="Image" />
-                                <div> <i class="far fa-file-alt"></i>ใส่ข้อมูลโพสต์สำคัญ</div>
+                                <img class="toppageimg"
+                                    src="{{ url('/images/Ellipse17.png') }}" alt="Image" />
+                                <div style="color:#C4C4C4;" > <i class="far fa-file-alt"></i>ใส่ข้อมูลโพสต์สำคัญ</div>
                             </div>
                             <div class="col-sm-6 toppage wrap">
                                 <div class="one-page">2</div>
-                                <img class="toppageimg" style="width: 98px; height: 98px;"
+                                <img class="toppageimg"
                                     src="{{ url('/images/Ellipse.png') }}" alt="Image" />
-                                <div> <i class="far fa-file-alt"></i>ใส่ข้อมูลเพิ่มเติม</div>
+                                <div style="color:#6D0CEE;" > <i class="far fa-file-alt" ></i>ใส่ข้อมูลเพิ่มเติม</div>
                             </div>
                         </div>
                     </div>
@@ -382,8 +381,8 @@
                         </div>
 
                         <div class="col-sm-12" style="display: flex;
-                                    justify-content: space-evenly;
-                                    margin: 20px;">
+                                        justify-content: space-evenly;
+                                        margin: 20px;">
                             <div class="">
                                 <div class="card_sis">
                                     <div class="div-point-side">
