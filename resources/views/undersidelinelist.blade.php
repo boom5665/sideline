@@ -12,8 +12,8 @@
             <div class="content-top dis-between">
                 <div class="content-un ">สังกัด GIGKUN</div>
                 <div>
-                <button class="btn-per">แก้ไข</button>
-                <button class="btn-per">แพ็กเกจ</button>
+                    <button class="btn-per">แก้ไข</button>
+                    <button class="btn-per">แพ็กเกจ</button>
                 </div>
             </div>
             <div class="con-top-img">
@@ -75,8 +75,10 @@
                 <div class="col-con">
                     <p>ประกาศ !</p>
                     <p>สามารถ "หยุดเวลา" ได้แล้ว</p>
-                    <p>หยุดเวลา คือ พักการแสดงผลบนหน้าเว็บไซต์และหยุดเวลาของโพสต์ นักท่องเที่ยวจะไม่สามารถมองเห็นรายละเอียดของโพสต์ที่ถูกหยุดเวลาโพสต์ได้</p>
-                    <p>- เหมาะสำหรับน้อง ๆ ที่ลาหยุดงาน ลากิจ ลาพักร้อน ลาป่วย หรือต้องการหยุดหลายวัน ( หยุดเวลาได้ตามจำนวนสิทธิ์ )</p>
+                    <p>หยุดเวลา คือ พักการแสดงผลบนหน้าเว็บไซต์และหยุดเวลาของโพสต์
+                        นักท่องเที่ยวจะไม่สามารถมองเห็นรายละเอียดของโพสต์ที่ถูกหยุดเวลาโพสต์ได้</p>
+                    <p>- เหมาะสำหรับน้อง ๆ ที่ลาหยุดงาน ลากิจ ลาพักร้อน ลาป่วย หรือต้องการหยุดหลายวัน (
+                        หยุดเวลาได้ตามจำนวนสิทธิ์ )</p>
                 </div>
                 <div class="content-top">
                     <div class="inline-formsearch">
@@ -113,7 +115,8 @@
                                     <div class="div-point-side">
                                         <p class="card-point-side">ให้คะแนนตรงปก</p>
                                         <p class="card-point-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i>
                                         </p>
                                     </div>
                                 </div>
@@ -143,7 +146,7 @@
                         </div>
                         <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom">
                             <div class="dis-collum" style="
-                            margin: 40px 0px 0px 0px;">
+                                margin: 40px 0px 0px 0px;">
                                 <div style="padding-left: 15px;">เหลือเวลาอีก 2 วัน</div>
                                 <div style="padding-left: 60px;">12:12:12</div>
                                 <div class="dis-row">
@@ -169,7 +172,8 @@
                                     <div class="div-point-side">
                                         <p class="card-point-side">ให้คะแนนตรงปก</p>
                                         <p class="card-point-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i>
                                         </p>
                                     </div>
                                 </div>
@@ -199,7 +203,7 @@
                         </div>
                         <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom">
                             <div class="dis-collum" style="
-                            margin: 40px 0px 0px 0px;">
+                                margin: 40px 0px 0px 0px;">
                                 <div style="padding-left: 15px;">เหลือเวลาอีก 2 วัน</div>
                                 <div style="padding-left: 60px;">12:12:12</div>
                                 <div class="dis-row">
@@ -213,31 +217,32 @@
                             </div>
 
                         </div>
-                        
+
                     </div>
                 </div>
 
 
+            </div>
+
         </div>
-
-
-
+    </div>
+    
         </body>
 
     @endsection
     @section('js')
-    <script>
-        $(document).ready(function() {
-            var options = {
-                currentPage: 3,
-                totalPages: 10
-            }
+        <script>
+            $(document).ready(function() {
+                var options = {
+                    currentPage: 3,
+                    totalPages: 10
+                }
 
-            $('#example').bootstrapPaginator(options);
-        });
+                $('#example').bootstrapPaginator(options);
+            });
 
-        $('.click-js-search').click(function() {
-            $('.dropdown-search-under').toggle('fast')
-        });
-    </script>
-@endsection
+            $('.click-js-search').click(function() {
+                $('.dropdown-search-under').toggle('fast')
+            });
+        </script>
+    @endsection
