@@ -83,17 +83,25 @@
                         <input type="text" id="email" name="email" placeholder="ID / อีเมล" required autocomplete="email"
                             autofocus class="@error('email') is-invalid @enderror">
 
-
+                            @error('email')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
 
                     </div>
                     <div class="">
                         <img class="icon2" src="{{ url('/images/lock.png') }}" alt="Image" />
                         <input id="password" type="password" class="inputtwo @error('password') is-invalid @enderror"
                             name="password" required autocomplete="current-password">
-
+                            @error('password')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
                     </div>
 
-                    <div class="dis-between">
+                    <div class="dis-between" style="margin: 40px 0px 50px 0px;">
                         <label class="login">ล็อกอินอัตโนมัติ
                             <input type="checkbox" checked="checked" name="remember" id="remember"
                                 {{ old('remember') ? 'checked' : '' }}>
@@ -106,16 +114,8 @@
                         @endif
 
                     </div>
-                    @error('email')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
-                    @error('password')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
+
+
 
                     <input type="submit" value="ลงชื่อเข้าใช้">
                     <div class="login" style="color: black">

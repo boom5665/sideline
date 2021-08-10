@@ -79,10 +79,10 @@
                         </div>
                         <div class="form-group">
                             <label class="regis col-sm-12" for="email">ชื่อผู้ใช้</label>
-                                <img class="icon2" src="{{ url('/images/user2.png') }}" alt="Image" />
-                                <input id="email" type="text" class="inputR @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                                <img class="icon2R" src="{{ url('/images/user2.png') }}" alt="Image" />
+                                <input type="text" name="name"  class="inputR @error('name') is-invalid @enderror"  >
 
-                                @error('email')
+                                @error('name')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -91,19 +91,20 @@
                         </div>
                         <div class="form-group ">
                             <label class="regis col-sm-12" for="email">อีเมลล์</label>
-                            <img class="icon" src="http://127.0.0.1:8000/images/email.png" alt="Image">
-                                <input type="text" name="name"  class="inputR @error('name') is-invalid @enderror"  >
-                                @error('name')
+                            <img class="iconR" src="http://127.0.0.1:8000/images/email.png" alt="Image">
+
+                                <input id="email" type="text" class="inputR @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                                @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
-
                         </div>
 
                         <div class="form-group">
                             <label class="regis col-sm-12" for="email">รหัสผ่าน</label>
-                            <img class="icon2" src="{{ url('/images/lock.png') }}" alt="Image" />
+                            <img class="icon2R" src="{{ url('/images/lock.png') }}" alt="Image" />
+                            <img class="iconeye" src="{{ url('/images/eyess.png') }}" alt="Image" />
                                 <input id="password" type="password" class="inputtwoR @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
                                         @error('password')
@@ -115,16 +116,23 @@
                         </div>
                         <div class="form-group">
                             <label class="regis col-sm-12" for="email">ใส่รหัสผ่านอีกครั้ง</label>
-                            <img class="icon2" src="{{ url('/images/lock.png') }}" alt="Image" />
+                            <img class="icon2R" src="{{ url('/images/lock.png') }}" alt="Image" />
+                            <img class="iconeye" src="{{ url('/images/eyess.png') }}" alt="Image" />
+                            <input id="password" type="password" class="inputtwoR @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
-                                <input id="password-confirm" type="password" class="inputtwoR" name="password_confirmation" >
+                            @error('password')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
 
                         </div>
 
 
                         <div class="dis-evenly">
 
-                            <label class="login loginR">ยอมรับว่าคุณมีอายุมากกว่า 18 ปี
+                            <label class="login loginR">ข้าพเจ้าอายุมากกว่า 18 ปี ตามกฎหมาย เข้าใจและตกลงตาม
+                                เงื่อนไขการให้บริการ และ นโยบายความเป็นส่วนตัว
                                 <input type="checkbox" checked="checked" value="ยอมรับว่าคุณมีอายุมากกว่า 18 ปี">
                                 <span class="checkmark "></span>
                             </label>
