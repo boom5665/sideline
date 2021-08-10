@@ -91,238 +91,228 @@
             </div>
             <div class="content">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 col-xs-6">
-                        <div class="box-sideline">
-                            <div class="row">
-                                <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom">
-                                    <div class="card_sis">
-                                        <img src="{{ url('/image/image-sis.png') }}"
-                                            class="card-img-top img-side-data-body" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title-side">Moji</h5>
-                                            <p class="card-text-side">รัชดา 17</p>
-                                            <div class="div-point-side">
-                                                <p class="card-point-side">ให้คะแนนตรงปก</p>
-                                                <p class="card-point-star"><i class="fas fa-star"></i><i
-                                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                                        class="fas fa-star"></i><i class="fas fa-star"></i></p>
-                                            </div>
-                                        </div>
-                                        <span class="card_ratemoney-following">
-                                            <a class="color-eye">
-                                                <i class="fab fa-btc"></i> 1,500
-                                            </a>
-                                        </span>
-                                        <span class="card_typesex-following">
-                                            <a class="color-eye">
-                                                ผู้หญิง
-                                            </a>
-                                        </span>
-                                        <span class="card_new-following">
-                                            <a class="color-eye">
-                                                NEW
-                                            </a>
-                                        </span>
-                                        <span class="card_follow-following">
-                                            <i class="fas fa-heart"></i>
-                                        </span>
-                                        <span class="card_check-following">
-                                            <i class="fas fa-check"></i>
-                                        </span>
-                                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom">
+                        <div class="card_sis">
+                            <img src="{{ url('/image/image-sis.png') }}" class="card-img-top img-side-data-body"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title-side">Moji</h5>
+                                <p class="card-text-side">รัชดา 17</p>
+                                <div class="div-point-side">
+                                    <p class="card-point-side">ให้คะแนนตรงปก</p>
+                                    <p class="card-point-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    </p>
                                 </div>
-                                <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom">
-                                    <div class="card_sis">
-                                        <img src="{{ url('/image/image-sis.png') }}"
-                                            class="card-img-top img-side-data-body" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title-side">Moji</h5>
-                                            <p class="card-text-side">รัชดา 17</p>
-                                            <div class="div-point-side">
-                                                <p class="card-point-side">ให้คะแนนตรงปก</p>
-                                                <p class="card-point-star"><i class="fas fa-star"></i><i
-                                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                                        class="fas fa-star"></i><i class="fas fa-star"></i></p>
-                                            </div>
-                                        </div>
-                                        <span class="card_ratemoney-following">
-                                            <a class="color-eye">
-                                                <i class="fab fa-btc"></i> 1,500
-                                            </a>
-                                        </span>
-                                        <span class="card_typesex-following">
-                                            <a class="color-eye">
-                                                ผู้หญิง
-                                            </a>
-                                        </span>
-                                        <span class="card_new-following">
-                                            <a class="color-eye">
-                                                NEW
-                                            </a>
-                                        </span>
-                                        <span class="card_follow-following">
-                                            <i class="fas fa-heart"></i>
-                                        </span>
-                                        <span class="card_check-following">
-                                            <i class="fas fa-check"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom">
-                                    <div class="card_sis">
-                                        <img src="{{ url('/image/image-sis.png') }}"
-                                            class="card-img-top img-side-data-body" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title-side">Moji</h5>
-                                            <p class="card-text-side">รัชดา 17</p>
-                                            <div class="div-point-side">
-                                                <p class="card-point-side">ให้คะแนนตรงปก</p>
-                                                <p class="card-point-star"><i class="fas fa-star"></i><i
-                                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                                        class="fas fa-star"></i><i class="fas fa-star"></i></p>
-                                            </div>
-                                        </div>
-                                        <span class="card_ratemoney-following">
-                                            <a class="color-eye">
-                                                <i class="fab fa-btc"></i> 1,500
-                                            </a>
-                                        </span>
-                                        <span class="card_typesex-following">
-                                            <a class="color-eye">
-                                                ผู้หญิง
-                                            </a>
-                                        </span>
-                                        <span class="card_new-following">
-                                            <a class="color-eye">
-                                                NEW
-                                            </a>
-                                        </span>
-                                        <span class="card_follow-following">
-                                            <i class="fas fa-heart"></i>
-                                        </span>
-                                        <span class="card_check-following">
-                                            <i class="fas fa-check"></i>
-                                        </span>
-                                    </div>
-                                </div>
-
-                                <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom">
-                                    <div class="card_sis">
-                                        <img src="{{ url('/image/image-sis.png') }}"
-                                            class="card-img-top img-side-data-body" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title-side">Moji</h5>
-                                            <p class="card-text-side">รัชดา 17</p>
-                                            <div class="div-point-side">
-                                                <p class="card-point-side">ให้คะแนนตรงปก</p>
-                                                <p class="card-point-star"><i class="fas fa-star"></i><i
-                                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                                        class="fas fa-star"></i><i class="fas fa-star"></i></p>
-                                            </div>
-                                        </div>
-                                        <span class="card_ratemoney-following">
-                                            <a class="color-eye">
-                                                <i class="fab fa-btc"></i> 1,500
-                                            </a>
-                                        </span>
-                                        <span class="card_typesex-following">
-                                            <a class="color-eye">
-                                                ผู้หญิง
-                                            </a>
-                                        </span>
-                                        <span class="card_new-following">
-                                            <a class="color-eye">
-                                                NEW
-                                            </a>
-                                        </span>
-                                        <span class="card_follow-following">
-                                            <i class="fas fa-heart"></i>
-                                        </span>
-                                        <span class="card_check-following">
-                                            <i class="fas fa-check"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom">
-                                    <div class="card_sis">
-                                        <img src="{{ url('/image/image-sis.png') }}"
-                                            class="card-img-top img-side-data-body" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title-side">Moji</h5>
-                                            <p class="card-text-side">รัชดา 17</p>
-                                            <div class="div-point-side">
-                                                <p class="card-point-side">ให้คะแนนตรงปก</p>
-                                                <p class="card-point-star"><i class="fas fa-star"></i><i
-                                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                                        class="fas fa-star"></i><i class="fas fa-star"></i></p>
-                                            </div>
-                                        </div>
-                                        <span class="card_ratemoney-following">
-                                            <a class="color-eye">
-                                                <i class="fab fa-btc"></i> 1,500
-                                            </a>
-                                        </span>
-                                        <span class="card_typesex-following">
-                                            <a class="color-eye">
-                                                ผู้หญิง
-                                            </a>
-                                        </span>
-                                        <span class="card_new-following">
-                                            <a class="color-eye">
-                                                NEW
-                                            </a>
-                                        </span>
-                                        <span class="card_follow-following">
-                                            <i class="fas fa-heart"></i>
-                                        </span>
-                                        <span class="card_check-following">
-                                            <i class="fas fa-check"></i>
-                                        </span>
-                                    </div>
-                                </div>
-
-                                <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom">
-                                    <div class="card_sis">
-                                        <img src="{{ url('/image/image-sis.png') }}"
-                                            class="card-img-top img-side-data-body" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title-side">Moji</h5>
-                                            <p class="card-text-side">รัชดา 17</p>
-                                            <div class="div-point-side">
-                                                <p class="card-point-side">ให้คะแนนตรงปก</p>
-                                                <p class="card-point-star"><i class="fas fa-star"></i><i
-                                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                                        class="fas fa-star"></i><i class="fas fa-star"></i></p>
-                                            </div>
-                                        </div>
-                                        <span class="card_ratemoney-following">
-                                            <a class="color-eye">
-                                                <i class="fab fa-btc"></i> 1,500
-                                            </a>
-                                        </span>
-                                        <span class="card_typesex-following">
-                                            <a class="color-eye">
-                                                ผู้หญิง
-                                            </a>
-                                        </span>
-                                        <span class="card_new-following">
-                                            <a class="color-eye">
-                                                NEW
-                                            </a>
-                                        </span>
-                                        <span class="card_follow-following">
-                                            <i class="fas fa-heart"></i>
-                                        </span>
-                                        <span class="card_check-following">
-                                            <i class="fas fa-check"></i>
-                                        </span>
-                                    </div>
-                                </div>
-
-
-
-
                             </div>
+                            <span class="card_ratemoney-following">
+                                <a class="color-eye">
+                                    <i class="fab fa-btc"></i> 1,500
+                                </a>
+                            </span>
+                            <span class="card_typesex-following">
+                                <a class="color-eye">
+                                    ผู้หญิง
+                                </a>
+                            </span>
+                            <span class="card_new-following">
+                                <a class="color-eye">
+                                    NEW
+                                </a>
+                            </span>
+                            <span class="card_follow-following">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                            <span class="card_check-following">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom">
+                        <div class="card_sis">
+                            <img src="{{ url('/image/image-sis.png') }}" class="card-img-top img-side-data-body"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title-side">Moji</h5>
+                                <p class="card-text-side">รัชดา 17</p>
+                                <div class="div-point-side">
+                                    <p class="card-point-side">ให้คะแนนตรงปก</p>
+                                    <p class="card-point-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="card_ratemoney-following">
+                                <a class="color-eye">
+                                    <i class="fab fa-btc"></i> 1,500
+                                </a>
+                            </span>
+                            <span class="card_typesex-following">
+                                <a class="color-eye">
+                                    ผู้หญิง
+                                </a>
+                            </span>
+                            <span class="card_new-following">
+                                <a class="color-eye">
+                                    NEW
+                                </a>
+                            </span>
+                            <span class="card_follow-following">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                            <span class="card_check-following">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom">
+                        <div class="card_sis">
+                            <img src="{{ url('/image/image-sis.png') }}" class="card-img-top img-side-data-body"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title-side">Moji</h5>
+                                <p class="card-text-side">รัชดา 17</p>
+                                <div class="div-point-side">
+                                    <p class="card-point-side">ให้คะแนนตรงปก</p>
+                                    <p class="card-point-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="card_ratemoney-following">
+                                <a class="color-eye">
+                                    <i class="fab fa-btc"></i> 1,500
+                                </a>
+                            </span>
+                            <span class="card_typesex-following">
+                                <a class="color-eye">
+                                    ผู้หญิง
+                                </a>
+                            </span>
+                            <span class="card_new-following">
+                                <a class="color-eye">
+                                    NEW
+                                </a>
+                            </span>
+                            <span class="card_follow-following">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                            <span class="card_check-following">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom">
+                        <div class="card_sis">
+                            <img src="{{ url('/image/image-sis.png') }}" class="card-img-top img-side-data-body"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title-side">Moji</h5>
+                                <p class="card-text-side">รัชดา 17</p>
+                                <div class="div-point-side">
+                                    <p class="card-point-side">ให้คะแนนตรงปก</p>
+                                    <p class="card-point-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="card_ratemoney-following">
+                                <a class="color-eye">
+                                    <i class="fab fa-btc"></i> 1,500
+                                </a>
+                            </span>
+                            <span class="card_typesex-following">
+                                <a class="color-eye">
+                                    ผู้หญิง
+                                </a>
+                            </span>
+                            <span class="card_new-following">
+                                <a class="color-eye">
+                                    NEW
+                                </a>
+                            </span>
+                            <span class="card_follow-following">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                            <span class="card_check-following">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom">
+                        <div class="card_sis">
+                            <img src="{{ url('/image/image-sis.png') }}" class="card-img-top img-side-data-body"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title-side">Moji</h5>
+                                <p class="card-text-side">รัชดา 17</p>
+                                <div class="div-point-side">
+                                    <p class="card-point-side">ให้คะแนนตรงปก</p>
+                                    <p class="card-point-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="card_ratemoney-following">
+                                <a class="color-eye">
+                                    <i class="fab fa-btc"></i> 1,500
+                                </a>
+                            </span>
+                            <span class="card_typesex-following">
+                                <a class="color-eye">
+                                    ผู้หญิง
+                                </a>
+                            </span>
+                            <span class="card_new-following">
+                                <a class="color-eye">
+                                    NEW
+                                </a>
+                            </span>
+                            <span class="card_follow-following">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                            <span class="card_check-following">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom">
+                        <div class="card_sis">
+                            <img src="{{ url('/image/image-sis.png') }}" class="card-img-top img-side-data-body"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title-side">Moji</h5>
+                                <p class="card-text-side">รัชดา 17</p>
+                                <div class="div-point-side">
+                                    <p class="card-point-side">ให้คะแนนตรงปก</p>
+                                    <p class="card-point-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="card_ratemoney-following">
+                                <a class="color-eye">
+                                    <i class="fab fa-btc"></i> 1,500
+                                </a>
+                            </span>
+                            <span class="card_typesex-following">
+                                <a class="color-eye">
+                                    ผู้หญิง
+                                </a>
+                            </span>
+                            <span class="card_new-following">
+                                <a class="color-eye">
+                                    NEW
+                                </a>
+                            </span>
+                            <span class="card_follow-following">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                            <span class="card_check-following">
+                                <i class="fas fa-check"></i>
+                            </span>
                         </div>
                     </div>
                 </div>
