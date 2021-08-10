@@ -429,7 +429,7 @@
             </form>
         </div>
     </body>
-@stop
+@endsection
 
 
 </html>

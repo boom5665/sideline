@@ -4,6 +4,7 @@
 
 
     <div id="wallet" class="container">
+        <div id="under" >
         <div class="content-top">
             <div class="content-wallet">โพสต์ของฉัน</div>
         </div>
@@ -76,60 +77,10 @@
 
 
         </div>
-
+    </div>
     </div>
 
-    <script>
 
-    </script>
 @stop
 
-<style>
-    #wallet .dis-row {
-        display: flex;
-        flex-direction: row;
-    }
 
-    #wallet .dis-collum {
-        display: flex;
-        flex-direction: column;
-        font-size: 20px;
-        color: #6D0CEE;
-
-    }
-
-    #wallet .btn-per {
-        background: #6D0CEE;
-        box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-        border-radius: 7px;
-        height: 50px;
-        background-color: #6D0CEE;
-        color: white;
-        padding: 0px 9px 0px 9px;
-        font-size: 20px;
-        width: 170px;
-        align-items: center;
-        border: none;
-        margin: 5px;
-    }
-
-    #wallet .btn-per-red {
-        background: #FF403F;
-
-    }
-
-    #wallet .alert-per {
-        font-size: 10px;
-        padding: 10px;
-        color: red;
-    }
-
-    #wallet .per-con {
-        font-size: 15px;
-        color: #6D0CEE;
-        margin: 0px 0px 20px 0px;
-    }
-
-    @media screen and (min-device-width: 280px) and (max-device-width: 1024px) {}
-
-</style>

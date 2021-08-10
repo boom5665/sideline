@@ -253,7 +253,7 @@
     },
   });
 </script>
-@stop
+@endsection
 <style>
     .swiper-container {
       width: 100%;

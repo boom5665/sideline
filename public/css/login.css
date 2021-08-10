@@ -716,3 +716,87 @@ a:hover {
     border: none;
     margin: 15px 0px 0px 5px;
 }
+#under .left-contenthead {
+    display: flex;
+    align-items: center;
+}
+
+#under .btn-detail {
+    width: 90px;
+    background: #6D0CEE;
+    box-shadow: 0px 4px 15px rgb(0 0 0 / 15%);
+    border-radius: 5px;
+    color: white;
+    border: none;
+    margin: 27px 0px 0px 20px;
+    height: 31px;
+    font-size: 14px;
+}
+#under .dropdown-search-under {
+    left: 18px;
+    background: #6D0CEE;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 5px;
+    color: white;
+    min-width: max-content;
+}
+
+#under .dd-item {
+    color: #fff!important;
+}
+#under .add-image {
+    width: 100px;
+    height: 100px;
+    padding: 0px;
+    position: relative;
+    transform: translate(15%, 90%);
+    margin-bottom: 175px;
+}
+
+
+#under .dis-row {
+    display: flex;
+    flex-direction: row;
+}
+
+#under .dis-collum {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: #6D0CEE;
+
+}
+
+#under .btn-per {
+    background: #6D0CEE;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 7px;
+    height: 50px;
+    background-color: #6D0CEE;
+    color: white;
+    padding: 0px 9px 0px 9px;
+    font-size: 20px;
+    width: 170px;
+    align-items: center;
+    border: none;
+    margin: 5px;
+}
+
+#under .btn-per-red {
+    background: #FF403F;
+
+}
+
+#under .alert-per {
+    font-size: 10px;
+    padding: 10px;
+    color: red;
+}
+
+#under .per-con {
+    font-size: 15px;
+    color: #6D0CEE;
+    margin: 0px 0px 20px 0px;
+}
+
+@media screen and (min-device-width: 280px) and (max-device-width: 1024px) {}

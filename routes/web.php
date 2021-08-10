@@ -39,6 +39,7 @@ Route::get('/sidelinelist', [PostController::class, 'sidelinelist']);
 Route::get('/underlist', [PostController::class, 'underlist']);
 Route::get('/undersidelinedetail', [PostController::class, 'undersidelinedetail']);
 
+
 Route::get('/about', function () {
     return view('about');
 });
@@ -61,7 +62,7 @@ Route::get('/personalinformation', function () {
     return view('personalinformation');
 });
 Route::get('/underdetail', function () {
-    return view('under-detail');
+    return view('posts.underdetail');
 });
 
 Route::get('/sidelineinformation', function () {

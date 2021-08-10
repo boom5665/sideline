@@ -332,7 +332,7 @@
             reader.readAsDataURL(this.files[0]);
         });
     </script>
-@stop
+@endsection
 <style>
     .display-cam {
         display: flex;

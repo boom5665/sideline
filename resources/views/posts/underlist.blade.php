@@ -29,7 +29,7 @@
                     <div class="left-contenthead">
                         <h2 class="head2-font-bf-data-underlist">สังกัดทั้งหมด</h2>
                     </div>
-                    <div class="right-contentsearch"> 
+                    <div class="right-contentsearch">
                         <input class="conent-search-input" id="" type="text" placeholder="ค้นหาสังกัด">
                         <i class="fas fa-search btn-search-insied-input"></i>
                     </div>
@@ -37,27 +37,28 @@
             </div>
 
             <div class="search-underlist">
-              
+
                 <div class="dropdown">
                     <span class="sptitle-search"> ตัวเลือกการค้นหา : <span>
-                    <button class="btn-secondary dropdown-toggle click-js-search btn-search-underlist" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      ความชอบ
-                    </button>
-                    <button class="btn-search-underlist">ค้นหา</button>
-                    <div class="dropdown-search-under" aria-labelledby="dropdownMenuButton">
-                      {{-- <a class="dropdown-item" href="#">Action</a>
+                            <button class="btn-secondary dropdown-toggle click-js-search btn-search-underlist" type="button"
+                                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                ความชอบ
+                            </button>
+                            <button class="btn-search-underlist">ค้นหา</button>
+                            <div class="dropdown-search-under" aria-labelledby="dropdownMenuButton">
+                                {{-- <a class="dropdown-item" href="#">Action</a>
                       <a class="dropdown-item" href="#">Another action</a>
                       <a class="dropdown-item" href="#">Something else here</a> --}}
-                     
-                        <label class="dropdown-item dd-item" for="one">
-                            <input type="checkbox" class="check-item-search" id="one" /> ผู้หญิง</label>
-                        <label class="dropdown-item dd-item" for="two">
-                            <input type="checkbox" class="check-item-search" id="two" /> สาวสอง</label>
-                        <label class="dropdown-item dd-item" for="three">
-                            <input type="checkbox" class="check-item-search" id="three" /> ผู้ชาย</label>
-                    
-                    </div>
-                  </div>
+
+                                <label class="dropdown-item dd-item" for="one">
+                                    <input type="checkbox" class="check-item-search" id="one" /> ผู้หญิง</label>
+                                <label class="dropdown-item dd-item" for="two">
+                                    <input type="checkbox" class="check-item-search" id="two" /> สาวสอง</label>
+                                <label class="dropdown-item dd-item" for="three">
+                                    <input type="checkbox" class="check-item-search" id="three" /> ผู้ชาย</label>
+
+                            </div>
+                </div>
             </div>
 
 
@@ -257,24 +258,21 @@
             </div>
         </div>
     </div>
-    @endsection
+@endsection
 
 @section('js')
     <script>
-       $(document).ready(function() {
+        $(document).ready(function() {
             var options = {
                 currentPage: 3,
                 totalPages: 10
             }
-            
+
             $('#example').bootstrapPaginator(options);
         });
 
         $('.click-js-search').click(function() {
-                $('.dropdown-search-under').toggle('fast')
+            $('.dropdown-search-under').toggle('fast')
         });
     </script>
 @endsection
-
-
-
