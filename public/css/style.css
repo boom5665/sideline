@@ -684,21 +684,21 @@ summary {
 
 .login-content {
     border-radius: 5px;
-    height: 49px;
+    height: 40px;
     background-color: #6d0cee;
     color: white;
-    padding: 0px 10px 0px 10px;
-    font-size: 20px;
+    padding: 0px 8px 0px 10px;
+    font-size: 18px;
     align-items: center;
     border-color: #6d0cee;
 }
 
 .regis-content {
     border-radius: 5px;
-    height: 47px;
+    height: 40px;
     background-color: #6d0cee;
     color: white;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 5px 0px 5px;
     font-size: 20px;
     align-items: center;
     border-color: #6d0cee;
