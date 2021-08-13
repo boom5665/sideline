@@ -809,7 +809,7 @@ summary {
 .card_under {
     background-color: #6D0CEE;
     border-radius: 10px;
-    height: 236px;
+    height: 214px;
     display: block;
     width: 100%;
     position: relative;
@@ -1344,6 +1344,13 @@ label {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     padding: 0px 0px 4px 15px !important;
+}
+
+.card-body-underlist {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 0px 0px 0px 0px !important;
 }
 
 .name-sdunderdetail {

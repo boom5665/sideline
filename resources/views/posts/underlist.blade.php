@@ -72,7 +72,7 @@
                                     <div class="card_under">
                                         <img src="{{ url('/image/image-sis.png') }}"
                                             class="card-img-top img-side-data-underlist" alt="...">
-                                        <div class="card-body">
+                                        <div class="card-body-underlist">
                                             <h5 class="card-title-underlist">GIGKUN</h5>
                                         </div>
                                     </div>
@@ -82,7 +82,7 @@
                                     <div class="card_under">
                                         <img src="{{ url('/image/image-sis.png') }}"
                                             class="card-img-top img-side-data-underlist" alt="...">
-                                        <div class="card-body">
+                                        <div class="card-body-underlist">
                                             <h5 class="card-title-underlist">GIGKUN</h5>
                                         </div>
                                     </div>
@@ -92,7 +92,7 @@
                                     <div class="card_under">
                                         <img src="{{ url('/image/image-sis.png') }}"
                                             class="card-img-top img-side-data-underlist" alt="...">
-                                        <div class="card-body">
+                                        <div class="card-body-underlist">
                                             <h5 class="card-title-underlist">GIGKUN</h5>
                                         </div>
                                     </div>
@@ -102,7 +102,7 @@
                                     <div class="card_under">
                                         <img src="{{ url('/image/image-sis.png') }}"
                                             class="card-img-top img-side-data-underlist" alt="...">
-                                        <div class="card-body">
+                                        <div class="card-body-underlist">
                                             <h5 class="card-title-underlist">GIGKUN</h5>
                                         </div>
                                     </div>
@@ -112,7 +112,7 @@
                                     <div class="card_under">
                                         <img src="{{ url('/image/image-sis.png') }}"
                                             class="card-img-top img-side-data-underlist" alt="...">
-                                        <div class="card-body">
+                                        <div class="card-body-underlist">
                                             <h5 class="card-title-underlist">GIGKUN</h5>
                                         </div>
                                     </div>
@@ -122,7 +122,7 @@
                                     <div class="card_under">
                                         <img src="{{ url('/image/image-sis.png') }}"
                                             class="card-img-top img-side-data-underlist" alt="...">
-                                        <div class="card-body">
+                                        <div class="card-body-underlist">
                                             <h5 class="card-title-underlist">GIGKUN</h5>
                                         </div>
                                     </div>
@@ -131,17 +131,7 @@
                                     <div class="card_under">
                                         <img src="{{ url('/image/image-sis.png') }}"
                                             class="card-img-top img-side-data-underlist" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title-underlist">GIGKUN</h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom">
-                                    <div class="card_under">
-                                        <img src="{{ url('/image/image-sis.png') }}"
-                                            class="card-img-top img-side-data-underlist" alt="...">
-                                        <div class="card-body">
+                                        <div class="card-body-underlist">
                                             <h5 class="card-title-underlist">GIGKUN</h5>
                                         </div>
                                     </div>
@@ -151,7 +141,7 @@
                                     <div class="card_under">
                                         <img src="{{ url('/image/image-sis.png') }}"
                                             class="card-img-top img-side-data-underlist" alt="...">
-                                        <div class="card-body">
+                                        <div class="card-body-underlist">
                                             <h5 class="card-title-underlist">GIGKUN</h5>
                                         </div>
                                     </div>
@@ -161,7 +151,7 @@
                                     <div class="card_under">
                                         <img src="{{ url('/image/image-sis.png') }}"
                                             class="card-img-top img-side-data-underlist" alt="...">
-                                        <div class="card-body">
+                                        <div class="card-body-underlist">
                                             <h5 class="card-title-underlist">GIGKUN</h5>
                                         </div>
                                     </div>
@@ -171,7 +161,7 @@
                                     <div class="card_under">
                                         <img src="{{ url('/image/image-sis.png') }}"
                                             class="card-img-top img-side-data-underlist" alt="...">
-                                        <div class="card-body">
+                                        <div class="card-body-underlist">
                                             <h5 class="card-title-underlist">GIGKUN</h5>
                                         </div>
                                     </div>
@@ -181,7 +171,7 @@
                                     <div class="card_under">
                                         <img src="{{ url('/image/image-sis.png') }}"
                                             class="card-img-top img-side-data-underlist" alt="...">
-                                        <div class="card-body">
+                                        <div class="card-body-underlist">
                                             <h5 class="card-title-underlist">GIGKUN</h5>
                                         </div>
                                     </div>
@@ -191,7 +181,7 @@
                                     <div class="card_under">
                                         <img src="{{ url('/image/image-sis.png') }}"
                                             class="card-img-top img-side-data-underlist" alt="...">
-                                        <div class="card-body">
+                                        <div class="card-body-underlist">
                                             <h5 class="card-title-underlist">GIGKUN</h5>
                                         </div>
                                     </div>
@@ -201,7 +191,7 @@
                                     <div class="card_under">
                                         <img src="{{ url('/image/image-sis.png') }}"
                                             class="card-img-top img-side-data-underlist" alt="...">
-                                        <div class="card-body">
+                                        <div class="card-body-underlist">
                                             <h5 class="card-title-underlist">GIGKUN</h5>
                                         </div>
                                     </div>
@@ -211,7 +201,7 @@
                                     <div class="card_under">
                                         <img src="{{ url('/image/image-sis.png') }}"
                                             class="card-img-top img-side-data-underlist" alt="...">
-                                        <div class="card-body">
+                                        <div class="card-body-underlist">
                                             <h5 class="card-title-underlist">GIGKUN</h5>
                                         </div>
                                     </div>
@@ -221,7 +211,7 @@
                                     <div class="card_under">
                                         <img src="{{ url('/image/image-sis.png') }}"
                                             class="card-img-top img-side-data-underlist" alt="...">
-                                        <div class="card-body">
+                                        <div class="card-body-underlist">
                                             <h5 class="card-title-underlist">GIGKUN</h5>
                                         </div>
                                     </div>
@@ -231,7 +221,7 @@
                                     <div class="card_under">
                                         <img src="{{ url('/image/image-sis.png') }}"
                                             class="card-img-top img-side-data-underlist" alt="...">
-                                        <div class="card-body">
+                                        <div class="card-body-underlist">
                                             <h5 class="card-title-underlist">GIGKUN</h5>
                                         </div>
                                     </div>
@@ -241,7 +231,17 @@
                                     <div class="card_under">
                                         <img src="{{ url('/image/image-sis.png') }}"
                                             class="card-img-top img-side-data-underlist" alt="...">
-                                        <div class="card-body">
+                                        <div class="card-body-underlist">
+                                            <h5 class="card-title-underlist">GIGKUN</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom">
+                                    <div class="card_under">
+                                        <img src="{{ url('/image/image-sis.png') }}"
+                                            class="card-img-top img-side-data-underlist" alt="...">
+                                        <div class="card-body-underlist">
                                             <h5 class="card-title-underlist">GIGKUN</h5>
                                         </div>
                                     </div>

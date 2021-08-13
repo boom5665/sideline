@@ -380,7 +380,8 @@
                 slidesPerView: 3,
                 spaceBetween: 10,
                 slidesPerGroup: 1,
-                loop: true,
+                loop: false,
+                // centeredSlides: true,
                 speed: 800,
                 // loopFillGroupWithBlank: true,
 
@@ -399,7 +400,7 @@
                         spaceBetween: 10,
                     },
                     1024: {
-                        slidesPerView: 5,
+                        slidesPerView: 3,
                         spaceBetween: 10,
                     },
                 },
