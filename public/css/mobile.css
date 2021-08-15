@@ -1,0 +1,93 @@
+/* @media only screen and (min-device-width: 320px) and (max-width: 576px) {} */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 576px) and (-webkit-min-device-pixel-ratio: 2) {
+    #body .content-top-dont-login h1 {
+        font-size: 23px;
+        padding-top: 7px;
+    }
+    .iconalert-tabcontent {
+        font-size: 42px;
+        padding: 17px 12px 0px 0px;
+    }
+    .head-font-bf-data {
+        font-size: 20px;
+        font-style: italic;
+        color: #6D0CEE;
+        font-weight: 700;
+    }
+    .head2-font-bf-data {
+        font-size: 13px;
+        color: #6D0CEE;
+        font-weight: 400;
+    }
+    .conent-search-input {
+        background: #CDCDCD;
+        padding: 9px 5px 8px 5px;
+        border-radius: 5px;
+        border: bisque;
+        position: relative;
+        right: -10px;
+        width: 143px;
+    }
+    .btn-search-insied-input {
+        position: relative;
+        left: 67px;
+        top: -22px;
+    }
+    .bf-data2 {
+        padding-top: 10px;
+    }
+    .pagination ul {
+        flex-direction: row;
+        display: flex;
+        margin-left: -29px;
+    }
+    .pd-top-sidelinelist {
+        padding-top: 15px;
+    }
+    .head2-font-bf-data-following {
+        font-size: 20px;
+        color: #6D0CEE;
+        text-align: left;
+        padding-top: 0rem;
+        font-weight: 700;
+    }
+    .btn-search-insied-input-underlist {
+        position: relative;
+        left: -11px;
+    }
+    .btn-search-insied-input-follow {
+        position: relative;
+        left: -11px;
+    }
+    .head2-font-bf-data-underlist {
+        font-size: 23px;
+        color: #6D0CEE;
+        text-align: left;
+        font-weight: 700;
+    }
+    .card_under {
+        background-color: #6D0CEE;
+        border-radius: 10px;
+        height: 220px;
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+    .pd-row-underlist {
+        padding-top: 10px;
+    }
+    .pf-user-mobile {
+        width: 55px !important;
+    }
+    .pf-user-desktop {
+        display: none;
+    }
+    .img-detail-information {
+        display: inline-flex;
+    }
+    .name-user-work {
+        padding-left: 10px;
+        padding-top: 20px;
+    }
+}

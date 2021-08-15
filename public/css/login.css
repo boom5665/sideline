@@ -45,15 +45,18 @@
     color: #9443FF;
     padding-left: 70px;
 }
+
 #login input[type=text]:focus {
     border: 2px solid #9443FF;
     outline-offset: 0px;
     outline: none;
     background: white;
 }
+
 #login input[type=text]:hover {
     border: 2px solid #7E7E7E
 }
+
 #login .inputtwo[type=password] {
     width: 100%;
     padding: 12px 20px;
@@ -70,16 +73,17 @@
     color: #9443FF;
     padding-left: 70px;
 }
+
 #login .inputtwo[type=password]:focus {
     border: 2px solid #9443FF;
     outline-offset: 0px;
     outline: none;
     background: white;
 }
+
 #login .inputtwo[type=password]:hover {
     border: 2px solid #7E7E7E
 }
-
 
 #login .inputR[type=text] {
     width: 100%;
@@ -95,16 +99,18 @@
     background: transparent;
     height: 50px;
 }
+
 #login .inputR[type=text]:focus {
     border: 2px solid white;
     outline-offset: 0px;
     outline: none;
     background: transparent;
-
 }
+
 #login .inputR[type=text]:hover {
     border: 2px solid white;
 }
+
 #login .inputtwoR[type=password] {
     width: 100%;
     padding: 12px 20px;
@@ -123,12 +129,14 @@
     background: transparent;
     height: 50px;
 }
+
 #login .inputtwoR[type=password]:focus {
     border: 2px solid white;
     outline-offset: 0px;
     outline: none;
     background: transparent;
 }
+
 #login .inputtwoR[type=password]:hover {
     border: 2px solid white;
 }
@@ -340,6 +348,7 @@ a:hover {
     min-width: 44px;
     width: 60px;
 }
+
 .iconeye {
     position: absolute;
     padding: 23px 0px 10px 23px;
@@ -347,6 +356,7 @@ a:hover {
     width: 60px;
     right: 285px;
 }
+
 @media screen and (min-device-width: 280px) and (max-device-width: 1024px) {
     #login .formstyle {
         margin: 20px;
@@ -379,6 +389,7 @@ a:hover {
         width: 100px;
     }
 }
+
 #login #profile .password {
     width: 90%;
     padding: 12px 20px;
@@ -392,6 +403,7 @@ a:hover {
     color: #9443FF;
     /* padding-left: 70px; */
 }
+
 #login #profile input[type=text] {
     width: 90%;
     padding: 12px 20px;
@@ -609,9 +621,9 @@ a:hover {
 .pagination ul li {
     text-decoration: none;
     position: relative;
-    margin: 0 5px;
-    width: 40px;
-    height: 40px;
+    margin: 0 4px;
+    width: 21px;
+    height: 26px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -728,6 +740,7 @@ a:hover {
     border: none;
     margin: 15px 0px 0px 5px;
 }
+
 #under .left-contenthead {
     display: flex;
     align-items: center;
@@ -744,6 +757,7 @@ a:hover {
     height: 31px;
     font-size: 14px;
 }
+
 #under .dropdown-search-under {
     left: 18px;
     background: #6D0CEE;
@@ -756,6 +770,7 @@ a:hover {
 #under .dd-item {
     color: #fff!important;
 }
+
 #under .add-image {
     width: 100px;
     height: 100px;
@@ -764,7 +779,6 @@ a:hover {
     transform: translate(15%, 90%);
     margin-bottom: 175px;
 }
-
 
 #under .dis-row {
     display: flex;
@@ -776,7 +790,6 @@ a:hover {
     flex-direction: column;
     font-size: 20px;
     color: #6D0CEE;
-
 }
 
 #under .btn-per {
@@ -796,7 +809,6 @@ a:hover {
 
 #under .btn-per-red {
     background: #FF403F;
-
 }
 
 #under .alert-per {

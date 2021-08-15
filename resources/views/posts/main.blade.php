@@ -536,7 +536,7 @@
 
             <div class="content-top">
                 <div class="content-head content-headD">
-                    <h1 class="head-font-bf-data">น้อง ๆ ไซด์ไลน์ ทั้งหมด</h1>
+                    <h1 class="head-font-bf-data bf-data2">น้อง ๆ ไซด์ไลน์ ทั้งหมด</h1>
                 </div>
                 <div class="inline-formsearch">
                     <div class="left-contenthead">
