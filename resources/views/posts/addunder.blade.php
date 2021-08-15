@@ -135,7 +135,7 @@
                         <div class="form-group">
                             <label class="src col-sm-12" for="email"> ยืนยันตัวตน</label>
 
-                            <div class="col-sm-11">
+                            <div class="col-sm-6">
                                 <input type="file" multiple id="gallery-photo-add" name="filename[]" class="input-file">
                                 <div class="input-group col-xs-12">
                                     <input type="text" class="form-control inputfile" disabled placeholder="Upload Video"
