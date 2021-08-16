@@ -14,45 +14,45 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::latest()->paginate(5);
+        // $posts = Post::latest()->paginate(5);
         return view('posts.index',compact('posts'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
     public function mainindex()
     {
-        $data['mains'] = Post::latest()->paginate(12);
-        return view('posts.main',  $data);
+        // $data['mains'] = Post::latest()->paginate(12);
+        return view('posts.main');
     }
     public function sidelinelist()
     {
-        $data['mains'] = Post::latest()->paginate(12);
-        return view('posts.sidelinelist', $data);
+        // $data['mains'] = Post::latest()->paginate(12);
+        return view('posts.sidelinelist');
     }
 
     public function underlist()
     {
-        $data['mains'] = Post::latest()->paginate(12);
-        return view('posts.underlist', $data);
+        // $data['mains'] = Post::latest()->paginate(12);
+        return view('posts.underlist');
     }
 
     public function undersidelinedetail()
     {
-        $data['mains'] = Post::latest()->paginate(12);
-        return view('posts.undersidelinedetail', $data);
+        // $data['mains'] = Post::latest()->paginate(12);
+        return view('posts.undersidelinedetail');
     }
 
     public function sidelineinformation()
     {
-        $data['mains'] = Post::latest()->paginate(12);
-        return view('posts.sidelineinformation', $data);
+        // $data['mains'] = Post::latest()->paginate(12);
+        return view('posts.sidelineinformation');
     }
 
    
 
     public function followindex()
     {
-        $data['follows'] = Post::latest()->paginate();
-        return view('posts.follow', $data);
+        // $data['follows'] = Post::latest()->paginate();
+        return view('posts.follow');
     }
 
 
