@@ -487,7 +487,15 @@ a:hover {
     color: #9443FF;
     /* padding-left: 70px; */
 }
-
+#profile input[type=text]:hover {
+    border: 0px solid #7E7E7E;
+}
+#profile input[type=text]:focus {
+    border: 0px solid #9443FF;
+    outline-offset: 0px;
+    outline: none;
+    background: white;
+}
 #profile .formstyle {
     box-sizing: border-box;
     border-radius: 18.8931px;
@@ -871,6 +879,7 @@ a:hover {
     border-radius: 5px;
     color: white;
     min-width: max-content;
+
 }
 
 #under .dd-item {
@@ -944,6 +953,12 @@ a:hover {
 }
 #under .tex-A{
     text-align: right;
+}
+#under .head2-font-bf-data-following {
+    font-size: 26px;
+    color: #6D0CEE;
+    padding-top: 2rem;
+    font-weight: 700;
 }
 @media screen and (min-device-width: 280px) and (max-device-width: 1024px) {
     #under .content-un {

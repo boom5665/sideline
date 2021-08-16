@@ -70,8 +70,11 @@ Route::get('/underdetail', function () {
     return view('posts.underdetail');
 });
 
+Route::get('/level', function () {
+    return view('level');
+});
 Route::get('/sidelineinformation', function () {
-    return view('posts.sidelineinformation');
+    return view('sidelineinformation');
 });
 // Route::get('/', function () {
 //     return view('auth.login');
