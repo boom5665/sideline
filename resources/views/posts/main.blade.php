@@ -292,8 +292,8 @@
                                         </span>
                                     </div>
                                 </div>
-                            
-                           
+
+
                                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom ">
                                     <div class="card_sis">
                                         <img src="{{ url('/image/image-sis.png') }}"
@@ -778,8 +778,8 @@
                             </span>
                         </div>
                     </div>
-               
-              
+
+
                     <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom ">
                         <div class="card_sis">
                             <img src="{{ url('/image/image-sis.png') }}" class="card-img-top img-side-data-body"
@@ -1013,9 +1013,9 @@
                     </div>
 
 
-               
+
+                </div>
             </div>
-        </div>
         </div>
         </div>
         </div>
@@ -1030,7 +1030,7 @@
 
 @section('js')
     <script>
-    
+
     </script>
 @endsection
 @stop

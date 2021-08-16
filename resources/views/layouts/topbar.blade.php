@@ -14,7 +14,7 @@
                     <a class="toppage" href="{{ url('about') }}"> เกี่ยวกับเรา</a>
                     <a class="toppage" href="{{ url('contact') }}"> ติดต่อเรา</a>
                     <div class="menu-right-topbar">
-                        <a id="searchmd" class="toppage" data-toggle="modal" data-target="#Modalsearch"><i
+                        <a class="toppage MDsearch" data-toggle="modal" data-target="#Modalsearch"><i
                                 class="fas fa-search"></i></a>
                         <div class="dropdown">
                             @if (Route::has('login'))
@@ -52,29 +52,29 @@
 
 
         {{ csrf_field() }}
-        <div class="container">
-            <div class="topnavM" class="display: none;">
-                <h1 href="#" class="active textsizeH">SIDELINE BKK</h1>
 
-                <div id="myLinks">
-                    <a class="align" href="{{ url('main') }}">หน้าหลัก</a>
-                    <a class="align" href="{{ url('dataweb') }}">ข้อมูล</a>
-                    <a class="align" href="{{ url('') }}">เลือกน้อง</a>
-                    <a class="align" href="{{ url('') }}">สังกัด</a>
-                    <a class="align" href="{{ url('follow') }}">ที่ติดตาม</a>
-                    <a class="align" data-toggle="modal" data-target="#exampleModalLong">ค้นหาน้อง
-                    </a>
-                    <a class="align" href="{{ url('login') }}">เข้าสู่ระบบ</a>
-                </div>
-                <a href="javascript:void(0);" class="icon" onclick="TFunc(this)">
+        <div class="topnavM">
+            <h1 href="#" class="active textsizeH">SIDELINE BKK</h1>
 
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-
+            <div id="myLinks">
+                <a class="align" href="{{ url('main') }}">หน้าหลัก</a>
+                <a class="align" href="{{ url('dataweb') }}">ข้อมูล</a>
+                <a class="align" href="{{ url('') }}">เลือกน้อง</a>
+                <a class="align" href="{{ url('') }}">สังกัด</a>
+                <a class="align" href="{{ url('follow') }}">ที่ติดตาม</a>
+                <a class="align MDsearch" data-toggle="modal" data-target="#exampleModalLong">ค้นหาน้อง
                 </a>
+                <a class="align" href="{{ url('login') }}">เข้าสู่ระบบ</a>
             </div>
+            <a href="javascript:void(0);" class="icon" onclick="TFunc(this)">
+
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+
+            </a>
         </div>
+
 
 </header>
 
@@ -115,7 +115,7 @@
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
-                                                                                 document.getElementById('logout-form').submit();">
+                                                                                     document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
                             </a>
 
@@ -135,234 +135,9 @@
 
 
 
-<div class="modal fade" id="Modalsearch" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <h5>ค้นหาน้อง ๆ ไซด์ไลน์</h5>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <input class="form-control" type="text" placeholder="มีชื่อน้อง ๆ ในดวงใจไหม ? ">
-                        <span class="span-txt-1">ถ้ามีหลายชื่อให้ใส่จุลภาค(,) ผิงผิง,ปอย,แพท</span>
-                    </div>
-                </div>
-
-                <h5>โซนรับงาน</h5>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="form-group">
-
-                            <select class="form-select" id="exampleFormControlSelect1">
-                                <option value="none" selected disabled hidden>
-                                    ภาค
-                                </option>
-                                <option>1</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-
-                            <select class="form-select" id="exampleFormControlSelect1">
-                                <option value="none" selected disabled hidden>
-                                    จังหวัด
-                                </option>
-                                <option>1</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="form-group">
-
-                            <select class="form-select" id="exampleFormControlSelect1">
-                                <option value="none" selected disabled hidden>
-                                    เขต
-                                </option>
-                                <option>1</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-
-                            <select class="form-select" id="exampleFormControlSelect1">
-                                <option value="none" selected disabled hidden>
-                                    แขวง
-                                </option>
-                                <option>1</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-
-
-                <h5>คุณชอบแบบไหน</h5>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="form-group">
-
-                            <select class="form-select" id="exampleFormControlSelect1">
-                                <option value="none" selected disabled hidden>
-                                    เพศ
-                                </option>
-                                <option>1</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="form-group">
-                            <select class="form-select" id="exampleFormControlSelect1">
-                                <option value="none" selected disabled hidden>
-                                    อายุ
-                                </option>
-                                <option>1</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="form-group">
-
-                            <select class="form-select" id="exampleFormControlSelect1">
-                                <option value="none" selected disabled hidden>
-                                    ส่วนสูง
-                                </option>
-                                <option>1</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div class="form-group">
-                            <select class="form-select" id="exampleFormControlSelect1">
-                                <option value="none" selected disabled hidden>
-                                    น้ำหนัก
-                                </option>
-                                <option>1</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="form-group">
-
-                            <select class="form-select" id="exampleFormControlSelect1">
-                                <option value="none" selected disabled hidden>
-                                    หน้าอก
-                                </option>
-                                <option>1</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="form-group">
-                            <select class="form-select" id="exampleFormControlSelect1">
-                                <option value="none" selected disabled hidden>
-                                    เอว
-                                </option>
-                                <option>1</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="form-group">
-
-                            <select class="form-select" id="exampleFormControlSelect1">
-                                <option value="none" selected disabled hidden>
-                                    สะโพก
-                                </option>
-                                <option>1</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-
-                <h5>คุณชอบแบบไหน</h5>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <select class="form-select" id="exampleFormControlSelect1">
-                                <option value="none" selected disabled hidden>
-                                    เรทราคาต่ำสุด
-                                </option>
-                                <option>1</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <select class="form-select" id="exampleFormControlSelect1">
-                                <option value="none" selected disabled hidden>
-                                    เรทราคาสูงสุด
-                                </option>
-                                <option>1</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-check verify-people">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        ยืนยันตัวตน
-                    </label>
-                </div>
-            </div>
 
 
 
 
-            <div class="modal-footer search-modal-header">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">รีเซ็ต</button>
-                <button type="button" class="btn btn-primary btn-searchheader-modal">ค้นหา</button>
-            </div>
-        </div>
-    </div>
-</div>
 
 
-
-<script>
-    function TFunc(x) {
-        x.classList.toggle("change");
-        var x = document.getElementById("myLinks");
-
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
-        }
-
-    }
-    // var modal = document.getElementById("Mpop");
-    // var btn = document.getElementById("Bpop");
-    // var btn_m = document.getElementById("Mpopup");
-
-    // var close = document.getElementsByClassName("close")[0];
-    // btn.onclick = function() {
-    //     modal.style.display = "block";
-    // }
-    // btn_m.onclick = function() {
-    //     modal.style.display = "block";
-    // }
-    close.onclick = function() {
-        modal.style.display = "none";
-    }
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-    $(document).ready(function() {
-        $("#searchmd").click(function() {
-            $("#Modalsearch").modal();
-        });
-    });
-</script>
