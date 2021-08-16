@@ -14,19 +14,16 @@
                     <a class="toppage" href="{{ url('about') }}"> เกี่ยวกับเรา</a>
                     <a class="toppage" href="{{ url('contact') }}"> ติดต่อเรา</a>
                     <div class="menu-right-topbar">
-                        <a class="toppage" data-toggle="modal" data-target="#exampleModalLong"><i
+                        <a id="searchmd" class="toppage" data-toggle="modal" data-target="#Modalsearch"><i
                                 class="fas fa-search"></i></a>
                         <div class="dropdown">
                             @if (Route::has('login'))
                                 <a class="toppage top-us" href="{{ route('login') }}">เข้าสู่ระบบ</a>
                             @endif
-
                             <div class="dropdown-content">
                                 @guest
                                 @else
                                     <img src="/uploads/avatars/{{ Auth::user()->avatar }}" class="avatar">
-
-
                                     <div class="padbut " href="#">
                                         {{ Auth::user()->name }}
                                     </div>
@@ -56,17 +53,6 @@
 
         {{ csrf_field() }}
         <div class="container">
-
-            {{-- <div id="Mpop" class="modal">
-                <div class="modal-content">
-                    
-                </div>
-            </div> --}}
-
-          
-
-
-
             <div class="topnavM" class="display: none;">
                 <h1 href="#" class="active textsizeH">SIDELINE BKK</h1>
 
@@ -76,7 +62,7 @@
                     <a class="align" href="{{ url('') }}">เลือกน้อง</a>
                     <a class="align" href="{{ url('') }}">สังกัด</a>
                     <a class="align" href="{{ url('follow') }}">ที่ติดตาม</a>
-                    <a class="align"  data-toggle="modal" data-target="#exampleModalLong">ค้นหาน้อง
+                    <a class="align" data-toggle="modal" data-target="#exampleModalLong">ค้นหาน้อง
                     </a>
                     <a class="align" href="{{ url('login') }}">เข้าสู่ระบบ</a>
                 </div>
@@ -92,7 +78,65 @@
 
 </header>
 
-<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+
+
+<div id="app" style="display:none">
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <div class="container">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Left Side Of Navbar -->
+                <ul class="navbar-nav mr-auto">
+
+                </ul>
+
+                <!-- Right Side Of Navbar -->
+                <ul class="navbar-nav ml-auto">
+                    <!-- Authentication Links -->
+                    @guest
+                        @if (Route::has('login'))
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            </li>
+                        @endif
+
+                        @if (Route::has('register'))
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                            </li>
+                        @endif
+                    @else
+
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            {{ Auth::user()->name }}
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                                                                                 document.getElementById('logout-form').submit();">
+                                {{ __('Logout') }}
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
+                        </div>
+
+                    @endguest
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+</div>
+
+
+
+<div class="modal fade" id="Modalsearch" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -283,62 +327,6 @@
     </div>
 </div>
 
-<div id="app" style="display:none">
-    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-        <div class="container">
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- Left Side Of Navbar -->
-                <ul class="navbar-nav mr-auto">
-
-                </ul>
-
-                <!-- Right Side Of Navbar -->
-                <ul class="navbar-nav ml-auto">
-                    <!-- Authentication Links -->
-                    @guest
-                        @if (Route::has('login'))
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
-                        @endif
-
-                        @if (Route::has('register'))
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                            </li>
-                        @endif
-                    @else
-
-                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                            {{ Auth::user()->name }}
-                        </a>
-
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                                         document.getElementById('logout-form').submit();">
-                                {{ __('Logout') }}
-                            </a>
-
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                @csrf
-                            </form>
-                        </div>
-
-                    @endguest
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-
-</div>
-
-
-
-
-
 
 
 <script>
@@ -372,9 +360,9 @@
             modal.style.display = "none";
         }
     }
-
-//     $('#myModal').on('shown.bs.modal', function () {
-//   $('#myInput').trigger('focus')
-// })
-
+    $(document).ready(function() {
+        $("#searchmd").click(function() {
+            $("#Modalsearch").modal();
+        });
+    });
 </script>
