@@ -69,8 +69,7 @@
                         @csrf
 
                         <div class="card-description">
-                            <div class="card-description-nemaR" style="font-size: 60px;
-                            font-weight: bold;">
+                            <div class="card-description-nemaR card-description-nemaH-R" >
                                 SIDELINE-BKK
                             </div>
                             <div class="card-description-nemaR">
@@ -104,9 +103,8 @@
                         <div class="form-group">
                             <label class="regis col-sm-12" for="email">รหัสผ่าน</label>
                             <img class="icon2R" src="{{ url('/images/lock.png') }}" alt="Image" />
+                            <input id="password" type="password" class="inputtwoR @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
                             <img class="iconeye" src="{{ url('/images/eyess.png') }}" alt="Image" />
-                                <input id="password" type="password" class="inputtwoR @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
                                         @error('password')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
@@ -117,9 +115,8 @@
                         <div class="form-group">
                             <label class="regis col-sm-12" for="email">ใส่รหัสผ่านอีกครั้ง</label>
                             <img class="icon2R" src="{{ url('/images/lock.png') }}" alt="Image" />
-                            <img class="iconeye" src="{{ url('/images/eyess.png') }}" alt="Image" />
                             <input id="password" type="password" class="inputtwoR @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
+                            <img class="iconeye" src="{{ url('/images/eyess.png') }}" alt="Image" />
                             @error('password')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>

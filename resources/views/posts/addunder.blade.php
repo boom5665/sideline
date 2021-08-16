@@ -65,8 +65,7 @@
                             <div class="col-sm-12" id="">
                                 <div class="col-sm-6 toppage wrap">
                                     <div class="one-page">1</div>
-                                    <img class="toppageimg" style="width: 98px; height: 98px;"
-                                        src="{{ url('/images/Ellipse.png') }}" alt="Image" />
+                                    <img class="toppageimg" src="{{ url('/images/Ellipse.png') }}" alt="Image" />
                                     <div style="color:#6D0CEE;"> <i class="far fa-file-alt"></i>ใส่ข้อมูลโพสต์สำคัญ</div>
                                 </div>
                                 <div class="col-sm-6 toppage wrap2">
@@ -167,14 +166,12 @@
                     <div class="col-sm-12">
                         <div class="col-sm-6 toppage wrap2">
                             <div class="one-page">1</div>
-                            <img class="toppageimg"
-                                src="{{ url('/images/Ellipse17.png') }}" alt="Image" />
+                            <img class="toppageimg" src="{{ url('/images/Ellipse17.png') }}" alt="Image" />
                             <div style="color:#C4C4C4;"> <i class="far fa-file-alt"></i>ใส่ข้อมูลโพสต์สำคัญ</div>
                         </div>
                         <div class="col-sm-6 toppage wrap">
                             <div class="one-page">2</div>
-                            <img class="toppageimg"
-                                src="{{ url('/images/Ellipse.png') }}" alt="Image" />
+                            <img class="toppageimg" src="{{ url('/images/Ellipse.png') }}" alt="Image" />
                             <div style="color:#6D0CEE;"> <i class="far fa-file-alt"></i>ใส่ข้อมูลเพิ่มเติม</div>
                         </div>
                     </div>
@@ -201,9 +198,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-12" style="display: flex;
-                                                        justify-content: space-evenly;
-                                                        margin: 20px;">
+                    <div class="col-sm-12 dis-evan">
                         <div class="">
                             <div class="card_sis">
                                 <div class="div-point-side">

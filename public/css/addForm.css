@@ -47,10 +47,10 @@
     text-align: center;
     position: relative;
     display: flex;
-    flex-direction: column;
     font-size: 30px;
     color: #6D0CEE;
-
+    flex-direction: row;
+    justify-content: center;
 }
 
 #work .font-w {
@@ -66,9 +66,11 @@
     height: 300px;
     position: relative;
 }
-#work .card_sis:hover{
+
+#work .card_sis:hover {
     background: #9443FF;
 }
+
 #work .div-point-side {
 
     display: flex;
@@ -101,10 +103,12 @@
     color: #6d0cee;
     font-size: 20px;
 }
-#work .but-pak:hover{
+
+#work .but-pak:hover {
     background: #C4C4C4;
 
 }
+
 #work .FormD2 {
     display: none;
 }
@@ -123,7 +127,7 @@
     box-sizing: border-box;
     border-radius: 6px;
     margin: 20px;
-    padding: 0px 150px;
+    /* padding: 0px 150px; */
 }
 
 #work .nextbutton {
@@ -451,7 +455,7 @@
     border-color: #6D0CEE;
 }
 
-.toppageimg{
+.toppageimg {
     width: 98px;
     height: 98px;
 }
@@ -460,4 +464,79 @@
 #work .far {
     font-weight: 400;
     padding-right: 5px;
+}
+
+#work .dis-evan {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+#work .display-tele {
+    display: flex;
+}
+@media screen and (min-device-width: 280px) and (max-device-width: 1024px) {
+    #work .input-group {
+        width: 60%;
+    }
+
+    .toppageimg {
+        width: 60px;
+        height: 60px;
+    }
+
+    #work .one-page {
+        font-size: 24px;
+        transform: translateY(35%);
+    }
+
+    .wrap:before {
+        top: 30%;
+    }
+
+    #work .wrap2:before {
+
+        top: 30%;
+    }
+
+    #work .card-description-nemaW2 {
+        font-size: 15px;
+    }
+    #work .dis-evan {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 20px 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+    #work .card_sis {
+        background-color: #6D0CEE;
+        border-radius: 10px;
+        height: auto;
+        display: block;
+        width: 200px;
+        height: 300px;
+        position: relative;
+        margin: 10px 0px;
+    }
+
+
+
+    #work .formstyle {
+        border: 1.51145px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 6px;
+        margin: 0px;
+        padding: 0px;
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    }
+    #work .display-tele {
+        display: flex;
+        font-size: 50px;
+
+        align-items: center;
+        flex-direction: column;
+    }
+    #work .display-rowW {
+        font-size: 15px;
+    }
 }
