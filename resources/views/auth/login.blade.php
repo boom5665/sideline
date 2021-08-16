@@ -93,8 +93,7 @@
 
                     <div class="dis-between mg-log">
                         <label class="login">ล็อกอินอัตโนมัติ
-                            <input type="checkbox" checked="checked" name="remember" id="remember"
-                                {{ old('remember') ? 'checked' : '' }}>
+                            <input type="checkbox" name="remember_me" id="remember_me">
                             <span class="checkmark"></span>
                         </label>
                         @if (Route::has('password.request'))

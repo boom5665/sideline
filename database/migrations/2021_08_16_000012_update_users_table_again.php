@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class UpdateusersTable extends Migration
+class UpdateusersTableAgain extends Migration
 {
     /**
      * Run the migrations.
@@ -14,7 +14,7 @@ class UpdateusersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('email')->after('id')->unique();
+            $table->string('remember_token')->after('expire');
         });
     }
 
