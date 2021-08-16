@@ -1,6 +1,4 @@
 @extends('layouts.app')
-
-
 @section('content')
 
     <div>
@@ -95,7 +93,7 @@
                         <h2 class="h1-work-after">*** การบ้านของ น้อง Miki ***</h2>
                     </div>
                     <div class="col-sm-7 pad-bt-workafter">
-                        <button class="btn-inwork-underdetail">ลงการบ้านน้อง</button>
+                        <button id="btnDownwork" class="btn-inwork-underdetail">ลงการบ้านน้อง</button>
                     </div>
                 </div>
                 <div class="row">

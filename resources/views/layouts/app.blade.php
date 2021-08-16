@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <meta charset="utf-8">
@@ -264,7 +265,7 @@
                         </label>
                     </div>
 
-                    
+
                 </div>
                 <div class="modal-footer search-modal-header">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">รีเซ็ต</button>
@@ -273,6 +274,71 @@
             </div>
         </div>
     </div>
+
+    <!-- ลงการบ้านน้องๆ  -->
+
+
+
+    <div class="modal fade bd-example-modal-lg" id="Downwork" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+          
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+
+                            <div class="col-sm-5">
+                            </div>
+                            <div class="col-sm-7">
+                                <p class="titlemain-downwork">เขียน รีวิวให้หนูหน่อยค่ะพี่ ๆ</p>
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1"></label>
+
+                                    <textarea class="form-control description-downwork" id="exampleFormControlTextarea1"
+                                        rows="3">เขียนการบ้าน...</textarea>
+                                    <div class="line-rate-downwork">
+                                        <div class="text-ratedownwork-title">
+                                            <p class="title-downwork">ให้คะแนนตรงปก</p>
+                                        </div>
+                                        <div class="rate-downwork">
+                                            <img class="icon-ratedownwork" src="{{ url('/image/Star 22.png') }}"
+                                                alt="Image" />
+                                            <img class="icon-ratedownwork" src="{{ url('/image/Star 22.png') }}"
+                                                alt="Image" />
+                                            <img class="icon-ratedownwork" src="{{ url('/image/Star 22.png') }}"
+                                                alt="Image" />
+                                            <img class="icon-ratedownwork" src="{{ url('/image/Star 22.png') }}"
+                                                alt="Image" />
+                                            <img class="icon-ratedownwork" src="{{ url('/image/Star 22.png') }}"
+                                                alt="Image" />
+                                        </div>
+                                        <p class="warning-downwork">
+                                            เพื่อให้คนอื่นได้รับรู้ว่าน้องคนนี้ตรงปกมากน้อยเท่าใด เพื่อประกอบการตัดสินใจ
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <p class="title-uploadimg-downwork">อัพโหลดรูปภาพประกอบการบ้าน</p>
+                                <p class="warning-18plus-delete">*คำเตือน รูปภาพ 18+ ที่ไม่ได้เซนเซอร์จะถูกลบรูปภาพ
+                                    เนื่องจากเราไม่ต้องการให้เว็บไซต์ผิดต่อมาตราการสื่อลามกอนาจาร</p>
+                                <img class="icon-ratedownwork" src="{{ url('/image/Rectangle 1126.png') }}"
+                                    alt="Image" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">ยกเลิก</button>
+                    <button type="button" class="btn btn-primary">โพสต์</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /ลงการบ้านน้องๆ  -->
     <script>
         function TFunc(x) {
             x.classList.toggle("change");
@@ -298,6 +364,12 @@
             $(".MDsearch").click(function() {
                 $("#Modalsearch").modal();
             });
+
+
+            $("#btnDownwork").click(function() {
+                $("#Downwork").modal();
+            });
+
         });
     </script>
     @yield('js')

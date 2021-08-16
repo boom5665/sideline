@@ -1500,3 +1500,58 @@ label {
     padding-right: 11px !important;
     padding-left: 10px !important;
 }
+
+.rate-downwork {
+    display: contents;
+}
+
+.line-rate-downwork {
+    display: flex;
+    padding: 10px 0px 0px 0px;
+}
+
+.warning-downwork {
+    width: 28%;
+    padding-left: 15px;
+    color: #FF403F;
+}
+
+.icon-ratedownwork {
+    width: 25px;
+    height: 24px;
+}
+
+.text-ratedownwork-title {
+    padding-right: 5px;
+    padding-top: 4px;
+}
+
+.file {
+    visibility: hidden;
+    position: absolute;
+}
+
+.titlemain-downwork {
+    font-size: 15px;
+    color: #6D0CEE;
+}
+
+.description-downwork {
+    border: solid 2px #6D0CEE !important;
+}
+
+.title-downwork {
+    color: white;
+    background-color: #6D0CEE;
+    padding: 5px 10px 5px 10px;
+    border-radius: 4px;
+}
+
+.title-uploadimg-downwork {
+    font-size: 14px;
+    color: #6d0cee;
+}
+
+.warning-18plus-delete {
+    color: #FF403F;
+}

@@ -74,7 +74,7 @@ Route::get('/level', function () {
     return view('level');
 });
 Route::get('/sidelineinformation', function () {
-    return view('sidelineinformation');
+    return view('posts.sidelineinformation');
 });
 // Route::get('/', function () {
 //     return view('auth.login');
