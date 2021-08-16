@@ -2,7 +2,7 @@
 @section('content')
 
 
-
+<div id="login" >
         <div id="contract" class="container">
             <div class="collapsible-head">
                 <div class="content-top display-tele">
@@ -30,7 +30,7 @@
 
             </div>
         </div>
-
+    </div>
 
 
 

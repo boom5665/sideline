@@ -353,11 +353,7 @@ a:hover {
     width: 60px;
 }
 
-<<<<<<< HEAD
 #login .iconeye {
-=======
-.iconeye {
->>>>>>> 0116a6887a2c7bc63b17edea02d036e270cffb4c
     position: absolute;
     padding: 23px 0px 10px 23px;
     min-width: 44px;
@@ -365,12 +361,9 @@ a:hover {
     right: 285px;
 }
 
-<<<<<<< HEAD
 #login .mg-log{
     margin: 30px 0px 30px 0px;
 }
-=======
->>>>>>> 0116a6887a2c7bc63b17edea02d036e270cffb4c
 @media screen and (min-device-width: 280px) and (max-device-width: 1024px) {
     #login .formstyle {
         margin: 0px;
@@ -468,11 +461,7 @@ a:hover {
     }
 }
 
-<<<<<<< HEAD
 #profile .password {
-=======
-#login #profile .password {
->>>>>>> 0116a6887a2c7bc63b17edea02d036e270cffb4c
     width: 90%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -486,11 +475,7 @@ a:hover {
     /* padding-left: 70px; */
 }
 
-<<<<<<< HEAD
 #profile input[type=text] {
-=======
-#login #profile input[type=text] {
->>>>>>> 0116a6887a2c7bc63b17edea02d036e270cffb4c
     width: 90%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -762,29 +747,8 @@ a:hover {
         align-items: center;
         font-size: 15px;
 
-<<<<<<< HEAD
     }
     #wallet .coppy-tran {
-=======
-.pagination ul li {
-    text-decoration: none;
-    position: relative;
-    margin: 0 4px;
-    width: 21px;
-    height: 26px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* box-shadow: 0 5px 10px rgb(0 0 0 / 30%), inset 0 -5px 0px rgb(80 80 80 / 10%), inset 0 -10px 0px rgb(150 150 150 / 10%); */
-    overflow: hidden;
-    color: #6D0CEE;
-    font-size: 20px;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    /* background-color: transparent;*/
-}
->>>>>>> 0116a6887a2c7bc63b17edea02d036e270cffb4c
 
         font-size: 20px;
     }
@@ -939,10 +903,7 @@ a:hover {
     flex-direction: column;
     font-size: 20px;
     color: #6D0CEE;
-<<<<<<< HEAD
     TEXT-ALIGN: center;
-=======
->>>>>>> 0116a6887a2c7bc63b17edea02d036e270cffb4c
 }
 #under .dis-collum-per {
     display: flex;
@@ -1274,7 +1235,6 @@ a:hover {
     background: #6D0CEE;
 }
 
-<<<<<<< HEAD
 .pagination ul {
     flex-direction: row;
     display: flex;
@@ -1302,6 +1262,3 @@ ol, ul {
     padding-left: 0rem;
 }
 }
-=======
-@media screen and (min-device-width: 280px) and (max-device-width: 1024px) {}
->>>>>>> 0116a6887a2c7bc63b17edea02d036e270cffb4c
