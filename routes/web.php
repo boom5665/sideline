@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
@@ -14,11 +15,15 @@ use App\Http\Controllers\UserController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+// authention
+Route::post('/authention', [LoginController::class, 'authention'])->name('Login.authention');
+
 Route::resource('posts', PostController::class);
 
 
 
-Route::get('/main', [PostController::class, 'mainindex']);
+Route::get('/main', [PostController::class, 'mainindex'])->name('Main.index');
 Route::get('/follow', [PostController::class, 'followindex']);
 
 
@@ -65,8 +70,11 @@ Route::get('/underdetail', function () {
     return view('posts.underdetail');
 });
 
+Route::get('/level', function () {
+    return view('level');
+});
 Route::get('/sidelineinformation', function () {
-    return view('posts.sidelineinformation');
+    return view('sidelineinformation');
 });
 // Route::get('/', function () {
 //     return view('auth.login');
