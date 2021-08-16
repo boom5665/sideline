@@ -380,9 +380,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-12" style="display: flex;
-                                        justify-content: space-evenly;
-                                        margin: 20px;">
+                        <div class="col-sm-12 dis-evan" style="">
                             <div class="">
                                 <div class="card_sis">
                                     <div class="div-point-side">

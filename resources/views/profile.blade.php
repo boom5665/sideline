@@ -12,11 +12,11 @@
                         <div class="card-description-nemaF">
                             <div class="imageWrapper">
 
-                                <img class="image" src="/uploads/avatars/{{ $user->avatar }}"
-                                    style="width:150px; height:150px; float:left; border-radius:50%; ">
+                                <img class="image img-pro" src="/uploads/avatars/{{ $user->avatar }}"
+                                   >
 
                             </div>
-                            <h2>{{ $user->name }}'s Profile</h2>
+                            <h2 class="pro-h2">{{ $user->name }}'s Profile</h2>
                             <button type="button" class="file-upload">
                                 <input type="file" name="avatar" class="file-input">เพิ่มรูปโปรไฟล์
                             </button>
@@ -78,15 +78,17 @@
 
         $(function() {
             $(".edit").click(function() {
-                var $this = $(this);
-                if ($this.hasClass("edit")) {
-                    $this.removeClass("edit").addClass("save").val("บันทึก").prev().
+                var $swap = $(this);
+                if ($swap.hasClass("edit")) {
+                    $swap.removeClass("edit").addClass("save").addClass().val("บันทึก").prev().
                     attr("readonly", false);
                 } else {
-                    $this.removeClass("save").addClass("edit").val("แก้ไข").prev().
+                    $swap.removeClass("save").addClass("edit").val("แก้ไข").prev().
                     attr("readonly", "readonly");
                 }
             });
         })
     </script>
 @stop
+
+

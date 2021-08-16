@@ -60,7 +60,7 @@
                 </div>
                 <div class="dis-colum">
                     <img src="{{ url('/images/gigi.png') }}" alt="Image" class="img-un">
-                    <div class="col-con" style="text-align: right;">
+                    <div class="col-con tex-A" >
                         <p>เข้าร่วมเมื่อ 8 มิ.ย. 2564</p>
                         <p>มีน้องๆ 3 คน ในสังกัด</p>
                         <p>มีคนเข้าชมสังกัดแล้ว: 10,139 ครั้ง</p>
@@ -200,7 +200,7 @@
                                     ผู้หญิง
                                 </a>
                             </span>
-                          
+
                             <span class="card_follow-following">
                                 <i class="fas fa-heart"></i>
                             </span>

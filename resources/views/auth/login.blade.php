@@ -101,7 +101,7 @@
                         @enderror
                     </div>
 
-                    <div class="dis-between" style="margin: 40px 0px 50px 0px;">
+                    <div class="dis-between mg-log">
                         <label class="login">ล็อกอินอัตโนมัติ
                             <input type="checkbox" checked="checked" name="remember" id="remember"
                                 {{ old('remember') ? 'checked' : '' }}>
