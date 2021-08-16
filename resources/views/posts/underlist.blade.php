@@ -31,7 +31,7 @@
                     </div>
                     <div class="right-contentsearch">
                         <input class="conent-search-input" id="" type="text" placeholder="ค้นหาสังกัด">
-                        <i class="fas fa-search btn-search-insied-input"></i>
+                        <i class="fas fa-search btn-search-insied-input-underlist"></i>
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@
 
 
             <div class="content">
-                <div class="row">
+                <div class="row pd-row-underlist">
                     <div class="col-lg-12 col-md-12 col-xs-6">
                         <div class="box-sideline">
                             <div class="row">

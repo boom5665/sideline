@@ -99,12 +99,16 @@
                     </div>
                 </div>
                 <div class="row">
+
                     <div class="col-sm-1">
-                        <img class="img-profile-user" src="{{ url('/image/image 53.png') }}" />
+                        <img class="img-profile-user pf-user-desktop" src="{{ url('/image/image 53.png') }}" />
                     </div>
                     <div class="col-sm-11 pad-comment">
                         <div class="comment-after">
-                            <h5>กูโต้ง ห้ามใจตัวเองไม่ให้รักเธอ</h5>
+                            <div class="img-detail-information">
+                                <img class="img-profile-user pf-user-mobile" src="{{ url('/image/image 53.png') }}" />
+                                <h5 class="name-user-work">กูโต้ง ห้ามใจตัวเองไม่ให้รักเธอ</h5>
+                            </div>
                             <span class="post-afterwork">โพสต์เมื่อ 3 วันที่แล้ว<span>
                                     <p class="text-comment-after">ตัวจริงสวยน่ารัก สะอาด ผิวขาว หุ่นดีน่ารักมาก ชอบมาก
                                         เดี๋ยวจะไปหาอีกนะจ๊ะ</p>
@@ -112,16 +116,20 @@
                                     <img class="img-comment" src="{{ url('/image/Miki1.png') }}" />
                         </div>
                     </div>
+
                 </div>
 
 
                 <div class="row">
                     <div class="col-sm-1">
-                        <img class="img-profile-user" src="{{ url('/image/image 18.png') }}" />
+                        <img class="img-profile-user pf-user-desktop" src="{{ url('/image/image 18.png') }}" />
                     </div>
                     <div class="col-sm-11 pad-comment">
                         <div class="comment-after">
-                            <h5>ผมเขต จู๋ผจญภัย</h5>
+                            <div class="img-detail-information">
+                                <img class="img-profile-user pf-user-mobile" src="{{ url('/image/image 18.png') }}" />
+                                <h5 class="name-user-work">เขต จู๋ผจญภัย</h5>
+                            </div>
                             <span class="post-afterwork">โพสต์เมื่อ 3 วันที่แล้ว<span>
                                     <p class="text-comment-after">ถูกใจไปหมด จ่ายค่าสินสอด คุยกันนิดหน่อย ชวนกันอาบน้ำ
                                         น้องถอดชุดออกเห็นเต็มรูปร่าง ผิวที่ขาวเนียนตา นมกำลังพองามและช่วงล่างจิมิ๊เกาเหลา
@@ -139,11 +147,14 @@
 
                 <div class="row">
                     <div class="col-sm-1">
-                        <img class="img-profile-user" src="{{ url('/image/image 63.png') }}" />
+                        <img class="img-profile-user pf-user-desktop" src="{{ url('/image/image 63.png') }}" />
                     </div>
                     <div class="col-sm-11 pad-comment">
                         <div class="comment-after">
-                            <h5>เขาใหญ่ เครู้กั๋นนน...</h5>
+                            <div class="img-detail-information">
+                                <img class="img-profile-user pf-user-mobile" src="{{ url('/image/image 63.png') }}" />
+                                <h5 class="name-user-work">เคร เขาใหญ่รู้กัน</h5>
+                            </div>
                             <span class="post-afterwork">โพสต์เมื่อ 3 วันที่แล้ว<span>
                                     <p class="text-comment-after">ตอนแรกไม่ตรงปก แต่ไปแล้วทำไงได้ ก็ต้องขึ้นอ่ะ
                                         ก็ทนๆไป....น้องถอดชุดออกเห็นเต็มรูปร่าง ผิวที่ขาวเนียนตา

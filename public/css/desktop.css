@@ -1,0 +1,28 @@
+@media screen and (min-device-width: 1025px) and (max-device-width: 1920px) and (-webkit-min-device-pixel-ratio: 1) {
+    #body .content-top-dont-login h1 {
+        font-size: 32px;
+        padding-top: 7px;
+    }
+    .head-font-bf-data {
+        font-size: 30px;
+        font-style: italic;
+        color: #6D0CEE;
+        font-weight: 700;
+    }
+    .head2-font-bf-data {
+        font-size: 19px;
+        color: #6D0CEE;
+        font-weight: 400;
+    }
+    .btn-search-insied-input-underlist {
+        position: relative;
+        left: -11px;
+    }
+    .btn-search-insied-input-follow {
+        position: relative;
+        left: -11px;
+    }
+    .pf-user-mobile {
+        display: none;
+    }
+}

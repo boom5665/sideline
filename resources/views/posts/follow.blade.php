@@ -57,16 +57,15 @@
         </div>
         
         <div class="content-top">
-        
             <div class="inline-formsearch">
-                <div class="left-contenthead"> 
-                    <h1 class="head2-font-bf-data-following">น้อง ๆ ที่ติดตาม</h1>
+                    <div class="left-contenthead">
+                        <h2 class="head2-font-bf-data-following">น้อง ๆ ที่ติดตาม </h2>
+                    </div>
+                    <div class="right-contentsearch">
+                        <input class="conent-search-input" id="" type="text" placeholder="ค้นหาชื่อน้อง, สังกัด">
+                        <i class="fas fa-search btn-search-insied-input-follow"></i>
+                    </div>
                 </div>
-                <div class="right-contentsearch-following"> 
-                    <input class="conent-search-input" id="" type="text" placeholder="ค้นหาชื่อน้อง, สังกัด">
-                    <i class="fas fa-search btn-search-insied-input"></i>
-                </div>
-            </div>
         </div>
 
 

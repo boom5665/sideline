@@ -248,7 +248,7 @@
 
 
         <div class="topnavM" class="display: none;">
-            <a href="#" class="active textsizeH">SIDELINE BKK</a>
+            <h1 href="#" class="active textsizeH">SIDELINE BKK</h1>
 
             <div id="myLinks">
                 <a class="align" href="{{ url('main') }}">หน้าหลัก</a>

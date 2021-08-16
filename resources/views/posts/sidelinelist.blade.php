@@ -52,12 +52,6 @@
                         <i class="fas fa-search btn-search-insied-input"></i>
                     </div>
                 </div>
-                {{-- <div class="conent-search"> 
-                        <form method="get" id="formsearch" >
-                            
-                        </form>
-                    </div> --}}
-
             </div>
             <div class="search-underlist">
 
@@ -86,7 +80,7 @@
 
 
             <div class="content">
-                <div class="row">
+                <div class="row pd-top-sidelinelist">
 
                     <div class="box-sideline">
                         <div class="row">
