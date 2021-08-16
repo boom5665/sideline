@@ -82,7 +82,7 @@
                     </div>
                     <div class="">
                         <img class="icon2" src="{{ url('/images/lock.png') }}" alt="Image" />
-                        <input id="password" type="password" class="inputtwo @error('password') is-invalid @enderror"
+                        <input id="password" type="password" placeholder="รหัสผ่าน" class="inputtwo @error('password') is-invalid @enderror"
                             name="password" required autocomplete="current-password">
                             @error('password')
                             <span class="invalid-feedback" role="alert">

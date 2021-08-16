@@ -473,6 +473,7 @@
 }
 #work .display-tele {
     display: flex;
+
 }
 @media screen and (min-device-width: 280px) and (max-device-width: 1024px) {
     #work .input-group {
