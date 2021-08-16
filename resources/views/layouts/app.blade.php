@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="th">
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <meta charset="utf-8">
