@@ -295,8 +295,8 @@
                                 <div class="form-group">
                                     <label for="exampleFormControlTextarea1"></label>
 
-                                    <textarea class="form-control description-downwork" id="exampleFormControlTextarea1"
-                                        rows="3">เขียนการบ้าน...</textarea>
+                                    <textarea class="form-control description-downwork" placeholder="เขียนการบ้าน..." id="exampleFormControlTextarea1"
+                                        rows="3"></textarea>
                                     <div class="line-rate-downwork">
                                         <div class="text-ratedownwork-title">
                                             <p class="title-downwork">ให้คะแนนตรงปก</p>
