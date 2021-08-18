@@ -1196,6 +1196,245 @@ a:hover {
 }
 
 
+#level .img-pro {
+    width: 110px;
+    height: 110px;
+    float: left;
+    border-radius: 50%;
+}
+
+#level .level-cola {
+    padding: 15px 15px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    background: #F9F9F9;
+    border: 2px solid #6D0CEE;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 15px rgb(0 0 0 / 15%);
+    border-radius: 20px;
+}
+
+#level .level-cola-in {
+    background: #FFFFFF;
+    border: 2px solid #C4C4C4;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 15px rgb(0 0 0 / 15%);
+    border-radius: 14px;
+    padding: 20px 20px;
+    overflow: hidden;
+    font-size: 25px;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+#level .dis-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#level .dis-aro {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0px 10px 0px;
+}
+
+#level .pro-h2 {
+    color: #6D0CEE;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+#level .pro-h3 {
+    color: #7E7E7E;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+#level .pro-h4 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #7E7E7E;
+}
+
+#level .pro-h5 {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 37px;
+    color: #7E7E7E;
+}
+
+#level .pro-h1 {
+    font-size: 200px;
+    font-weight: bold;
+    color: #6D0CEE;
+    height: 200px;
+    line-height: 1;
+}
+
+#level .dis-be {
+    display: flex;
+    justify-content: space-between;
+}
+
+#level .img-pro-2 {
+    width: 70px;
+    height: 70px;
+    float: left;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+#level .pro-t1 {
+    color: #6D0CEE;
+    font-weight: 300;
+    font-size: 25px;
+    text-align: left;
+    margin: 20px 0px;
+}
+
+#level .pro-t2 {
+    color: #C4C4C4;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: left;
+}
+
+#level .pro-t3 {
+    color: #6D0CEE;
+    font-weight: normal;
+    font-size: 30px;
+    text-align: left;
+}
+
+#level .but-pass {
+    background: #6D0CEE;
+    border-radius: 50px;
+    border: none;
+    padding: 5px 25px;
+    color: #fff;
+}
+
+#level .but-pass2 {
+    background: #FF403F;
+}
+
+#level .img-pro3 {
+    width: 160px;
+    height: 220px;
+    border-radius: 10%;
+}
+
+#level .but-edit {
+    text-align: end;
+    background: transparent;
+    border-radius: 50px;
+    color: #6D0CEE;
+    border: none;
+}
+
+#level .wrapper {
+    line-height: 1.2em;
+    max-height: calc(2*1.2em + 2em);
+    width: 100%;
+    height: max-content;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+#level .wrapper .content {
+    position: relative;
+}
+
+/* This will hide the show/less if the content is 2 lines or less*/
+#level .wrapper .content:after {
+    content: "";
+    position: absolute;
+    top: 106%;
+    /* Start at the end of the content */
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: #fff;
+    height: 100px;
+    /* A big height */
+}
+
+/**/
+#level .wrapper :nth-last-child(1),
+#level .wrapper :nth-last-child(2) {
+    /*make the element sticky so they show above the content if the content is big
+and the after will no more hide them
+*/
+    position: sticky;
+    bottom: 0;
+    background: #fff;
+    cursor: pointer;
+    outline: none;
+    color: #7E7E7E;
+    line-height: 2em;
+}
+
+#level .wrapper:focus,
+#level .wrapper:active {
+    outline: 0;
+    max-height: 400px;
+}
+
+/*make the after and the "show more" on click*/
+#level .wrapper:focus .content:after,
+#level .wrapper:active .content:after,
+#level .wrapper:focus :nth-last-child(1),
+#level .wrapper:active :nth-last-child(1) {
+    display: none;
+}
+
+#level .text-e {
+    text-align: end;
+}
+
+@media screen and (min-device-width: 280px) and (max-device-width: 1024px) {
+    #level .but-pass {
+        padding: 5px 15px;
+        width: max-content;
+        height: max-content;
+        font-size: 20px;
+    }
+
+    #level .pro-h2 {
+        font-size: 20px;
+        line-height: 2;
+    }
+
+    #level .text-a {
+        text-align: center;
+    }
+
+    #level .text-e {
+        text-align: center;
+    }
+
+    #level .pro-t2 {
+        font-size: 15px;
+    }
+
+    #level .pro-t3 {
+        font-size: 20px;
+    }
+
+
+    #level .img-pro3 {
+        width: 120px;
+        height: 160px;
+    }
+
+    #level .but-pass {
+        font-size: 15px;
+    }
+}
 
 
 

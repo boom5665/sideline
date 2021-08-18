@@ -17,7 +17,7 @@ class LoginController extends Controller
     {
 
         $credentials = $request->only('email', 'password');
-        $remember_me = $request->has('remember_me') ? true : false; 
+        $remember_me = $request->has('remember_me') ? true : false;
 
         if (Auth::attempt($credentials, $remember_me)) {
             $user = Auth::user();
@@ -29,7 +29,7 @@ class LoginController extends Controller
                 //     'url' => route('Main.index')
                 // ]);
                 return redirect()->route('Main.index');
-                
+
             }else{
                 Auth::logout();
                 return response()->json(['status'=>'0', 'mgs'=>'Unauthorised login xx01'], 401);

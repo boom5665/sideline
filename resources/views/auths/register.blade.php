@@ -65,7 +65,7 @@
     </div>
     <div id="login" class="container">
         <div class="formstyleR">
-                    <form method="POST" action="{{ route('register') }}">
+            <form action=" {{ route('Register.saveregis') }}" method="POST" enctype="multipart/form-data">
                         @csrf
 
                         <div class="card-description">
@@ -92,7 +92,7 @@
                             <label class="regis col-sm-12" for="email">อีเมลล์</label>
                             <img class="iconR" src="http://127.0.0.1:8000/images/email.png" alt="Image">
 
-                                <input id="email" type="text" class="inputR @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                                <input id="email" name="email" type="text" class="inputR @error('email') is-invalid @enderror"  value="{{ old('email') }}" required autocomplete="email">
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -103,7 +103,7 @@
                         <div class="form-group">
                             <label class="regis col-sm-12" for="email">รหัสผ่าน</label>
                             <img class="icon2R" src="{{ url('/images/lock.png') }}" alt="Image" />
-                            <input id="password" type="password" class="inputtwoR @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                            <input id="password" name="password"  type="password" class="inputtwoR @error('password') is-invalid @enderror" required autocomplete="new-password">
                             <img class="iconeye" src="{{ url('/images/eyess.png') }}" alt="Image" />
                                         @error('password')
                                             <span class="invalid-feedback" role="alert">
@@ -112,7 +112,7 @@
                                         @enderror
 
                         </div>
-                        <div class="form-group">
+                        {{-- <div class="form-group">
                             <label class="regis col-sm-12" for="email">ใส่รหัสผ่านอีกครั้ง</label>
                             <img class="icon2R" src="{{ url('/images/lock.png') }}" alt="Image" />
                             <input id="password" type="password" class="inputtwoR @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
@@ -123,7 +123,7 @@
                                 </span>
                             @enderror
 
-                        </div>
+                        </div> --}}
 
 
                         <div class="dis-evenly">

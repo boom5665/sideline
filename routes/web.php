@@ -5,6 +5,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\RegisterController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,7 +21,12 @@ use App\Http\Controllers\UserController;
 Route::post('/authention', [LoginController::class, 'authention'])->name('Login.authention');
 
 Route::resource('posts', PostController::class);
+Route::resource('auths', RegisterController::class);
 
+
+//register
+Route::post('saveregis', [RegisterController::class, 'saveregis'])->name('Register.saveregis');
+Route::get('/register', [RegisterController::class, 'registerindex']);
 
 
 Route::get('/main', [PostController::class, 'mainindex'])->name('Main.index');
@@ -32,11 +38,9 @@ Route::get('/profile', [UserController::class, 'profile']);
 Route::post('/profile', [UserController::class, 'update_avatar']);
 
 
-Auth::routes();
-
-Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home')->middleware('isAdmin');
+// Route::get('/', [HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home')->middleware('isAdmin');
 
 
 
@@ -45,6 +49,11 @@ Route::get('/underlist', [PostController::class, 'underlist']);
 Route::get('/undersidelinedetail', [PostController::class, 'undersidelinedetail']);
 
 
+
+
+Route::get('/login', function () {
+    return view('auths.login');
+});
 Route::get('/about', function () {
     return view('about');
 });
@@ -76,23 +85,10 @@ Route::get('/level', function () {
 Route::get('/sidelineinformation', function () {
     return view('posts.sidelineinformation');
 });
-// Route::get('/', function () {
-//     return view('auth.login');
-// });
 
-// Route::get('/register', function () {
-//     return view('register');
-// });
 
 Route::get('/work', function () {
     return view('work');
-});
-Route::get('Login/login', function () {
-    return view('Login/login');
-});
-
-Route::get('Login/register', function () {
-    return view('Login/register');
 });
 
 
