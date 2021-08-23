@@ -65,8 +65,7 @@
     </div>
     <div id="login" class="container">
         <div class="formstyleR">
-            <form id="send-invite-form" action=" {{ route('Register.saveregis') }}" method="POST"
-                enctype="multipart/form-data">
+            <form action=" {{ route('Register.saveregis') }}" method="POST" enctype="multipart/form-data">
                 @csrf
 
                 <div class="card-description">
@@ -132,8 +131,7 @@
 
                     <label class="login loginR">ข้าพเจ้าอายุมากกว่า 18 ปี ตามกฎหมาย เข้าใจและตกลงตาม
                         เงื่อนไขการให้บริการ และ นโยบายความเป็นส่วนตัว
-                        <input type="checkbox" checked="checked" class="invitation-friends"
-                            value="ยอมรับว่าคุณมีอายุมากกว่า 18 ปี">
+                        <input type="checkbox" checked="checked" value="ยอมรับว่าคุณมีอายุมากกว่า 18 ปี">
                         <span class="checkmark "></span>
                     </label>
                 </div>
@@ -171,14 +169,7 @@
             input.attr("type", "password");
         }
     });
-
-    var $form = $('#send-invite-form');
-    var $checkbox = $('input[class^="invitation-friends"]');
-
-    $form.on('submit', function(e) {
-        if ($('input.invitation-friends:checked').length == 0) {
-            alert( 'กรุณายืนยันอายุว่ามากกว่า 18+' );
-            return false;
-        }
-    });
 </script>
+
+
+

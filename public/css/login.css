@@ -17,6 +17,7 @@
     font-size: 50px;
     color: #fff;
 }
+
 #login .card-description-nemaH-R {
     font-size: 60px;
     font-weight: bold;
@@ -121,7 +122,7 @@
     margin: 8px 0;
     display: inline-block;
     border: 2px solid #ccc;
-    border-radius: 7px;
+    border-radius: 10px;
     box-sizing: border-box;
     font-size: 25px;
     background-image: url(/images/eye.png);
@@ -358,12 +359,35 @@ a:hover {
     padding: 23px 0px 10px 23px;
     min-width: 44px;
     width: 60px;
-    right: 285px;
+    transform: translateX(-80px);
 }
 
-#login .mg-log{
+#login .mg-log {
     margin: 30px 0px 30px 0px;
 }
+
+#login .iconeye {
+    position: absolute;
+    padding: 23px 0px 10px 23px;
+    min-width: 44px;
+    width: 60px;
+    transform: translate(1500%, -48px);
+    background-image: url(/images/eyess.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+}
+
+#login .iconeye2 {
+    position: absolute;
+    padding: 35px 0px 10px 23px;
+    min-width: 44px;
+    width: 60px;
+    transform: translate(1500%, -55px);
+    background-image: url(/images/eyenone.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+}
+
 @media screen and (min-device-width: 280px) and (max-device-width: 1024px) {
     #login .formstyle {
         margin: 0px;
@@ -399,6 +423,7 @@ a:hover {
     #login .loginimg {
         width: 70px;
     }
+
     #login .login .checkmark:after {
         left: 5px;
         top: 2px;
@@ -412,13 +437,16 @@ a:hover {
         padding-left: 70px;
         background-size: 30px;
     }
+
     .icon2 {
         padding: 20px 12px 10px 23px;
         width: 55px;
     }
+
     #login .mg-log {
         margin: 15px 0px 15px 0px;
     }
+
     #login input[type=submit] {
         font-size: 15px;
     }
@@ -432,30 +460,37 @@ a:hover {
         font-size: 20px;
         padding: 5px 0px 0px 0px;
     }
+
     #login .card-description-nemaH-R {
         font-size: 40px;
         font-weight: bold;
     }
+
     #login .card-description-nemaR {
         font-size: 35px;
     }
+
     #login .iconeye {
         right: 35px;
         width: 50px;
     }
+
     #login .icon2R {
         padding: 20px 12px 10px 25px;
         width: 55px;
     }
+
     #login .iconR {
         padding: 25px 13px 16px 25px;
         width: 60px;
     }
+
     #login .submitR[type=submit] {
         padding: 7px 10px;
         margin: 8px 0;
         font-size: 20px;
     }
+
     #login .inputR[type=text] {
         font-size: 20px;
     }
@@ -487,15 +522,18 @@ a:hover {
     color: #9443FF;
     /* padding-left: 70px; */
 }
+
 #profile input[type=text]:hover {
     border: 0px solid #7E7E7E;
 }
+
 #profile input[type=text]:focus {
     border: 0px solid #9443FF;
     outline-offset: 0px;
     outline: none;
     background: white;
 }
+
 #profile .formstyle {
     box-sizing: border-box;
     border-radius: 18.8931px;
@@ -602,34 +640,41 @@ a:hover {
 #profile .pro-h2 {
     font-size: 30px;
 }
+
 @media screen and (min-device-width: 280px) and (max-device-width: 1024px) {
 
     #profile .formstyle {
         margin: 0px;
         padding: 0px;
     }
+
     #profile .img-pro {
         width: 90px;
         height: 90px;
         margin-top: 20px;
     }
+
     #profile .pro-h2 {
         font-size: 20px;
     }
+
     #profile input[type=text] {
         width: 75%;
         padding: 10px 10px;
         font-size: 20px;
     }
+
     #profile .buttonmo {
         font-size: 20px;
 
     }
+
     #profile .password {
         width: 75%;
         padding: 10px 10px;
         font-size: 20px;
     }
+
     #profile .file-upload {
         font-size: 15px;
     }
@@ -739,32 +784,39 @@ a:hover {
     background: #6D0CEE;
     border-radius: 5px;
 }
+
 @media screen and (min-device-width: 280px) and (max-device-width: 1024px) {
     #wallet .content-wallet {
         font-size: 15px;
     }
+
     #wallet .content-wallet-con {
         font-size: 25px;
     }
+
     #wallet .imgtele {
         width: 75px;
         height: 75px;
 
     }
+
     #wallet .display-row {
         align-items: center;
         font-size: 15px;
 
     }
+
     #wallet .coppy-tran {
 
         font-size: 20px;
     }
+
     #wallet .re-tran {
 
         font-size: 15px;
 
     }
+
     #wallet .wallet-table {
 
         font-size: 11px;
@@ -899,10 +951,12 @@ a:hover {
     display: flex;
     flex-direction: column;
 }
+
 #under .dis-row-per {
     display: flex;
     flex-direction: row;
 }
+
 /* #under .dis-row {
     display: flex;
     flex-direction: column;
@@ -914,6 +968,7 @@ a:hover {
     color: #6D0CEE;
     TEXT-ALIGN: center;
 }
+
 #under .dis-collum-per {
     display: flex;
     flex-direction: column;
@@ -921,6 +976,7 @@ a:hover {
     color: #6D0CEE;
 
 }
+
 #under .btn-un {
     background: #6D0CEE;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
@@ -951,15 +1007,18 @@ a:hover {
     color: #6D0CEE;
     margin: 0px 0px 20px 0px;
 }
-#under .tex-A{
+
+#under .tex-A {
     text-align: right;
 }
+
 #under .head2-font-bf-data-following {
     font-size: 26px;
     color: #6D0CEE;
     padding-top: 2rem;
     font-weight: 700;
 }
+
 @media screen and (min-device-width: 280px) and (max-device-width: 1024px) {
     #under .content-un {
         font-size: 25px;
@@ -967,29 +1026,35 @@ a:hover {
         padding: 15px 0px;
         color: #6D0CEE;
     }
+
     #under .dis-between {
         display: flex;
         flex-direction: column;
     }
+
     #under .dis-colum {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
-    #under .tex-A{
+
+    #under .tex-A {
         text-align: left;
     }
+
     #under .img-un {
         width: 100px;
         height: 100px;
         margin-left: 15px;
         margin-top: 0px;
     }
+
     #under .left-contenthead {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     #under .btn-detail {
         width: 90px;
         background: #6D0CEE;
@@ -1000,6 +1065,7 @@ a:hover {
         margin: 0px 0px 0px 0px;
 
     }
+
     #under .head2-font-bf-data-following {
         font-size: 15px;
     }
@@ -1013,10 +1079,12 @@ a:hover {
         right: -15px;
         width: 120px;
     }
+
     #under .col-con {
         padding: 10px;
         font-size: 13px;
     }
+
     #under .dis-row {
         display: flex;
         flex-direction: column;
@@ -1029,19 +1097,24 @@ a:hover {
         flex-direction: row;
         align-items: center;
     }
+
     #under .dis-row-per2 {
         display: flex;
         align-items: center;
         flex-direction: column;
     }
+
     #under .btn-per-red2 {
         background: #FF403F;
         margin: 15px 1px 0px 15px;
     }
-    #under .dis-but-side{ display: flex;
+
+    #under .dis-but-side {
+        display: flex;
         justify-content: center;
         margin: 15px;
-    }}
+    }
+}
 
 
 
@@ -1436,13 +1509,6 @@ and the after will no more hide them
     }
 }
 
-
-
-
-
-
-
-
 .pagination {
     display: flex;
     width: 100%;
@@ -1493,26 +1559,29 @@ and the after will no more hide them
     flex-direction: row;
     display: flex;
 }
+
 @media screen and (min-device-width: 280px) and (max-device-width: 1024px) {
-.pagination ul li {
-    text-decoration: none;
-    position: relative;
-    margin: 0 5px;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* box-shadow: 0 5px 10px rgb(0 0 0 / 30%), inset 0 -5px 0px rgb(80 80 80 / 10%), inset 0 -10px 0px rgb(150 150 150 / 10%); */
-    overflow: hidden;
-    color: #6D0CEE;
-    font-size: 15px;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    /* background-color: transparent; */
-}
-ol, ul {
-    padding-left: 0rem;
-}
+    .pagination ul li {
+        text-decoration: none;
+        position: relative;
+        margin: 0 5px;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* box-shadow: 0 5px 10px rgb(0 0 0 / 30%), inset 0 -5px 0px rgb(80 80 80 / 10%), inset 0 -10px 0px rgb(150 150 150 / 10%); */
+        overflow: hidden;
+        color: #6D0CEE;
+        font-size: 15px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        /* background-color: transparent; */
+    }
+
+    ol,
+    ul {
+        padding-left: 0rem;
+    }
 }

@@ -96,11 +96,11 @@
                             <input type="checkbox" name="remember_me" id="remember_me">
                             <span class="checkmark"></span>
                         </label>
-                        @if (Route::has('password.request'))
-                            <a class="login color-log" href="{{ route('password.request') }}">
+                        {{-- @if (Route::has('password.request')) --}}
+                            <a class="login color-log" href="{{ url('password.request') }}">
                                 {{ __('ลืมรหัสผ่าน') }}
                             </a>
-                        @endif
+                        {{-- @endif --}}
 
                     </div>
 
@@ -108,10 +108,12 @@
 
                     <input type="submit" value="ลงชื่อเข้าใช้">
                     <div class="login" style="color: black">
-                        @if (Route::has('register'))
+                        {{-- @if (Route::has('register'))
                             <a class="color-log" href="{{ route('register') }}"> สมัครบัญชี  >
                             </a>
-                        @endif
+                        @endif --}}
+                        <a class="color-log" href="{{ url('register') }}"> สมัครบัญชี  >
+                        </a>
                     </div>
 
                 </form>

@@ -80,7 +80,7 @@
 
 
 
-<div id="app" style="display:none">
+<div id="app" style="display:block">
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
         <div class="container">
 
@@ -113,13 +113,13 @@
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{{ route('logout') }}"
+                            <a class="dropdown-item" href="{{ route('Login.logout') }}"
                                 onclick="event.preventDefault();
-                                                                                     document.getElementById('logout-form').submit();">
+                                  document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
                             </a>
 
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            <form id="logout-form" action="{{ route('Login.logout') }}" method="POST" class="d-none">
                                 @csrf
                             </form>
                         </div>

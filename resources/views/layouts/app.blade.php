@@ -30,9 +30,11 @@
     <link href="{{ asset('css/layout.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/login.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/addForm.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap-reboot.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap-grid.min.css') }}" rel="stylesheet">
+
 
 
     <link href="{{ asset('css/mobile.css') }}" rel="stylesheet">
@@ -283,7 +285,7 @@
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-          
+
                 <div class="modal-body">
                     <div class="container-fluid">
                         <div class="row">

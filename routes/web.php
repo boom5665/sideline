@@ -19,7 +19,7 @@ use App\Http\Controllers\RegisterController;
 
 // authention
 Route::post('/authention', [LoginController::class, 'authention'])->name('Login.authention');
-
+Route::post('/logout', [LoginController::class, 'logout'])->name('Login.logout');
 Route::resource('posts', PostController::class);
 Route::resource('auths', RegisterController::class);
 

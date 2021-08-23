@@ -55,8 +55,9 @@ class RegisterController extends Controller
         $user->remember_token = '';
         $user->save();
 
-        return redirect()->route('auths.register')
-            ->with('success', 'Project created successfully.');
+        return view('auths.login');
+        // return redirect()->route('login')
+        //     ->with('success', 'Project created successfully.');
     }
 
     /**
