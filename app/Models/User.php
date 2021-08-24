@@ -12,7 +12,7 @@ class User extends Authenticatable
 {
     use HasFactory, Notifiable;
 
-
+    // protected $guarded = [];
     protected $table = 'users';
     protected $fillable = ['remembe_token'];
 

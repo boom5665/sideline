@@ -66,6 +66,7 @@
     <div id="login" class="container">
         <div class="formstyleR">
             <form id="send-invite-form" action=" {{ route('Register.saveregis') }}" method="POST"
+            {{-- <form id="send-invite-form" action="{{ route('register.post.step.1') }}" method="POST" --}}
                 enctype="multipart/form-data">
                 @csrf
 
@@ -92,7 +93,6 @@
                 <div class="form-group ">
                     <label class="regis col-sm-12" for="email">อีเมลล์</label>
                     <img class="iconR" src="http://127.0.0.1:8000/images/email.png" alt="Image">
-
                     <input id="email" name="email" type="text" class="inputR @error('email') is-invalid @enderror"
                         value="{{ old('email') }}" required autocomplete="email">
                     @error('email')
@@ -149,7 +149,7 @@
 
 </body>
 
-<script>
+{{-- <script>
     function onChange() {
         const password = document.querySelector('input[name=password]');
         const confirm = document.querySelector('input[name=confirm]');
@@ -164,7 +164,6 @@
 
         $(this).toggleClass("iconeye iconeye2");
         var input = $($(this).attr("toggle"));
-
         if (input.attr("type") == "password") {
             input.attr("type", "text");
         } else {
@@ -181,4 +180,4 @@
             return false;
         }
     });
-</script>
+</script> --}}

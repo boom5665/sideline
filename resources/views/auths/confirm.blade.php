@@ -79,64 +79,31 @@
                 <div class="form-group">
                     <label class="regis col-sm-12" for="email">ชื่อผู้ใช้</label>
                     <img class="icon2R" src="{{ url('/images/user2.png') }}" alt="Image" />
-                    <input type="text" name="name" class="inputR @error('name') is-invalid @enderror">
+                    <input type="text" name="name" class="inputR "
+                    >
 
-                    @error('name')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
+
 
                 </div>
                 <div class="form-group ">
                     <label class="regis col-sm-12" for="email">อีเมลล์</label>
                     <img class="iconR" src="http://127.0.0.1:8000/images/email.png" alt="Image">
+                    <input id="email" name="email" type="text" class="inputR "
+                         required autocomplete="email">
 
-                    <input id="email" name="email" type="text" class="inputR @error('email') is-invalid @enderror"
-                        value="{{ old('email') }}" required autocomplete="email">
-                    @error('email')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
                 </div>
 
                 <div class="form-group">
                     <label class="regis col-sm-12" for="email">รหัสผ่าน</label>
                     <img class="icon2R" src="{{ url('/images/lock.png') }}" alt="Image" />
-                    <input id="password-field" name="password" type="password" onChange="onChange()"
-                        class="inputtwoR inputR  @error('password') is-invalid @enderror" required
-                        autocomplete="new-password">
+                    <input id="password-field" name="password" type="password"
+                        class="inputtwoR inputR">
                     <div toggle="#password-field" class="iconeye icon toggle-password"
                         src="{{ url('/images/eyess.png') }}"></div>
-                    @error('password')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
-
                 </div>
-                <div class="form-group">
-                    <label class="regis col-sm-12" for="email">ใส่รหัสผ่านอีกครั้ง</label>
-                    <img class="icon2R" src="{{ url('/images/lock.png') }}" alt="Image" />
-                    <input name="confirm" onChange="onChange()" id="password-field" type="password"
-                        class="inputtwoR inputR password">
-                    <div toggle="#password-field" class="iconeye  toggle-password"></div>
+                <a type="button" href="/register" class="btn btn-warning">แก้ไข</a>
+                <button type="submit" class="submitR" >สมัคร</button>
 
-
-                </div>
-
-
-                <div class="dis-evenly">
-
-                    <label class="login loginR">ข้าพเจ้าอายุมากกว่า 18 ปี ตามกฎหมาย เข้าใจและตกลงตาม
-                        เงื่อนไขการให้บริการ และ นโยบายความเป็นส่วนตัว
-                        <input type="checkbox" checked="checked" value="ยอมรับว่าคุณมีอายุมากกว่า 18 ปี">
-                        <span class="checkmark "></span>
-                    </label>
-                </div>
-
-                <input type="submit" class="submitR" value="สมัคร">
 
             </form>
         </div>
@@ -148,15 +115,7 @@
 </body>
 
 <script>
-    function onChange() {
-        const password = document.querySelector('input[name=password]');
-        const confirm = document.querySelector('input[name=confirm]');
-        if (confirm.value === password.value) {
-            confirm.setCustomValidity('');
-        } else {
-            confirm.setCustomValidity('Passwords do not match');
-        }
-    }
+
 
     $(".toggle-password").click(function() {
 

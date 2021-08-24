@@ -30,6 +30,42 @@ class RegisterController extends Controller
     }
 
     /**
+     * Write code on Method
+     *
+     * @return response()
+     */
+    public function createStep1(Request $request)
+    {
+        $user = $request->session()->get('user');
+        return view('register.step1',compact('user'));
+    }
+   /**
+     * Write code on Method
+     *
+     * @return response()
+     */
+    public function PostcreateStep1(Request $request)
+    {
+        $user = $request->session()->get('user');
+        $validatedData = $request->validate([
+            'name' => 'required|unique:user',
+            'email' => 'required',
+            'password' => 'required',
+        ]);
+        if(empty($request->session()->get('user'))){
+            $user = new User();
+            $user->fill($validatedData);
+            $user->session()->put('user', $user);
+        }else{
+            $user = $request->session()->get('user');
+            $user->fill($validatedData);
+            $user->session()->put('user', $user);
+        }
+
+        return view('auths.confirm',compact('user'));
+    }
+
+    /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -37,13 +73,13 @@ class RegisterController extends Controller
      */
     public function saveregis(Request $request)
     {
+
         $request->validate([
             'name' => 'required',
             'email' => 'required',
             'password' => 'required',
 
         ]);
-        // DB::table('users')->truncate();
         $user = new User;
         $user->name = $request->name;
         $user->email = $request->email;
@@ -54,10 +90,8 @@ class RegisterController extends Controller
         $user->expire = null;
         $user->remember_token = '';
         $user->save();
-
         return view('auths.login');
-        // return redirect()->route('login')
-        //     ->with('success', 'Project created successfully.');
+
     }
 
     /**

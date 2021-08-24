@@ -27,6 +27,8 @@ Route::resource('auths', RegisterController::class);
 //register
 Route::post('saveregis', [RegisterController::class, 'saveregis'])->name('Register.saveregis');
 Route::get('/register', [RegisterController::class, 'registerindex']);
+Route::get('/confirm', [RegisterController::class,'createStep1'])->name('register.create.step.1');
+Route::post('/confirm', [RegisterController::class,'PostcreateStep1'])->name('register.post.step.1');
 
 
 Route::get('/main', [PostController::class, 'mainindex'])->name('Main.index');
