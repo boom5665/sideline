@@ -387,7 +387,12 @@ a:hover {
     background-repeat: no-repeat;
     background-size: 50px;
 }
-
+#login .sty-feed{
+    font-size: 18px;
+    display: flex;
+    color: #FFFFFF;
+    justify-content: flex-end;
+}
 @media screen and (min-device-width: 280px) and (max-device-width: 1024px) {
     #login .formstyle {
         margin: 0px;

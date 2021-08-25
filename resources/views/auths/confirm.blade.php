@@ -66,7 +66,7 @@
     <div id="login" class="container">
         <div class="formstyleR">
             <form action=" {{ route('Register.saveregis') }}" method="POST" enctype="multipart/form-data">
-                @csrf
+                {{ csrf_field() }}
 
                 <div class="card-description">
                     <div class="card-description-nemaR card-description-nemaH-R">
@@ -79,30 +79,30 @@
                 <div class="form-group">
                     <label class="regis col-sm-12" for="email">ชื่อผู้ใช้</label>
                     <img class="icon2R" src="{{ url('/images/user2.png') }}" alt="Image" />
-                    <input type="text" name="name" class="inputR "
+                    <input type="text" name="name" class="inputR"
+                     value="{{ session()->get('user.name') }}"
                     >
-
-
-
                 </div>
                 <div class="form-group ">
                     <label class="regis col-sm-12" for="email">อีเมลล์</label>
                     <img class="iconR" src="http://127.0.0.1:8000/images/email.png" alt="Image">
                     <input id="email" name="email" type="text" class="inputR "
-                         required autocomplete="email">
+                        value="{{ session()->get('user.email') }}"
+                        >
 
                 </div>
 
                 <div class="form-group">
                     <label class="regis col-sm-12" for="email">รหัสผ่าน</label>
                     <img class="icon2R" src="{{ url('/images/lock.png') }}" alt="Image" />
-                    <input id="password-field" name="password" type="password"
-                        class="inputtwoR inputR">
+                    <input id="password-field" name="password" type="password" class="inputtwoR inputR"
+                        value="{{ session()->get('user.password') }}"
+                        >
                     <div toggle="#password-field" class="iconeye icon toggle-password"
                         src="{{ url('/images/eyess.png') }}"></div>
                 </div>
                 <a type="button" href="/register" class="btn btn-warning">แก้ไข</a>
-                <button type="submit" class="submitR" >สมัคร</button>
+                <button type="submit" class="submitR">สมัคร</button>
 
 
             </form>
@@ -115,8 +115,6 @@
 </body>
 
 <script>
-
-
     $(".toggle-password").click(function() {
 
         $(this).toggleClass("iconeye iconeye2");
@@ -129,6 +127,3 @@
         }
     });
 </script>
-
-
-

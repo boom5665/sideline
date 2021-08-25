@@ -65,10 +65,11 @@
     </div>
     <div id="login" class="container">
         <div class="formstyleR">
-            <form id="send-invite-form" action=" {{ route('Register.saveregis') }}" method="POST"
-            {{-- <form id="send-invite-form" action="{{ route('register.post.step.1') }}" method="POST" --}}
+
+            {{-- <form id="send-invite-form" action=" {{ route('Register.saveregis') }}" method="POST" --}}
+            <form id="send-invite-form" action="{{ route('register.post') }}" method="POST"
                 enctype="multipart/form-data">
-                @csrf
+                {{ csrf_field() }}
 
                 <div class="card-description">
                     <div class="card-description-nemaR card-description-nemaH-R">
@@ -81,13 +82,14 @@
                 <div class="form-group">
                     <label class="regis col-sm-12" for="email">ชื่อผู้ใช้</label>
                     <img class="icon2R" src="{{ url('/images/user2.png') }}" alt="Image" />
-                    <input type="text" name="name" class="inputR @error('name') is-invalid @enderror">
-
+                    <input type="text" name="name" class="inputR @error('name') is-invalid @enderror"
+                    value="{{ old('name') }}"required autocomplete="name">
                     @error('name')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
+                    <span class="invalid-feedback sty-feed" role="alert">
+                        <strong>***ชื่อซ้ำ***</strong>
+                    </span>
+                @enderror
+
 
                 </div>
                 <div class="form-group ">
@@ -96,8 +98,8 @@
                     <input id="email" name="email" type="text" class="inputR @error('email') is-invalid @enderror"
                         value="{{ old('email') }}" required autocomplete="email">
                     @error('email')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
+                        <span class="invalid-feedback sty-feed" role="alert">
+                            <strong>***อีเมลล์ซ้ำ***</strong>
                         </span>
                     @enderror
                 </div>
@@ -106,15 +108,11 @@
                     <label class="regis col-sm-12" for="email">รหัสผ่าน</label>
                     <img class="icon2R" src="{{ url('/images/lock.png') }}" alt="Image" />
                     <input id="password-field" name="password" type="password" onChange="onChange()"
-                        class="inputtwoR inputR  @error('password') is-invalid @enderror" required
+                        class="inputtwoR inputR  " required
                         autocomplete="new-password">
                     <div toggle="#password-field" class="iconeye icon toggle-password"
                         src="{{ url('/images/eyess.png') }}"></div>
-                    @error('password')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
+
 
                 </div>
                 <div class="form-group">
@@ -129,7 +127,6 @@
 
 
                 <div class="dis-evenly">
-
                     <label class="login loginR">ข้าพเจ้าอายุมากกว่า 18 ปี ตามกฎหมาย เข้าใจและตกลงตาม
                         เงื่อนไขการให้บริการ และ นโยบายความเป็นส่วนตัว
                         <input type="checkbox" checked="checked" class="invitation-friends"
@@ -181,3 +178,6 @@
         }
     });
 </script> --}}
+
+
+

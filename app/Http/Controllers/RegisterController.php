@@ -7,6 +7,8 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\DB;
+use App\Models\Register;
+
 class RegisterController extends Controller
 {
     /**
@@ -19,50 +21,43 @@ class RegisterController extends Controller
         return view('auths.register');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        return view('auths.register');
-    }
+
 
     /**
      * Write code on Method
      *
      * @return response()
      */
-    public function createStep1(Request $request)
+    public function createStep3(Request $request)
     {
-        $user = $request->session()->get('user');
-        return view('register.step1',compact('user'));
+
+        $users = $request->session()->get('users');
+        return view('auths.register',compact('users'));
     }
    /**
      * Write code on Method
      *
      * @return response()
      */
-    public function PostcreateStep1(Request $request)
+    public function PostcreateStep3(Request $request)
     {
-        $user = $request->session()->get('user');
+        $users = $request->session()->get('users');
         $validatedData = $request->validate([
-            'name' => 'required|unique:user',
-            'email' => 'required',
+            'name' => 'required|unique:users',
+            'email' => 'required|unique:users',
             'password' => 'required',
         ]);
-        if(empty($request->session()->get('user'))){
-            $user = new User();
-            $user->fill($validatedData);
-            $user->session()->put('user', $user);
+        if(empty($request->session()->get('users'))){
+            $users = new \App\Models\User();
+            $users->fill($validatedData);
+            $users->session()->put('users', $users);
         }else{
-            $user = $request->session()->get('user');
-            $user->fill($validatedData);
-            $user->session()->put('user', $user);
+            $users = $request->session()->get('users');
+            $users->fill($validatedData);
+            $users->session()->put('users', $users);
         }
 
-        return view('auths.confirm',compact('user'));
+        return view('auths.confirm',compact('users'));
     }
 
     /**
@@ -74,23 +69,25 @@ class RegisterController extends Controller
     public function saveregis(Request $request)
     {
 
-        $request->validate([
-            'name' => 'required',
-            'email' => 'required',
-            'password' => 'required',
+        // $request->validate([
+        //     'name' => 'required|unique:users',
+        //     'email' => 'required|unique:users',
+        //     'password' => 'required',
 
-        ]);
-        $user = new User;
-        $user->name = $request->name;
-        $user->email = $request->email;
-        $user->password = Hash::make($request->password);
-        $user->image = '';
-        $user->type = 'user';
-        $user->status = 'Y';
-        $user->expire = null;
-        $user->remember_token = '';
-        $user->save();
-        return view('auths.login');
+        // ]);
+        $users = $request->session()->get('users');
+        $users = new User;
+        $users->name = $request->name;
+        $users->email = $request->email;
+        $users->password = Hash::make($request->password);
+        $users->image = '';
+        $users->type = 'user';
+        $users->status = 'Y';
+        $users->expire = null;
+        $users->remember_token = '';
+        $users->save();
+
+        return redirect('login')->with('status', 'registercomplete');
 
     }
 
