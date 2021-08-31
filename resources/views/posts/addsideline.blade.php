@@ -1,47 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Side line</title>
-    <link rel="shortcut icon" href="favicon.png">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
-    <!-- Custom fonts for this template-->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"> -->
-
-    <!-- Custom styles for this template-->
-    <link href="css/app.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
-    <!-- Plugin -->
-    <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css" />
-    <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
-    <link href="{{ asset('css/layout.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/addForm.css') }}" rel="stylesheet">
-</head>
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 @extends('layouts.app')
 @section('content')
 
@@ -299,12 +256,22 @@
                                 </div>
                                 <div> ซึ่งสามารถค้นหา Profile ตัวเองได้โดยการค้นหาชื่อ</div>
                             </div>
+                            <div class="col-sm-12">
+                                <div id="drop-region">
+                                    <div class="drop-message">
+                                        Drag & drop files here …
+                                    </div>
+                                    <div id="image-preview"></div>
+                                </div>
 
+                            </div>
                             <div class="form-group">
                                 <div class="col-sm-12">
                                     <div class="" id="">
                                         <div class="fallback">
-                                            <div class="gallery" id="selectedFiles"></div>
+                                            <div
+                                            class="gallery"
+                                            id="selectedFiles"></div>
                                         </div>
                                     </div>
 
@@ -315,7 +282,7 @@
                                 <label class="src col-sm-12" for="email"> ยืนยันตัวตน</label>
 
                                 <div class="col-sm-6">
-                                    <input type="file" multiple id="gallery-photo-add" name="filename[]" class="input-file">
+                                    <input type="file" id="gallery-photo-add" name="filename[]" class="input-file">
                                     <div class="input-group col-xs-12 ">
                                         <input type="text" class="form-control inputfile" disabled
                                             placeholder="Upload Video" style="width: 99%;">
@@ -426,11 +393,6 @@
                 </div>
             </form>
         </div>
-    </body>
-@endsection
-
-
-</html>
 
 <script>
     $(document).on('click', '.upload-field', function() {
@@ -470,19 +432,14 @@
             x.style.display = "block";
         }
     }
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script>
+
     $(function() {
         // Multiple images preview in browser
         var imagesPreview = function(input, placeToInsertImagePreview) {
-
             if (input.files) {
                 var filesAmount = input.files.length;
-
                 for (i = 0; i < filesAmount; i++) {
                     var reader = new FileReader();
-
                     reader.onload = function(event) {
                         $($.parseHTML('<img>')).attr('src', event.target.result).appendTo(
                             placeToInsertImagePreview);
@@ -499,3 +456,159 @@
         });
     });
 </script>
+<script>
+    var // where files are dropped + file selector is opened
+        dropRegion = document.getElementById("drop-region"),
+        // where images are previewed
+        imagePreviewRegion = document.getElementById("image-preview");
+    // open file selector when clicked on the drop region
+    var fakeInput = document.createElement("input");
+    fakeInput.type = "file";
+    fakeInput.accept = "image/*";
+    fakeInput.multiple = true;
+    dropRegion.addEventListener('click', function() {
+        fakeInput.click();
+    });
+    fakeInput.addEventListener("change", function() {
+        var files = fakeInput.files;
+        handleFiles(files);
+    });
+
+    function preventDefault(e) {
+        e.preventDefault();
+        e.stopPropagation();
+    }
+    dropRegion.addEventListener('dragenter', preventDefault, false)
+    dropRegion.addEventListener('dragleave', preventDefault, false)
+    dropRegion.addEventListener('dragover', preventDefault, false)
+    dropRegion.addEventListener('drop', preventDefault, false)
+
+
+    function handleDrop(e) {
+        var dt = e.dataTransfer,
+            files = dt.files;
+        if (files.length) {
+            handleFiles(files);
+        } else {
+            // check for img
+            var html = dt.getData('text/html'),
+                match = html && /\bsrc="?([^"\s]+)"?\s*/.exec(html),
+                url = match && match[1];
+            if (url) {
+                uploadImageFromURL(url);
+                return;
+            }
+        }
+
+        function uploadImageFromURL(url) {
+            var img = new Image;
+            var c = document.createElement("canvas");
+            var ctx = c.getContext("2d");
+
+            img.onload = function() {
+                c.width = this.naturalWidth; // update canvas size to match image
+                c.height = this.naturalHeight;
+                ctx.drawImage(this, 0, 0); // draw in image
+                c.toBlob(function(blob) { // get content as PNG blob
+
+                    // call our main function
+                    handleFiles([blob]);
+
+                }, "image/png");
+            };
+            img.onerror = function() {
+                alert("Error in uploading");
+            }
+            img.crossOrigin = ""; // if from different origin
+            img.src = url;
+        }
+
+    }
+
+    dropRegion.addEventListener('drop', handleDrop, false);
+    function handleFiles(files) {
+        for (var i = 0, len = files.length; i < len; i++) {
+            if (validateImage(files[i]))
+                previewAnduploadImage(files[i]);
+        }
+    }
+
+    function validateImage(image) {
+        // check the type
+        var validTypes = ['image/jpeg', 'image/png', 'image/gif'];
+        if (validTypes.indexOf(image.type) === -1) {
+            alert("Invalid File Type");
+            return false;
+        }
+
+        // check the size
+        var maxSizeInBytes = 10e6; // 10MB
+        if (image.size > maxSizeInBytes) {
+            alert("File too large");
+            return false;
+        }
+
+        return true;
+
+    }
+
+    function previewAnduploadImage(image) {
+
+        // container
+        var imgView = document.createElement("div");
+        imgView.className = "image-view";
+        imagePreviewRegion.appendChild(imgView);
+
+        // previewing image
+        var img = document.createElement("img");
+        imgView.appendChild(img);
+
+        // progress overlay
+        var overlay = document.createElement("div");
+        overlay.className = "overlay";
+        imgView.appendChild(overlay);
+
+
+        // read the image...
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            img.src = e.target.result;
+        }
+        reader.readAsDataURL(image);
+
+        // create FormData
+        var formData = new FormData();
+        formData.append('image', image);
+
+        // upload the image
+        var uploadLocation = 'https://api.imgbb.com/1/upload';
+        formData.append('key', 'bb63bee9d9846c8d5b7947bcdb4b3573');
+
+        var ajax = new XMLHttpRequest();
+        ajax.open("POST", uploadLocation, true);
+
+        ajax.onreadystatechange = function(e) {
+            if (ajax.readyState === 4) {
+                if (ajax.status === 200) {
+                    // done!
+                } else {
+                    // error!
+                }
+            }
+        }
+        ajax.upload.onprogress = function(e) {
+
+            // change progress
+            // (reduce the width of overlay)
+
+            var perc = (e.loaded / e.total * 100) || 100,
+                width = 100 - perc;
+
+            overlay.style.width = width;
+        }
+
+        ajax.send(formData);
+
+    }
+</script>
+@endsection

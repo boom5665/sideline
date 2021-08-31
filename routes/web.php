@@ -66,9 +66,13 @@ Route::get('/contact', function () {
 Route::get('/wallet', function () {
     return view('wallet');
 });
+Route::get('/addsideline', function () {
+    return view('posts.addsideline');
+});
 Route::get('/addunder', function () {
     return view('posts.addunder');
 });
+
 Route::get('/addunderdetail', function () {
     return view('posts.addunderdetail');
 });

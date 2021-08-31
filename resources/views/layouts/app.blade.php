@@ -34,9 +34,6 @@
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap-reboot.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap-grid.min.css') }}" rel="stylesheet">
-
-
-
     <link href="{{ asset('css/mobile.css') }}" rel="stylesheet">
     <link href="{{ asset('css/tablet.css') }}" rel="stylesheet">
     <link href="{{ asset('css/desktop.css') }}" rel="stylesheet">
@@ -354,20 +351,19 @@
 
         }
 
-        close.onclick = function() {
-            modal.style.display = "none";
-        }
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
+
+        // close.onclick = function() {
+        //     modal.style.display = "none";
+        // }
+        // window.onclick = function(event) {
+        //     if (event.target == modal) {
+        //         modal.style.display = "none";
+        //     }
+        // }
         $(document).ready(function() {
             $(".MDsearch").click(function() {
                 $("#Modalsearch").modal();
             });
-
-
             $("#btnDownwork").click(function() {
                 $("#Downwork").modal();
             });

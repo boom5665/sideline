@@ -47,7 +47,7 @@ class PostController extends Controller
         return view('posts.sidelineinformation');
     }
 
-   
+
 
     public function followindex()
     {
@@ -61,10 +61,7 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        return view('posts.Addsideline');
-    }
+   
 
     /**
      * Store a newly created resource in storage.
