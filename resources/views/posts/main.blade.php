@@ -13,8 +13,8 @@
                         <div class="content-tab-dont-login">ผู้รับจ้างเป็นแฟน รับงาน ในเว็บไซต์แห่งนี้</div>
                         <div class="content-tab-dont-login">อายุมากกว่า 18 ปี ตามกฎหมาย</div>
                         <div class="btn-log-regis">
-                            <button class="login-content">เข้าสู่ระบบ</button>
-                            <button class="regis-content">ลงทะเบียน</button>
+                            <a href="{{ url('login') }}"><button class="login-content">เข้าสู่ระบบ</button></a>
+                            <a href="{{ url('register') }}"><button class="regis-content">ลงทะเบียน</button></a>
                         </div>
                     </div>
                 </div>

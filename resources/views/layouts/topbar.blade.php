@@ -59,7 +59,7 @@
             <div id="myLinks">
                 <a class="align" href="{{ url('main') }}">หน้าหลัก</a>
                 <a class="align" href="{{ url('dataweb') }}">ข้อมูล</a>
-                <a class="align" href="{{ url('') }}">เลือกน้อง</a>
+                <a class="align" href="{{ url('main') }}">เลือกน้อง</a>
                 <a class="align" href="{{ url('') }}">สังกัด</a>
                 <a class="align" href="{{ url('follow') }}">ที่ติดตาม</a>
                 <a class="align MDsearch" data-toggle="modal" data-target="#exampleModalLong">ค้นหาน้อง

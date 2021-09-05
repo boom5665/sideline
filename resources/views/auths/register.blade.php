@@ -146,7 +146,7 @@
 
 </body>
 
-{{-- <script>
+<script>
     function onChange() {
         const password = document.querySelector('input[name=password]');
         const confirm = document.querySelector('input[name=confirm]');
@@ -177,7 +177,7 @@
             return false;
         }
     });
-</script> --}}
+</script>
 
 
 

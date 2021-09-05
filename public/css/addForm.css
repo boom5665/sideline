@@ -466,10 +466,12 @@
     justify-content: space-evenly;
     margin: 20px;
 }
+
 #work .display-tele {
     display: flex;
 
 }
+
 #work .display-cam {
     display: flex;
     margin: 10px 0px;
@@ -513,7 +515,14 @@
     z-index: 2;
     background: rgba(255, 255, 255, 0.5);
 }
-
+#work .toppagefont {
+    color: #C4C4C4;
+    font-size: 23px;
+}
+#work .toppagefont2 {
+    color: #6D0CEE;
+    font-size: 23px;
+}
 @media screen and (min-device-width: 280px) and (max-device-width: 1024px) {
     #work .input-group {
         width: 60%;
@@ -530,17 +539,23 @@
     }
 
     .wrap:before {
-        top: 30%;
+        top: 40%;
     }
 
     #work .wrap2:before {
 
-        top: 30%;
+        top: 40%;
     }
-
+    #work .toppagefont {
+        font-size: 15px;
+    }
+    #work .toppagefont2 {
+        font-size: 15px;
+    }
     #work .card-description-nemaW2 {
         font-size: 15px;
     }
+
     #work .dis-evan {
         display: flex;
         justify-content: space-evenly;
@@ -548,6 +563,7 @@
         flex-direction: column;
         align-items: center;
     }
+
     #work .card_sis {
         background-color: #6D0CEE;
         border-radius: 10px;
@@ -566,9 +582,10 @@
         box-sizing: border-box;
         border-radius: 6px;
         margin: 0px;
-        padding: 0px;
+        padding: 10px;
         box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
     }
+
     #work .display-tele {
         display: flex;
         font-size: 50px;
@@ -576,7 +593,32 @@
         align-items: center;
         flex-direction: column;
     }
+
     #work .display-rowW {
         font-size: 15px;
     }
+
+    #work .nextbutton {
+        padding: 10px 10px;
+        margin: 10px 5px 20px 0px;
+        border-radius: 4px;
+        font-size: 15px;
+    }
+
+    #work .but-cam {
+        width: 60px;
+        height: 40px;
+        font-size: 15px;
+        margin: 0px 8px;
+    }
+
+    #work #drop-region {
+        font-size: 19px;
+    }
+
+    #work .c-box {
+        height: 100px;
+    }
+
+
 }
