@@ -69,12 +69,12 @@ class RegisterController extends Controller
     public function saveregis(Request $request)
     {
 
-        // $request->validate([
-        //     'name' => 'required|unique:users',
-        //     'email' => 'required|unique:users',
-        //     'password' => 'required',
+        $request->validate([
+            'name' => 'required|unique:users',
+            'email' => 'required|unique:users',
+            'password' => 'required',
 
-        // ]);
+        ]);
         $users = $request->session()->get('users');
         $users = new User;
         $users->name = $request->name;

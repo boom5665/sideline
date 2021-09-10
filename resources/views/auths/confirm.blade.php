@@ -102,7 +102,7 @@
                         src="{{ url('/images/eyess.png') }}"></div>
                 </div>
                 <a type="button" href="/register" class="btn btn-warning">แก้ไข</a>
-                <button type="submit" class="submitR">สมัคร</button>
+                <button type="submit" class="submitR">ตกลง</button>
 
 
             </form>

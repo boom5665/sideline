@@ -70,11 +70,6 @@
     {{-- <script src="{{ asset('js/bootstrap.min.js') }}" defer></script> --}}
     <script src="{{ asset('js/bootstrap-paginator.js') }}" defer></script>
     <script src="{{ asset('js/swiper-bundle.min.js') }}" defer></script>
-
-
-
-
-
     @yield('css')
 
 

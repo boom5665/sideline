@@ -692,7 +692,9 @@ summary {
     align-items: center;
     border-color: #6d0cee;
 }
-
+.login-content:hover {
+    background-color: #CDCDCD;
+}
 .regis-content {
     border-radius: 5px;
     height: 40px;
@@ -703,7 +705,9 @@ summary {
     align-items: center;
     border-color: #6d0cee;
 }
-
+.regis-content:hover {
+    background-color: #CDCDCD;
+}
 .btn-log-regis {
     padding-bottom: 10px;
     padding-top: 10px;
@@ -958,6 +962,9 @@ summary {
     width: 111px;
     align-items: center;
     border-color: #9443FF;
+}
+.btn-seemore:hover {
+    background-color: #CDCDCD;
 }
 
 .div-seemore {

@@ -26,9 +26,9 @@ Route::resource('auths', RegisterController::class);
 
 //register
 Route::post('saveregis', [RegisterController::class, 'saveregis'])->name('Register.saveregis');
-Route::get('/register', [RegisterController::class, 'registerindex']);
-Route::get('/register-create', [RegisterController::class,'createStep3'])->name('register.create');
-Route::post('/register-post', [RegisterController::class,'PostcreateStep3'])->name('register.post');
+// Route::get('/register', [RegisterController::class, 'registerindex']);
+Route::get('/register', [RegisterController::class,'createStep3'])->name('register.create');
+// Route::post('/confirm', [RegisterController::class,'PostcreateStep3'])->name('register.post');
 //
 
 
@@ -56,6 +56,9 @@ Route::get('/undersidelinedetail', [PostController::class, 'undersidelinedetail'
 
 Route::get('/login', function () {
     return view('auths.login');
+});
+Route::get('/confirm', function () {
+    return view('auths.confirm');
 });
 Route::get('/about', function () {
     return view('about');

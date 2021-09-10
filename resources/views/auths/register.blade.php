@@ -54,23 +54,19 @@
 
     <div id="login" class="">
         <div class="">
-            <div class="dis-between-center">
-                <div class="login" style="padding: 10px 0px 0px 10px;">หน้าหลัก
-                </div>
-                <a class="login" href="{{ url('about') }}">เกี่ยวกับ
-                </a>
-
-            </div>
+            <div class="               dis-between-center">
+        <div class="login" style="padding: 10px 0px 0px 10px;">หน้าหลัก
         </div>
+        <a class="login" href="{{ url('about') }}">เกี่ยวกับ
+        </a>
+
+    </div>
+    </div>
     </div>
     <div id="login" class="container">
-        <div class="formstyleR">
-
-            {{-- <form id="send-invite-form" action=" {{ route('Register.saveregis') }}" method="POST" --}}
-            <form id="send-invite-form" action="{{ route('register.post') }}" method="POST"
-                enctype="multipart/form-data">
-                {{ csrf_field() }}
-
+        <div class="formstyleR" id="form">
+            {{-- <form  action=" {{ route('Register.saveregis') }}" method="POST"> --}}
+            <div>
                 <div class="card-description">
                     <div class="card-description-nemaR card-description-nemaH-R">
                         SIDELINE-BKK
@@ -82,63 +78,102 @@
                 <div class="form-group">
                     <label class="regis col-sm-12" for="email">ชื่อผู้ใช้</label>
                     <img class="icon2R" src="{{ url('/images/user2.png') }}" alt="Image" />
-                    <input type="text" name="name" class="inputR @error('name') is-invalid @enderror"
-                    value="{{ old('name') }}"required autocomplete="name">
+                    <input type="text" name="name" class="inputR @error('name') is-invalid @enderror form-control"
+                        required autocomplete="name" id="name" required>
                     @error('name')
-                    <span class="invalid-feedback sty-feed" role="alert">
-                        <strong>***ชื่อซ้ำ***</strong>
-                    </span>
-                @enderror
+                        <span class="invalid-feedback sty-feed" role="alert">
+                            <strong>***ชื่อซ้ำ***</strong>
 
-
+                        </span>
+                    @enderror
+                    <div class="valid-feedback">สามารถใช้ได้</div>
+                    <div class="invalid-feedback"></div>
                 </div>
                 <div class="form-group ">
                     <label class="regis col-sm-12" for="email">อีเมลล์</label>
                     <img class="iconR" src="http://127.0.0.1:8000/images/email.png" alt="Image">
-                    <input id="email" name="email" type="text" class="inputR @error('email') is-invalid @enderror"
-                        value="{{ old('email') }}" required autocomplete="email">
+                    <input id="email" name="email" type="text"
+                        class="inputR form-control @error('email') is-invalid @enderror"
+                        id="email" required>
                     @error('email')
                         <span class="invalid-feedback sty-feed" role="alert">
                             <strong>***อีเมลล์ซ้ำ***</strong>
                         </span>
                     @enderror
+                    <div class="valid-feedback">อีเมลล์ใช้งานได้</div>
+                    <div class="invalid-feedback"></div>
                 </div>
 
                 <div class="form-group">
                     <label class="regis col-sm-12" for="email">รหัสผ่าน</label>
                     <img class="icon2R" src="{{ url('/images/lock.png') }}" alt="Image" />
-                    <input id="password-field" name="password" type="password" onChange="onChange()"
-                        class="inputtwoR inputR  " required
-                        autocomplete="new-password">
+                    <input id="password-field" name="password" type="password" class="inputtwoR inputR form-control"
+                    required >
                     <div toggle="#password-field" class="iconeye icon toggle-password"
                         src="{{ url('/images/eyess.png') }}"></div>
-
-
+                    <div class="valid-feedback">รหัสผ่านใช้ได้</div>
+                    <div class="invalid-feedback">รหัสผ่านไม่ปลอดภัย</div>
                 </div>
+
                 <div class="form-group">
                     <label class="regis col-sm-12" for="email">ใส่รหัสผ่านอีกครั้ง</label>
                     <img class="icon2R" src="{{ url('/images/lock.png') }}" alt="Image" />
-                    <input name="confirm" onChange="onChange()" id="password-field" type="password"
-                        class="inputtwoR inputR password">
+                    <input name="confirm" id="cPwdId" type="password"
+                        class="inputtwoR inputR password form-control myCpwdClass" required>
                     <div toggle="#password-field" class="iconeye  toggle-password"></div>
-
-
+                    <div class="valid-feedback">รหัสผ่านตรงกัน</div>
+                    <div class="invalid-feedback">รหัสผ่านไม่ตรงกัน</div>
                 </div>
-
 
                 <div class="dis-evenly">
                     <label class="login loginR">ข้าพเจ้าอายุมากกว่า 18 ปี ตามกฎหมาย เข้าใจและตกลงตาม
                         เงื่อนไขการให้บริการ และ นโยบายความเป็นส่วนตัว
-                        <input type="checkbox" checked="checked" class="invitation-friends"
-                            value="ยอมรับว่าคุณมีอายุมากกว่า 18 ปี">
+                        <input type="checkbox" id="agreeId" class="invitation-friends custom-control-input form-control"
+                            required>
                         <span class="checkmark "></span>
                     </label>
                 </div>
+                <button class="submitR"  id="submitBtn" onclick="onVerify()" disabled>สมัคร</button>
 
-                <input type="submit" class="submitR" value="สมัคร">
+            </div>
+        </div>
 
+        <div class="formstyleR" id="open">
+            <form  action=" {{ route('Register.saveregis') }}" method="POST">
+                {{ csrf_field() }}
+                <div class="card-description">
+                    <div class="card-description-nemaR card-description-nemaH-R">
+                        SIDELINE-BKK
+                    </div>
+                    <div class="card-description-nemaR">
+                        สมัคเลย ฟรี !
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="regis col-sm-12" for="email">ชื่อผู้ใช้</label>
+                    <img class="icon2R" src="{{ url('/images/user2.png') }}" alt="Image" />
+                    <div id="openName" type="text" name="name" class="inputR"></div>
+                </div>
+                <div class="form-group ">
+                    <label class="regis col-sm-12" for="email">อีเมลล์</label>
+                    <img class="iconR" src="http://127.0.0.1:8000/images/email.png" alt="Image">
+                    <div id="open-Email" name="email" type="text" class="inputR "></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="regis col-sm-12" for="email">รหัสผ่าน</label>
+                    <img class="icon2R" src="{{ url('/images/lock.png') }}" alt="Image" />
+                    <div id="open-password-field" name="password" type="password" class="inputtwoR inputR"></div>
+                    <div toggle="#password-field" class="iconeye icon toggle-password"
+                        src="{{ url('/images/eyess.png') }}"></div>
+                </div>
+                <div style="text-align: center;">
+                    <button type="button" class="submitW" onclick="onCancel()">แก้ไข</button>
+                    <button type="submit" id="submitBtn" class="submitW" onclick="onVerify()">ตกลง</button>
+                </div>
             </form>
         </div>
+
 
     </div>
 
@@ -146,19 +181,104 @@
 
 </body>
 
+
 <script>
-    function onChange() {
-        const password = document.querySelector('input[name=password]');
-        const confirm = document.querySelector('input[name=confirm]');
-        if (confirm.value === password.value) {
-            confirm.setCustomValidity('');
-        } else {
-            confirm.setCustomValidity('Passwords do not match');
+ $(document).ready(function() {
+        // ----------- Set all elements as INVALID --------------
+        var myInputElements = document.querySelectorAll(".form-control");
+        var i;
+        for (i = 0; i < myInputElements.length; i++) {
+            myInputElements[i].classList.add('is-invalid');
+            myInputElements[i].classList.remove('is-valid');
         }
+        // ------------ Check passwords similarity --------------
+        $('#password-field, #cPwdId').on('keyup', function() {
+            if ($('#password-field').val() != '' && $('#cPwdId').val() != '' && $('#password-field')
+                .val() == $('#cPwdId')
+                .val()) {
+                $('#cPwdValid').show();
+                $('#cPwdInvalid').hide();
+                $('#cPwdInvalid').html('Passwords Match').css('color', 'green');
+                $('.myCpwdClass').addClass('is-valid');
+                $('.myCpwdClass').removeClass('is-invalid');
+                $("#submitBtn").attr("disabled", false);
+                for (i = 0; i < myInputElements.length; i++) {
+                    var myElement = document.getElementById(myInputElements[i].id);
+                    if (myElement.classList.contains('is-invalid')) {
+                        $("#submitBtn").attr("disabled", true);
+                       
+                        break;
+                    }
+                }
+            } else {
+                $('#cPwdValid').hide();
+                $('#cPwdInvalid').show();
+                $('#cPwdInvalid').html('Not Matching').css('color', 'red');
+                $('.myCpwdClass').removeClass('is-valid');
+                $('.myCpwdClass').addClass('is-invalid');
+                $("#submitBtn").attr("disabled", true);
+
+            }
+        });
+        // ----------------- Validate on submit -----------------
+        let currForm = document.getElementById('form');
+        currForm.addEventListener('submit', function(event) {
+            if (currForm.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+            } else {
+                $("#submitBtn").attr("disabled", false);
+                currForm.classList.add('was-validated');
+            }
+        }, false);
+        // ----------------- Validate on input -----------------
+        currForm.querySelectorAll('.form-control').forEach(input => {
+            input.addEventListener(('input'), () => {
+                if (input.checkValidity()) {
+                    input.classList.remove('is-invalid');
+                    input.classList.add('is-valid');
+                } else {
+                    input.classList.remove('is-valid');
+                    input.classList.add('is-invalid');
+                }
+                var is_valid = $('.form-control').length === $('.form-control.is-valid').length;
+                // $("#submitBtn").attr("disabled", !is_valid);
+                if (is_valid) {
+                    $("#submitBtn").attr("disabled", false);
+
+                } else {
+                    $("#submitBtn").attr("disabled", true);
+
+
+                }
+            });
+        });
+        // ------------------------------------------------------
+    });
+
+    $(document).ready(function() {
+        document.getElementById("open").style.display = "none";
+    })
+
+    function onVerify() {
+        document.getElementById("openName").innerHTML = document.getElementById("name").value;
+        document.getElementById("open-Email").innerHTML = document.getElementById("email").value;
+        document.getElementById("open-password-field").innerHTML = document.getElementById("password-field").value;
+        document.getElementById("open").style.display = "block";
+        document.getElementById("form").style.display = "none";
     }
 
-    $(".toggle-password").click(function() {
+    function onCommit() {
+        document.getElementById("form").style.display = "none";
+        document.getElementById("open").style.display = "none";
+    }
 
+    function onCancel() {
+        document.getElementById("form").style.display = "block";
+        document.getElementById("open").style.display = "none";
+
+    }
+    $(".toggle-password").click(function() {
         $(this).toggleClass("iconeye iconeye2");
         var input = $($(this).attr("toggle"));
         if (input.attr("type") == "password") {
@@ -167,17 +287,51 @@
             input.attr("type", "password");
         }
     });
-
-    var $form = $('#send-invite-form');
-    var $checkbox = $('input[class^="invitation-friends"]');
-
-    $form.on('submit', function(e) {
-        if ($('input.invitation-friends:checked').length == 0) {
-            alert( 'กรุณายืนยันอายุว่ามากกว่า 18+' );
-            return false;
-        }
-    });
 </script>
 
+<style>
+    input[type="submit"]:disabled {
+        background-color: red;
+    }
 
+    .form-control.is-invalid,
+    .was-validated .form-control:invalid {
+        border-color: white;
+        padding-right: calc(1.5em + .75rem);
+        background-image: none !important;
+        background-repeat: no-repeat;
+        background-position: center right calc(.375em + .1875rem);
+        background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+    }
 
+    .form-control.is-valid,
+    .was-validated .form-control:valid {
+        border-color: white;
+        padding-right: calc(1.5em + .75rem);
+        background-image: none;
+
+    }
+
+    .invalid-feedback {
+        width: 100%;
+        margin-top: 0.25rem;
+        font-size: 18px;
+        color: #FFFFFF;
+        justify-content: flex-end;
+    }
+
+    .valid-feedback {
+        width: 100%;
+        margin-top: 0.25rem;
+        font-size: 18px;
+        color: #FFFFFF;
+        justify-content: flex-end;
+    }
+
+    .was-validated .form-control:invalid:focus,
+    .form-control.is-invalid:focus {
+
+        box-shadow: 0 0 0 0.25rem rgb(246 246 246 / 25%);
+    }
+
+</style>
