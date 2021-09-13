@@ -692,9 +692,7 @@ summary {
     align-items: center;
     border-color: #6d0cee;
 }
-.login-content:hover {
-    background-color: #CDCDCD;
-}
+.login-content:hover {background: #9443FF;border-color: #9443FF;}
 .regis-content {
     border-radius: 5px;
     height: 40px;
@@ -705,9 +703,7 @@ summary {
     align-items: center;
     border-color: #6d0cee;
 }
-.regis-content:hover {
-    background-color: #CDCDCD;
-}
+.regis-content:hover {background: #9443FF;border-color: #9443FF;}
 .btn-log-regis {
     padding-bottom: 10px;
     padding-top: 10px;
@@ -808,6 +804,8 @@ summary {
     width: 100%;
     position: relative;
     opacity: 0.5;
+    background: linear-gradient(200.42deg, rgba(109, 12, 238, 0) 0%, #6D0CEE 98.49%);
+    opacity: 0.6;
 }
 
 .card_under {
@@ -963,9 +961,7 @@ summary {
     align-items: center;
     border-color: #9443FF;
 }
-.btn-seemore:hover {
-    background-color: #CDCDCD;
-}
+.btn-seemore:hover {background: #9443FF;border-color: #9443FF;}
 
 .div-seemore {
     text-align: center;

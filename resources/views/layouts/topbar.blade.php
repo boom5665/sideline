@@ -18,11 +18,9 @@
                                 class="fas fa-search"></i></a>
                         <div class="dropdown">
                             {{-- @if (Route::has('login')) --}}
-                                <a class="toppage top-us"
-                                {{-- href="{{ route('login') }}" --}}
-                                >เข้าสู่ระบบ</a>
+                            <a class="toppage top-us" {{-- href="{{ route('login') }}" --}}>เข้าสู่ระบบ</a>
                             {{-- @endif --}}
-                            {{-- <div class="dropdown-content">
+                            <div class="dropdown-content">
                                 @guest
                                 @else
                                     <img src="/uploads/avatars/{{ Auth::user()->avatar }}" class="avatar">
@@ -30,15 +28,23 @@
                                         {{ Auth::user()->name }}
                                     </div>
                                 @endguest
+                                <a href="{{ url('/profile') }}"><button class="padbut set-but-2">เติมเงิน</button></a>
+                                <a href="{{ url('/profile') }}"><button class="padbut set-but-2">ลงโพสต์</button></a>
                                 <a href="{{ url('/profile') }}"><button
-                                        class="padbut set-but">จัดการบัญชี</button></a>
-                                <button class="padbut set-but-2">การบ้านที่ส่ง</button>
-                                <button class="padbut set-but-2">น้องสุดโปรด</button>
+                                        class="padbut set-but-2">โพสต์ของฉัน</button></a>
+                                <a href="{{ url('/profile') }}"><button
+                                        class="padbut set-but-2">เปิดสังกัด</button></a>
+                                <a href="{{ url('/profile') }}"><button
+                                        class="padbut set-but-2">สังกัดของฉัน</button></a>
+                                <a href="{{ url('/profile') }}"> <button
+                                        class="padbut set-but-2">โปรไฟล์ของฉัน</button></a>
 
                                 <button class="padbut set-but-out" onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();"><img class=""
-                                        src="{{ url('/images/log-out.png') }}" alt="Image" />ออกจากระบบ</button>
-                            </div> --}}
+                                document.getElementById('logout-form').submit();"><img
+                                        class=""
+                                        src="
+                                        {{ url('/images/log-out.png') }}" alt="Image" />ออกจากระบบ</button>
+                            </div>
 
                         </div>
                     </div>
@@ -81,8 +87,7 @@
 </header>
 
 
-
-<div id="app" style="display:block">
+{{-- <div id="app" style="display:block">
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
         <div class="container">
 
@@ -133,13 +138,4 @@
     </nav>
 
 
-</div>
-
-
-
-
-
-
-
-
-
+</div> --}}

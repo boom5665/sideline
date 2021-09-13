@@ -1278,7 +1278,9 @@ a:hover {
     color: #EBE8E1;
     margin: 10px;
 }
-
+#contract .but-tele:hover {
+background: #63c5f7;
+}
 @media screen and (min-device-width: 280px) and (max-device-width: 1024px) {
     #contract .collapsible {
         font-size: 16px;

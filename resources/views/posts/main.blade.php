@@ -4,9 +4,9 @@
 
     <body id="body">
         <div class="container">
-            <div class="content-tab-dont-log">
+            <div class="content-tab-dont-log" data-aos="fade-left">
                 <div class="alert2">
-                    <div class="content">
+                    <div class="content" >
                         <div class="content-top-dont-login">
                             <h1>เว็บไซต์ไลน์บีเคเค</h1>
                         </div>
@@ -21,8 +21,8 @@
             </div>
 
             <div class="bt-content">
-                <div class="content-alert">
-                    <div class="alert-header">
+                <div class="content-alert" data-aos="fade-right">
+                    <div class="alert-header" >
                         <i class="fas fa-exclamation-triangle iconalert-tabcontent"></i>
                         {{-- <img class="alert-img" src="{{ url('/images/Group.png') }}" alt="Image" /> --}}
                         <div class="content">
@@ -65,7 +65,7 @@
                     <div class="col-lg-12 col-md-12 col-xs-6">
                         <div class="box-sideline">
                             <div class="row">
-                                <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom ">
+                                <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom " data-aos="zoom-in" >
                                     <div class="card_sis">
                                         <img src="{{ url('/image/image-sis.png') }}"
                                             class="card-img-top img-side-data-body" alt="...">
@@ -145,7 +145,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom ">
+                                <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom " data-aos="zoom-in">
                                     <div class="card_sis">
                                         <img src="{{ url('/image/image-sis.png') }}"
                                             class="card-img-top img-side-data-body" alt="...">
@@ -225,7 +225,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom ">
+                                <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom " data-aos="zoom-in">
                                     <div class="card_sis">
                                         <img src="{{ url('/image/image-sis.png') }}"
                                             class="card-img-top img-side-data-body" alt="...">
@@ -305,7 +305,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom ">
+                                <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom " data-aos="zoom-in">
                                     <div class="card_sis">
                                         <img src="{{ url('/image/image-sis.png') }}"
                                             class="card-img-top img-side-data-body" alt="...">
@@ -385,7 +385,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom ">
+                                <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom " data-aos="zoom-in">
                                     <div class="card_sis">
                                         <img src="{{ url('/image/image-sis.png') }}"
                                             class="card-img-top img-side-data-body" alt="...">
@@ -465,7 +465,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom ">
+                                <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom " data-aos="zoom-in">
                                     <div class="card_sis">
                                         <img src="{{ url('/image/image-sis.png') }}"
                                             class="card-img-top img-side-data-body" alt="...">
@@ -553,6 +553,7 @@
 
 
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -561,7 +562,7 @@
 
             <div class="content-top">
                 <div class="content-head content-headD">
-                    <h1 class="head-font-bf-data bf-data2">น้อง ๆ ไซด์ไลน์ ทั้งหมด</h1>
+                    <h1 class="head-font-bf-data bf-data2" >น้อง ๆ ไซด์ไลน์ ทั้งหมด</h1>
                 </div>
                 <div class="inline-formsearch">
                     <div class="left-contenthead">
@@ -576,7 +577,7 @@
 
             <div class="content">
                 <div class="row">
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom ">
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom " data-aos="zoom-in">
                         <div class="card_sis">
                             <img src="{{ url('/image/image-sis.png') }}" class="card-img-top img-side-data-body"
                                 alt="...">
@@ -655,7 +656,7 @@
                         </div>
                     </div>
 
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom ">
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom " data-aos="zoom-in">
                         <div class="card_sis">
                             <img src="{{ url('/image/image-sis.png') }}" class="card-img-top img-side-data-body"
                                 alt="...">
@@ -734,7 +735,7 @@
                         </div>
                     </div>
 
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom ">
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom " data-aos="zoom-in">
                         <div class="card_sis">
                             <img src="{{ url('/image/image-sis.png') }}" class="card-img-top img-side-data-body"
                                 alt="...">
@@ -813,7 +814,7 @@
                         </div>
                     </div>
 
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom ">
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom " data-aos="zoom-in">
                         <div class="card_sis">
                             <img src="{{ url('/image/image-sis.png') }}" class="card-img-top img-side-data-body"
                                 alt="...">
@@ -892,7 +893,7 @@
                         </div>
                     </div>
 
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom ">
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom " data-aos="zoom-in">
                         <div class="card_sis">
                             <img src="{{ url('/image/image-sis.png') }}" class="card-img-top img-side-data-body"
                                 alt="...">
@@ -971,7 +972,7 @@
                         </div>
                     </div>
 
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom ">
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 pd-bottom " data-aos="zoom-in">
                         <div class="card_sis">
                             <img src="{{ url('/image/image-sis.png') }}" class="card-img-top img-side-data-body"
                                 alt="...">
@@ -1074,8 +1075,11 @@
     </html>
 
 @section('js')
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-
+ AOS.init({
+  duration: 1200,
+})
     </script>
 @endsection
 @stop

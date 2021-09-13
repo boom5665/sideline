@@ -201,17 +201,21 @@
     border: none;
     width: 90%;
     color: #fff;
+    text-align: end;
 }
 
 #header .set-but-2 {
-    background: #C4C4C4;
-    border-radius: 5px;
+    background: #6D0CEE;
+    /* border-radius: 5px; */
     border: none;
-    width: 80%;
+    color: white;
+    text-align: end;
 }
-
+#header .set-but-2:hover {
+background: #9443FF;
+}
 #header .set-but-out {
-    background: #6D6D6D;
+    background: #6D0CEE;
     border-radius: 17.7418px;
     border: none;
     width: 90%;
@@ -228,14 +232,13 @@
 #header .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 200px;
+    background-color: #6D0CEE;
     box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
-    padding: 12px 16px;
+    padding: 14px 0px;
     z-index: 1;
     color: black;
     top: 27px;
-    left: -20px;
+    left: -87px;
 }
 
 #header .dropdown:hover .dropdown-content {
@@ -252,7 +255,7 @@
 }
 
 #header .padbut {
-    margin: 8px 0px;
+    padding: 3px 10px;
     width: 100%;
     font-size: 20px;
 }

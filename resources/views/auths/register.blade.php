@@ -65,7 +65,7 @@
     </div>
     <div id="login" class="container">
         <div class="formstyleR" id="form">
-            {{-- <form  action=" {{ route('Register.saveregis') }}" method="POST"> --}}
+            <form  action=" {{ route('Register.saveregis') }}" method="POST">
             <div>
                 <div class="card-description">
                     <div class="card-description-nemaR card-description-nemaH-R">
@@ -139,7 +139,7 @@
         </div>
 
         <div class="formstyleR" id="open">
-            <form  action=" {{ route('Register.saveregis') }}" method="POST">
+            {{-- <form  action="" method="POST"> --}}
                 {{ csrf_field() }}
                 <div class="card-description">
                     <div class="card-description-nemaR card-description-nemaH-R">
