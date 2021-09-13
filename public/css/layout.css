@@ -2,10 +2,10 @@
     background-color: #6D0CEE;
     color: white;
     width: 100%;
-    <<<<<<< HEAD=======padding: 25px 0px 35px 0px;
+    /* padding: 25px 0px 35px 0px; */
     text-align: center;
     position: relative;
-    >>>>>>>cbfa7d4f916e5dcd35ecb8d021d4ffa1bade16a0
+
 }
 
 #header .toppage {
@@ -364,7 +364,8 @@
 .menu-right-topbar {
     width: auto;
     float: right;
-    padding-right: 83px;
+    padding-right: 50px;
+    transform: translate(-40%, 0px);
 }
 
 .fw {

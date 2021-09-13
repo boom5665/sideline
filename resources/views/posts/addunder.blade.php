@@ -30,7 +30,7 @@
                                 <div class="col-sm-6 toppage wrap2">
                                     <div class="one-page">2</div>
                                     <img class="toppageimg" src="{{ url('/images/Ellipse17.png') }}" alt="Image" />
-                                    <div class="toppagefont" > <i class="far fa-file-alt"></i>ใส่ข้อมูลเพิ่มเติม</div>
+                                    <div class="toppagefont"> <i class="far fa-file-alt"></i>ใส่ข้อมูลเพิ่มเติม</div>
                                 </div>
                             </div>
                         </div>
@@ -242,7 +242,6 @@
             // read the image file as a data URL.
             reader.readAsDataURL(this.files[0]);
         });
-
     </script>
     <script>
         var // where files are dropped + file selector is opened
@@ -270,8 +269,6 @@
         dropRegion.addEventListener('dragleave', preventDefault, false)
         dropRegion.addEventListener('dragover', preventDefault, false)
         dropRegion.addEventListener('drop', preventDefault, false)
-
-
         function handleDrop(e) {
             var dt = e.dataTransfer,
                 files = dt.files;
@@ -312,7 +309,6 @@
             }
 
         }
-
         dropRegion.addEventListener('drop', handleDrop, false);
 
         function handleFiles(files) {
@@ -386,13 +382,10 @@
                 }
             }
             ajax.upload.onprogress = function(e) {
-
                 // change progress
                 // (reduce the width of overlay)
-
                 var perc = (e.loaded / e.total * 100) || 100,
                     width = 100 - perc;
-
                 overlay.style.width = width;
             }
 

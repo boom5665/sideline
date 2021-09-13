@@ -206,7 +206,7 @@
                     var myElement = document.getElementById(myInputElements[i].id);
                     if (myElement.classList.contains('is-invalid')) {
                         $("#submitBtn").attr("disabled", true);
-                       
+
                         break;
                     }
                 }

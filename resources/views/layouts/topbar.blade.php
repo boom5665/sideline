@@ -17,10 +17,12 @@
                         <a class="toppage MDsearch" data-toggle="modal" data-target="#Modalsearch"><i
                                 class="fas fa-search"></i></a>
                         <div class="dropdown">
-                            @if (Route::has('login'))
-                                <a class="toppage top-us" href="{{ route('login') }}">เข้าสู่ระบบ</a>
-                            @endif
-                            <div class="dropdown-content">
+                            {{-- @if (Route::has('login')) --}}
+                                <a class="toppage top-us"
+                                {{-- href="{{ route('login') }}" --}}
+                                >เข้าสู่ระบบ</a>
+                            {{-- @endif --}}
+                            {{-- <div class="dropdown-content">
                                 @guest
                                 @else
                                     <img src="/uploads/avatars/{{ Auth::user()->avatar }}" class="avatar">
@@ -36,7 +38,7 @@
                                 <button class="padbut set-but-out" onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();"><img class=""
                                         src="{{ url('/images/log-out.png') }}" alt="Image" />ออกจากระบบ</button>
-                            </div>
+                            </div> --}}
 
                         </div>
                     </div>
