@@ -6,7 +6,7 @@
         <div id="contract" class="container">
             <div class="collapsible-head">
                 <div class="content-top display-tele">
-                    <img src="{{ url('/images/Telegram_2019_Logo 1.png') }}" alt="Image" class="imgtele">
+                    <img src="{{ url('/images/Telegram_2019_Logo 1.png') }}" alt="Image" class="imgtele" data-aos="flip-down">
                     <div class="">Telegram</div>
                 </div>
                 <button type="button" class="collapsible">Don’t have Telegram yet? Try it now!></button>

@@ -14,8 +14,8 @@
             </div>
             <div class="formstyle">
 
-                <div class="content-top display-tele">
-                    <img src="{{ url('/images/kbank.png') }}" alt="Image" class="imgtele">
+                <div class="content-top display-tele" >
+                    <img src="{{ url('/images/kbank.png') }}" alt="Image" class="imgtele" data-aos="flip-down">
                     <div class="display-row">
                         <div class=""><b>ชื่อบัญชี</b> : โต้ง สายแจ๊ะในตำนานไม่อยากจะเล่า</div>
                         <div class=""><b>1234567890</b></div>

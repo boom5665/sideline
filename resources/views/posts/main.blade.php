@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <body id="body">
+    <body id="body" >
         <div class="container">
             <div class="content-tab-dont-log" data-aos="fade-left">
                 <div class="alert2">
@@ -1075,11 +1075,6 @@
     </html>
 
 @section('js')
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
- AOS.init({
-  duration: 1200,
-})
-    </script>
+
 @endsection
 @stop

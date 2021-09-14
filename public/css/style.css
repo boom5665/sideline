@@ -805,7 +805,7 @@ summary {
     position: relative;
     opacity: 0.5;
     background: linear-gradient(200.42deg, rgba(109, 12, 238, 0) 0%, #6D0CEE 98.49%);
-    opacity: 0.6;
+    opacity: 1;
 }
 
 .card_under {

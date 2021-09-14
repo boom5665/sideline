@@ -20,7 +20,7 @@
             <div id="Form1">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="content-head">โพสต์ ลงงานไซด์ไลน์
+                        <div class="content-head">โพสต์ สังกัดของฉัน
                             <div class="col-sm-12" id="">
                                 <div class="col-sm-6 toppage wrap">
                                     <div class="one-page">1</div>
@@ -41,7 +41,7 @@
                 </div>
                 <div class="container">
                     <div id="Form1" class="formstyle Form1" style="border: none; box-shadow:none;">
-                        <div class="___class_+?17___" id="wallet">
+                        <div class="" id="wallet">
                             <div class="content-top display-tele">
                                 <div style="display: flex; flex-direction: column;">
                                     <img src="{{ url('/images/cam.png') }}" id="preview2" alt="Image"
@@ -54,7 +54,7 @@
                                     </div>
                                 </div>
                                 <div class="display-rowW">
-                                    <div class="___class_+?25___"><b>ชื่อสังกัด</b></div>
+                                    <div class=""><b>ชื่อสังกัด</b></div>
                                     <input type="text" id="name" name="title" placeholder="" value="">
                                     <p class="___class_+?26___">กำหนดชื่อ URL
                                         เพื่อให้คุณสามารถนำลิ้งก์ URL นี้ ไปแชร์หรือโปรโมท

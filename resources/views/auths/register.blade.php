@@ -63,8 +63,8 @@
     </div>
     </div>
     </div>
-    <div id="login" class="container">
-        <div class="formstyleR" id="form">
+    <div id="login" class="container" >
+        <div class="formstyleR" id="form" >
             <form  action=" {{ route('Register.saveregis') }}" method="POST">
             <div>
                 <div class="card-description">

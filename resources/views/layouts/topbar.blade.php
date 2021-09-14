@@ -18,7 +18,7 @@
                                 class="fas fa-search"></i></a>
                         <div class="dropdown">
                             {{-- @if (Route::has('login')) --}}
-                            <a class="toppage top-us" {{-- href="{{ route('login') }}" --}}>เข้าสู่ระบบ</a>
+                            <a class="toppage top-us" href="{{ url('login') }}">เข้าสู่ระบบ</a>
                             {{-- @endif --}}
                             <div class="dropdown-content">
                                 @guest
@@ -28,13 +28,13 @@
                                         {{ Auth::user()->name }}
                                     </div>
                                 @endguest
-                                <a href="{{ url('/profile') }}"><button class="padbut set-but-2">เติมเงิน</button></a>
-                                <a href="{{ url('/profile') }}"><button class="padbut set-but-2">ลงโพสต์</button></a>
-                                <a href="{{ url('/profile') }}"><button
+                                <a href="{{ url('/wallet') }}"><button class="padbut set-but-2">เติมเงิน</button></a>
+                                <a href="{{ url('/addsideline') }}"><button class="padbut set-but-2">ลงโพสต์</button></a>
+                                <a href="{{ url('/personalinformation') }}"><button
                                         class="padbut set-but-2">โพสต์ของฉัน</button></a>
-                                <a href="{{ url('/profile') }}"><button
+                                <a href="{{ url('/addunder') }}"><button
                                         class="padbut set-but-2">เปิดสังกัด</button></a>
-                                <a href="{{ url('/profile') }}"><button
+                                <a href="{{ url('/underdetail') }}"><button
                                         class="padbut set-but-2">สังกัดของฉัน</button></a>
                                 <a href="{{ url('/profile') }}"> <button
                                         class="padbut set-but-2">โปรไฟล์ของฉัน</button></a>

@@ -290,8 +290,8 @@
                                 <div class="form-group">
                                     <label for="exampleFormControlTextarea1"></label>
 
-                                    <textarea class="form-control description-downwork" placeholder="เขียนการบ้าน..." id="exampleFormControlTextarea1"
-                                        rows="3"></textarea>
+                                    <textarea class="form-control description-downwork" placeholder="เขียนการบ้าน..."
+                                        id="exampleFormControlTextarea1" rows="3"></textarea>
                                     <div class="line-rate-downwork">
                                         <div class="text-ratedownwork-title">
                                             <p class="title-downwork">ให้คะแนนตรงปก</p>
@@ -334,6 +334,7 @@
         </div>
     </div>
     <!-- /ลงการบ้านน้องๆ  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         function TFunc(x) {
             x.classList.toggle("change");
@@ -365,7 +366,13 @@
             });
 
         });
+
+
+        AOS.init({
+            duration: 1200,
+        })
     </script>
+
     @yield('js')
 </body>
 
